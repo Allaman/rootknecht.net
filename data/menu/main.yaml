@@ -1,0 +1,88 @@
+---
+main:
+  - name: Applications
+    ref: "/knowledge/applications"
+    sub:
+      - name: Ansible
+        ref: "/knowledge/applications/ansible"
+      - name: Apache
+        ref: "/knowledge/applications/apache"
+      - name: CLI
+        ref: "/knowledge/applications/cli"
+      - name: Database
+        ref: "/knowledge/applications/database"
+      - name: Drone
+        ref: "/knowledge/applications/drone"
+      - name: FZF
+        ref: "/knowledge/applications/fzf"
+      - name: Gitlab
+        ref: "/knowledge/applications/gitlab"
+      - name: Git
+        ref: "/knowledge/applications/git"
+      - name: Gui
+        ref: "/knowledge/applications/gui"
+      - name: HAProxy
+        ref: "/knowledge/applications/haproxy"
+      - name: Jenkins
+        ref: "/knowledge/applications/jenkins"
+      - name: Jira
+        ref: "/knowledge/applications/jira"
+      - name: Revealjs
+        ref: "/knowledge/applications/revealjs"
+      - name: SSL/TLS/HTTPS
+        ref: "/knowledge/applications/ssl-tls-https"
+      - name: Tmux
+        ref: "/knowledge/applications/tmux"
+      - name: Vim
+        ref: "/knowledge/applications/vim"
+  - name: Cloud
+    ref: "/knowledge/cloud"
+    sub:
+      - name: AWS
+        ref: "/knowledge/cloud/aws"
+      - name: Docker
+        ref: "/knowledge/cloud/docker"
+      - name: Kubernetes
+        ref: "/knowledge/cloud/kubernetes"
+      - name: Terraform
+        ref: "/knowledge/cloud/terraform"
+  - name: Linux
+    ref: "/knowledge/linux"
+    sub:
+      - name: Debian
+        ref: "/knowledge/linux/debian"
+      - name: FHS
+        ref: "/knowledge/linux/filesystem"
+      - name: Network Troubleshooting
+        ref: "/knowledge/linux/network-troubleshooting"
+      - name: NixOS
+        ref: "/knowledge/linux/nixos"
+      - name: Productivity
+        ref: "/knowledge/linux/productivity"
+      - name: SAP NW ABAP 7.51 Installation
+        ref: "/knowledge/linux/sap"
+      - name: Shell
+        ref: "/knowledge/linux/shell"
+      - name: SSH
+        ref: "/knowledge/linux/ssh"
+      - name: Systemd
+        ref: "/knowledge/linux/systemd"
+  - name: Programming
+    ref: "/knowledge/programming"
+    sub:
+      - name: Bash
+        ref: "/knowledge/programming/bash"
+      - name: Java
+        ref: "/knowledge/programming/java"
+      - name: Javascript
+        ref: "/knowledge/programming/javascript"
+      - name: Go
+        ref: "/knowledge/programming/go"
+      - name: Make
+        ref: "/knowledge/programming/makefile"
+      - name: Python
+        ref: "/knowledge/programming/python"
+      - name: Rust
+        ref: "/knowledge/programming/rust"
+      - name: Web
+        ref: "/knowledge/programming/web"

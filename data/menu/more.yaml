@@ -1,0 +1,17 @@
+---
+more:
+  - name: Professional Page
+    ref: "https://mijope.de"
+    external: true
+    icon: "briefcase"
+  - name: My Blog
+    ref: "/blog"
+    icon: "gdoc_notification"
+  - name: Github
+    ref: "https://github.com/allaman/"
+    external: true
+    icon: "gdoc_github"
+  - name: Source
+    ref: "https://github.com/allaman/"
+    external: true
+    icon: "code"
