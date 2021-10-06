@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.85.0"
+          extended: true
+
+      - name: Build
+        run: hugo
+
+      - name: SSH setup
+        env:
+          DEPLOY_KEY: ${{ secrets.deploy_key }}
+          KNOWN_HOSTS: ${{ secrets.known_hosts }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "${KNOWN_HOSTS}" >> ~/.ssh/known_hosts
+          echo "${DEPLOY_KEY}" > ~/.ssh/my_rsync_key
+          echo "IdentityFile ~/.ssh/my_rsync_key" >> ~/.ssh/config
+          chmod -R 700 ~/.ssh
+      - name: Rsync deployment
+        run: |
+          rsync -avhr --delete -e ssh public/ hugo@rootknecht.net:/var/www/rootknecht.net/
