@@ -12,6 +12,6 @@ more:
     external: true
     icon: "gdoc_github"
   - name: Source
-    ref: "https://github.com/allaman/"
+    ref: "https://github.com/allaman/rootknecht.net"
     external: true
     icon: "code"
