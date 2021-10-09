@@ -7,6 +7,10 @@ more:
   - name: My Blog
     ref: "/blog"
     icon: "gdoc_notification"
+  - name: RSS
+    ref: "https://rootknecht.net/blog/index.xml"
+    external: true
+    icon: "rss"
   - name: Github
     ref: "https://github.com/allaman/"
     external: true
