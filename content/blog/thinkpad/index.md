@@ -71,7 +71,7 @@ I ❤️ Thinkpads. Here you can read about some of my stories with them 🙂
 
 <!--more-->
 
-![](head.jpg)
+{{< img name=head lazy=false description=false >}}
 
 {{< toc >}}
 

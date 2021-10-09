@@ -41,7 +41,7 @@ I am running a Lenovo X1 Carbon 6th Generation[^1] with following specs:
 
 - Intel Core i7-8550U processor (8 MB Cache, up to 4,00 GHz)
 - Intel UHD-Grafik 620
-- 16 GB LPDDR3 2.133 MHz (solded)
+- 16 GB LPDDR3 2.133 MHz (soldered)
 - 1 TB SSD, M.2 2280, PCIe, NVMe, OPAL 2.0-enabled
 - 35,6 cm (14") WQHD (2.560 x 1.440), IPS, anti-glare, 300 cd/m²
 - Intel Dualband-Wireless-AC 8265 (2x2) WLAN

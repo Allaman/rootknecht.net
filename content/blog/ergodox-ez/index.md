@@ -41,7 +41,7 @@ resources:
     title: Glowing
 ---
 
-Thinkings about my new keyboard: the [ErgoDox EZ](https://ergodox-ez.com/) and my journey with this exciting piece of hardware.
+Thinking about my new keyboard - the [ErgoDox EZ](https://ergodox-ez.com/) and my impressions with this exciting piece of hardware.
 
 <!--more-->
 
