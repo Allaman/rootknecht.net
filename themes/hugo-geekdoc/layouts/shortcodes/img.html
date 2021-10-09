@@ -2,6 +2,7 @@
 {{ $customAlt := .Get "alt" }}
 {{ $customSize := .Get "size" }}
 {{ $lazyLoad := default (default true $.Site.Params.GeekdocImageLazyLoading) (.Get "lazy") }}
+{{ $description := default true (.Get "description") }}
 
 {{ with $source }}
 {{ $caption := default .Title $customAlt }}
@@ -21,9 +22,11 @@
             <img {{ if $lazyLoad }}loading="lazy" {{ end }}src="{{ $size.large }}" alt="{{ $caption }}" />
         </picture>
     </a>
-    {{ with $caption -}}
-    <figcaption>{{ . }}{{ with $source.Params.credits }} ({{ . | $.Page.RenderString }}){{ end }}</figcaption>
-    {{- end }}
+    {{ with $description }}
+	    {{ with $caption -}}
+	    <figcaption>{{ . }}{{ with $source.Params.credits }} ({{ . | $.Page.RenderString }}){{ end }}</figcaption>
+	    {{- end }}
+    {{ end }}
 </figure>
 </div>
 {{ end }}
