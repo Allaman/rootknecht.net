@@ -31,7 +31,7 @@ resources:
     title: office
 ---
 
-This is the successor of my blog post [my laptop setup](/blog/my-laptop-setup) where I want to give an update my hardware and software I use for my daily business.
+This is the successor of my blog post [my laptop setup](/blog/my-laptop-setup) where I want to give an update for my hardware and software I use for my daily business.
 This article is divided into three parts. In the first part I want to give you an overview about the hardware I am currently working with. In the second part I want to talk about the software running on my laptop and in the last part I want to talk about my desk.
 
 <!--more-->
