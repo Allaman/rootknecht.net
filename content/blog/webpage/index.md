@@ -7,6 +7,10 @@ tags:
   - opinion
 ---
 
+{{< hint alert >}}
+I switched from Hugo to Grav. A follow up will come shortly
+{{< /hint >}}
+
 In this article I explain why I have choosen [Grav CMS](https://getgrav.org/), maybe a rather unknown solution, for [knowledge.rootknecht.net](#).
 
 <!--more-->
