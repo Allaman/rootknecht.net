@@ -2,7 +2,7 @@
 title: My Workplace
 type: posts
 draft: false
-date: 2021-10-07
+date: 2021-10-11
 tags:
   - business
   - configuration
