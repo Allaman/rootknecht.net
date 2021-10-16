@@ -33,6 +33,10 @@ In this post I give an overview of my current Laptop and some of my hardware I u
 
 {{< toc >}}
 
+{{< hint info >}}
+Please visit [My Workplace 2021](/blog/my-workplace-2021/) for an updated version!
+{{< /hint >}}
+
 ## Hardware
 
 ### Laptop
