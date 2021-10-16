@@ -65,7 +65,7 @@ Read more about my reasons for Lenovo [in my old post](blog/my-laptop-setup/#why
 Unfortunately, I experienced some quirks:
 
 1. You MUST upgrade your firmware. Earlier firmware versions are affected by heavy throttling making the system unresponsive ([Lenovo Forum](https://forums.lenovo.com/topic/view/1301/5073083)).
-2. While being connected to my monitor via USB-C a wake-up after suspension resulted in full load on one core, although no process was using that much CPU. Turns out that `Linux S3` mode was the issue. After switching to `Windows and Linux` (s0ix or connected standby) in the BIOS settings this issue was resolved. Apparently, Intel [dropped S3 support](https://www.reddit.com/r/System76/comments/k7xrtz/ill_have_whatever_intel_was_smoking_when_they/) for there Tiger Lake CPUs.
+2. While being connected to my monitor via USB-C a wake-up after suspension resulted in full load on one core, although no process was using that much CPU. Turns out that `Linux S3` mode was the issue. After switching to `Windows and Linux` (s0ix or connected standby) in the BIOS settings this issue was resolved. Apparently, Intel [dropped S3 support](https://www.reddit.com/r/System76/comments/k7xrtz/ill_have_whatever_intel_was_smoking_when_they/) for Tiger Lake CPUs.
 
 ### Keyboard and mouse
 
