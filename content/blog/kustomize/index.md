@@ -26,6 +26,12 @@ resources:
   - name: backend-structure
     src: layering/backend-structure.png
     title: Deployments from the same base
+  - name: host-example
+    src: advanced/host-example.png
+    title: Host for stg and prod
+  - name: notification-example
+    src: advanced/notification-example.png
+    title: Username for stg and prod
 ---
 
 An introduction to [Kustomize](https://kustomize.io/) and why I it could change the way you deploy your workloads to Kubernetes.
@@ -175,7 +181,7 @@ patchesStrategicMerge:
   - deployment.yaml
 ```
 
-In this example we use a [pachtesStrategicMerge](https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#patchstrategicmerge) which will use the provided `deployment.yaml` and patch the provided values to the deployment resource defined in `base`.
+In this example we use a [patchesStrategicMerge](https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#patchstrategicmerge) which will use the provided `deployment.yaml` and patch the provided values to the deployment resource defined in `base`.
 
 {{< hint info >}}
 You must provide the names of resources (here `metadata.name` and `containers.name`) so that can identify the resources from base that needs to be patched.
@@ -350,11 +356,20 @@ metadata:
   namespace: team1
 ```
 
-### Advanced use cases
+### More patches
 
-#### Patching a single value only
+Kustomize supports more advanced mechanisms besides patchesStrategicMerge strat
+{{< hint info >}}
+You can find the code at my [Github](https://github.com/Allaman/kustomize-demo/tree/main/advanced)
+{{< /hint >}}
 
-####
+#### patches
+
+{{< img name=host-example lazy=true >}}
+
+#### patchesJson6902
+
+{{< img name=notification-example lazy=true >}}
 
 ### CD integration
 
@@ -402,6 +417,6 @@ There are some aspects to consider:
 - **boiler plate**: For more complex deployments you will write a lot of kustomization.yaml.
 - **redundancy**: As shown, Kustomize reduces the redundancy of code. But there is still some redundancy. For instance in the basic example your have to write the deployment files to be patched three times with only minimal differences.
 - **loose coupling**: components defined with Kustomize are only loosely coupled and dependencies between components are not easy to declare.
-- **Limited "language"**: Kustomize, unlike Helm, is not a templating language and therefore does not include templating features like loops or control flows.
+- **Limited "language"**: Kustomize, unlike Helm, is not a templating language and therefore does not include templating features like loops or control flows. For some resource missing templating features like loops result in much repetitive writing. Think about many ingress rules for example.
 
 ## Glossary
