@@ -37,11 +37,11 @@ resources:
     title: Username for stg and prod
 ---
 
-While my early days working with [Kustomize](https://kustomize.io/) I was missing some condensed practical hands-on how to build deployments with Kustomize and how to achieve common requirements in a multi cluster setup. In this blog post I want to fill this gap and give you a somehow holistic overview about Kustomize.
+While in my early days of working with [Kustomize](https://kustomize.io/) I was missing some condensed practical hands-on how to build deployments with Kustomize and how to achieve common requirements in a multi-cluster setup. In this blog post, I want to fill this gap and give you a somewhat holistic overview of Kustomize.
 
 <!--more-->
 
-{{< img name=head lazy=false description=false >}}
+{{< img name=head lazy=false size=huge description=false >}}
 
 {{< toc >}}
 
@@ -49,15 +49,15 @@ While my early days working with [Kustomize](https://kustomize.io/) I was missin
 
 > Kubernetes native configuration management
 
-With Kustomize you can define your Kubernetes deployments[^1] for various environments with different parameters without learning a new templating language nor a DSL. Kustomize works with standard Kubernetes resources[^2] and applies different parameters for different environments via a so called overlay. More on this when we have a closer look at Kustomize.
+With Kustomize you can define your Kubernetes deployments[^1] for various environments with different parameters without learning a new templating language nor a DSL. Kustomize works with standard Kubernetes resources[^2] and applies different parameters for different environments via a so-called overlay. More on this when we have a closer look at Kustomize.
 
-Kustomize is included in `kubectl` and also [available](https://kubectl.docs.kubernetes.io/installation/kustomize/) as standalone application for all major platforms.
+Kustomize is included in `kubectl` and is also [available](https://kubectl.docs.kubernetes.io/installation/kustomize/) as a standalone application for all major platforms.
 
 ## What does Kustomize solve?
 
 Generally spoken, Kustomize is a tool that supports you in declaratively writing Kubernetes manifests[^3]. You might ask what is the difference to a simple `kubectl apply -f /path/to/yaml/dir`?
 
-Think about the common scenario of teams deploying to Kubernetes in a multi cluster setup for different environments[^4]. For instance, you could have `develop`, `test`, and `production` environments and for each of it a dedicated Kubernetes cluster is running. You need to deploy your applications to each Kubernetes cluster in order to perform the required tasks like testing or QA and of course running production load. The deployments are not equal on each cluster because the requirements can be different. On the production cluster you probably require more resources in order to sustain availability under heavy load in contrast to develop where only a few developers work with.
+Think about the common scenario of teams deploying to Kubernetes in a multi-cluster setup for different environments[^4]. For instance, you could have `develop`, `test`, and `production` environments. For each of them, a dedicated Kubernetes cluster is running. You need to deploy your applications to each Kubernetes cluster in order to perform the required tasks like testing or QA and, of course, running production load. The deployments are not equal on each cluster because the requirements can be different. On the production cluster, you probably require more resources in order to sustain availability under heavy load, in contrast, to develop where only a few developers work with.
 
 A **naive** approach might look like this:
 
@@ -83,19 +83,19 @@ We want to define common Kubernetes manifests for all environments that are **k*
 
 ## Kustomize in action
 
-Kustomize introduces the `base` and `overlay` concept. The base includes all Kubernetes manifests that are common for all environments and tend to be very static as they do not change often if any. The overlay includes manifests for a specific environment and alters or adds specific values of the base.
+Kustomize introduces the `base` and `overlay` concept. The base includes all Kubernetes manifests that are common for all environments and tend to be very static as they do not change often, if at all. The overlay includes manifests for a specific environment and alters or adds specific values of the base.
 
-A common practice for writing Kustomize deployments is a clear folder structure that separates base and overlay manifests as shown in the following image:
+A common practice for writing Kustomize deployments is a clear folder structure that separates base and overlay manifests, as shown in the following image:
 
 {{< img name=folder-structure lazy=true size=tiny >}}
 
 {{< hint info >}}
-You can omit the overlay folder if you prefer a more flat layout. Basically, you can organize your manifests as you like but I recommend to keep it simple and uniform.
+You can omit the overlay folder if you prefer a more flat layout. Basically, you can organize your manifests as you like, but I recommend keeping it simple and uniform.
 {{< /hint >}}
 
 ### Basic example
 
-This example illustrates the simple overlay mechanism of Kustomize to write Kubernetes manifests for different environments. Kustomize generates/build the manifests to be applied before they are transmitted to the Kubernetes controller.
+This example illustrates the simple overlay mechanism of Kustomize to write Kubernetes manifests for different environments. Kustomize generates/builds the manifests to be applied before they are transmitted to the Kubernetes controller.
 
 The generated manifests are printed out and can be redirected to a file.
 
@@ -107,7 +107,7 @@ kustomize build /path/to/folder [> manifests.yaml]
 The following snippet will apply resources! Use the former command for just generating the resources
 {{< /hint >}}
 
-And if you want to use the built in Kustomize flag of kubectl:
+And if you want to use the built-in Kustomize flag of kubectl:
 
 ```sh
 kubectl apply -k /path/to/folder
@@ -117,7 +117,7 @@ kubectl apply -k /path/to/folder
 Most of my Kustomize code ships with a [Makefile](https://github.com/Allaman/toolbox/tree/main/makefile/kustomize) with common commands included - have a look 🤓
 {{< /hint >}}
 
-Now lets think about the following scenario:
+Now, let's think about the following scenario:
 
 - three environments (dev, test, prod)
 - two applications named foo and bar
@@ -128,13 +128,13 @@ We should write deployment manifests that satisfy the following requirements:
 - resource labeling must match the environment
 - scale the applications per environment
 - allocate resources to the applications per environment
-- inject ENV variables into pods per environemnt
+- inject ENV variables into pods per environment
 
 {{< hint info >}}
 You can find the code at my [Github](https://github.com/Allaman/kustomize-demo/tree/main/basic)
 {{< /hint >}}
 
-In the **base** folder we define our usual Kubernetes manifests. For this demo, we write resources for a deployment, a service account and a service for both, `bar` and `foo` services.
+In the **base** folder, we define our usual Kubernetes manifests. For this demo, we write resources for a deployment, a service account and a service for both `bar` and `foo` services.
 
 {{< img name=basic-base-folder lazy=true size=small >}}
 
@@ -159,7 +159,7 @@ The **overlay** folder contains the modifications we want for each environment. 
 {{< img name=basic-overlay-folder lazy=true size=small >}}
 
 {{< hint info >}}
-At the beginning this is a bit awkward and you probably will often forget to add a `kustomization.yaml` but you will get used to it.
+At the beginning, this is a bit awkward and you probably will often forget to add a `kustomization.yaml`, but you will get used to it.
 {{< /hint >}}
 
 The first kustomization.yaml defines the list of resources to be applied to the according environment. Note that you can define folders as well. Furthermore we define an additional common label specific to the environment (`env`) that will be merged to the labels from the already defined ones in the base resources.
@@ -192,7 +192,7 @@ patchesStrategicMerge:
   - deployment.yaml
 ```
 
-In this example we use a [patchesStrategicMerge](https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#patchstrategicmerge) which will use the provided `deployment.yaml` and patch the provided values to the deployment resource defined in `base`.
+In this example, we use a [patchesStrategicMerge](https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#patchstrategicmerge) which will use the provided `deployment.yaml` and patch the provided values to the deployment resource defined in `base`.
 
 `overlay/dev/foo/deployment.yaml`:
 
@@ -226,13 +226,13 @@ You must provide the names of resources (here `metadata.name` and `containers.na
 
 This patch will add `spec.replicas`, `spec.template.spec.containers[0].resources`, and `spec.template.spec.containers[0].env` to the deployment resource from the base. As we provide such a patch for each environment we can adjust our deployment for each of them.
 
-Here you can see a diff for the deployment resources generated by Kustomize for each environment. As intended each environment is **k**ustomized with its own values.
+Here you can see a diff in the deployment resources generated by Kustomize for each environment. As intended, each environment is **k**ustomized with its own values.
 
 {{< img name=basic-diff lazy=true >}}
 
 ### Selectors
 
-If you have a closer look at the code of the basic example you can see that the deployment manifests are lacking the `spec.selectors` part and how this should work for a real deployment in a cluster.
+If you have a closer look at the code of the basic example, you can see that the deployment manifests lack the `spec.selectors` part and how this should work for a real deployment in a cluster.
 
 The answer is a convenient feature of Kustomize for the handling of `spec.selectors`. Kustomize automatically handles them for you!
 
@@ -267,10 +267,10 @@ spec:
 ```
 
 {{< hint warning >}}
-As Kustomize always uses all values of `commonLabels` for selectors you cannot modify your labels for certain resources (e.g. deployments) because `matchLabel` is immutable by the Kubernetes API! Think about your labeling before deploying resources.
+As Kustomize always uses all values of `commonLabels` for selectors, you cannot modify your labels for certain resources (e.g., deployments) because `matchLabel` is immutable by the Kubernetes API! Think about your labeling before deploying resources.
 {{< /hint >}}
 
-Since Kustomize [4.1.0](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize%2Fv4.1.0) there is a new option to distinguish between labels that should be included in selectors as the following example shows.
+Since Kustomize [4.1.0](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize%2Fv4.1.0), there is a new option to distinguish between labels that should be included in selectors as the following example shows.
 
 `basic/base/bar/kustomization.yaml`:
 
@@ -286,7 +286,7 @@ labels:
     includeSelectors: true
 ```
 
-By providing a set of base resources we can reduce the amount of redundant manifests. By applying patches via Kustomize we can modify only the resources' values we need. By following a clean folder structure (see [layering](/blog/kustomize#layering) for more details) it is intuitive and straight forward to understand and maintain your Kubernetes manifests.
+By providing a set of base resources, we can reduce the number of redundant manifests. By applying patches via Kustomize, we can modify only the resources' values we need. By following a clean folder structure (see [resource layout](/blog/kustomize#resource_layout) for more details), it is intuitive and straight-forward to understand and maintain your Kubernetes manifests.
 
 ### Resource layout
 
@@ -301,17 +301,17 @@ Kustomize works on different levels allowing you to organize your deployments an
 **Basic conditions**
 
 - two dedicated clusters for a staging(stg) and a production(prod) environment
-- a frontend consisting of an UI component and a BFF (backend for frontend) component
+- a frontend consisting of a UI component and a BFF (backend for frontend) component
 - a backend consisting of an engine component, an administration component and **several** scraper components
 - a debugging service that is only required to deploy on stg
 
 **Implementation**
 
-With Kustomize you can organize your deployments in folders and sub folders in a nested structure.
+With Kustomize, you can organize your deployments in folders and sub-folders in a nested structure.
 
 {{< img name=layering-folder lazy=true size=small >}}
 
-You can see that we organized our applications in `backend` and `frontend` folders. Of course, each folder requires a `kustomization.yaml`. Furthermore you can see that the `debug` application only exists in stg and not in base because of the requirements. If you think that there might be a chance that the debug component needs to be deployed to prod as well you can define it in the base as well but only refer to it from staging.
+You can see that we organized our applications in `backend` and `frontend` folders. Of course, each folder requires a `kustomization.yaml`. Furthermore you can see that the `debug` application only exists in stg and not in the base because of the requirements. If you think that there might be a chance that the debug component needs to be deployed to prod as well, you can define it in the base as well but only refer to it from staging.
 
 #### Labels
 
@@ -335,7 +335,7 @@ labels:
 
 #### Multiple deployments from one base
 
-In Production we want to deploy multiple scraper applications that might run just in a slightly different configuration (for instance a different environment variable). With Kustomize we can still define the common resources for the scraper in our base folder but create multiple deployments in the overlay.
+In Production, we want to deploy multiple scraper applications that might run just in a slightly different configuration (for instance, a different environment variable). With Kustomize, we can still define the common resources for the scraper in our base folder but create multiple deployments in the overlay.
 
 {{< img name=backend-structure lazy=true size=tiny >}}
 
@@ -356,7 +356,7 @@ resources:
   - ../../../../base/backend/scraper
 ```
 
-Although in base we defined `metadata.name: scraper` Kustomize generates manifests with a new name allowing us to deploy multiple scraper applications while only maintaining one common base.
+Although in base, we defined `metadata.name: scraper` Kustomize generates manifests with a new name allowing us to deploy multiple scraper applications while only maintaining one common base.
 
 ```yaml
 ---
@@ -381,7 +381,7 @@ You can find the code at my [Github](https://github.com/Allaman/kustomize-demo/t
 
 #### patches
 
-This example demonstrates how to path (replace) a single value, in this case the host of an ingress resource.
+This example demonstrates how to path (replace) a single value, in this case, the host of an ingress resource.
 
 {{< img name=host-example lazy=true >}}
 
@@ -391,7 +391,7 @@ This example changes the username of a Grafana notification channel per environm
 
 {{< img name=notification-example lazy=true >}}
 
-You can patch multiple values and use a JSON format. Different values for `op` like delete are available.
+You can patch multiple values and use a JSON format. Different values for `op`, like delete, are available.
 
 ```json
 [
@@ -416,13 +416,13 @@ You can patch multiple values and use a JSON format. Different values for `op` l
 ### CD integration
 
 CD integration is available for common GitOps tools like [Flux](https://github.com/fluxcd/flux) and [ArgoCD](https://github.com/argoproj/argo-cd).
-Due to its simplicity it is likely that you can integrate Kustomize in your workflow as well. This is the most basic command to apply your manifests:
+Due to its simplicity, it is likely that you can integrate Kustomize into your workflow as well. This is the most basic command to apply your manifests:
 
 ```sh
 kustomize build overlay/prod | kubectl apply -f -
 ```
 
-Keep in mind that this approach does not do a garbage collection of resources like Flux does.
+Keep in mind that this approach does not do a garbage collection of resources as Flux does.
 
 ## Kustomize best practices
 
@@ -435,10 +435,10 @@ These things worked for me but keep in mind that your mileage might differ.
 3. Think about your labels ([recommended labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/))
 4. Think about your folder structure and keep it simple and uniform across projects/teams
 5. Prefix your commit messages to distinguish commits for specific environments
-6. Think about your base. In doubt move code to the overlay to reduce impact on your production environment
+6. Think about your base. In doubt, move code to the overlay to reduce the impact on your production environment
 7. Implement a pipeline that verifies your manifests
 
-## Kustomize vs Helm
+## Kustomize vs. Helm
 
 {{< hint warning >}}
 Never blindly follow a tool recommendation but analyze the specific requirements in your environment and choose the best tool for the job!
@@ -450,7 +450,7 @@ Never blindly follow a tool recommendation but analyze the specific requirements
 
 > Helm is the best way to find, share, and use software built for Kubernetes.
 
-Helm is one of the old players in the Kubernetes ecosystem. Meanwhile the current version of Helm is v3 which replaced version 2 with a new architecture. See the official [migration guide](https://helm.sh/docs/topics/v2_v3_migration/) for the changes between v3 and v2. Helm is [available](https://helm.sh/docs/intro/install/) for all major operating systems.
+Helm is one of the old players in the Kubernetes ecosystem. Meanwhile, the current version of Helm is v3 which replaced version 2 with a new architecture. See the official [migration guide](https://helm.sh/docs/topics/v2_v3_migration/) for the changes between v3 and v2. Helm is [available](https://helm.sh/docs/intro/install/) for all major operating systems.
 
 Basically, Helm is used to define and distribute deployments for Kubernetes.
 
@@ -462,27 +462,27 @@ The main difference to Kustomize is the templating language of Helm.
 This section reflects my point of view!
 {{< /hint >}}
 
-| Kustomize                                                                    | Helm                                      |
-| ---------------------------------------------------------------------------- | ----------------------------------------- |
-| Part of kubectl 👍                                                           | Often used by third party deployments 👍  |
-| Is built upon standard Kubernetes manifests 👍                               | Supports Release(bundles) 👍              |
-| Different environments are configured by using "overlays" 👍                 | Templating 👍👎                           |
-| No templating / no templating language (thumbs up) (thumbs down) 👍 👎       | not very intuitiv / maintainable 👎       |
-| Easy to write and read 👍                                                    | Complexity 👎                             |
-| Flexible and customizable 👍                                                 | Error prune 👎                            |
-| Difficult to bundle different resources 👎                                   | Actual resources needs to be templated 👎 |
-| Actual resources needs to "calculated" by far not as complex as with Helm 👎 |                                           |
-| Not so DRY 👎                                                                |                                           |
+| Kustomize                                                                     | Helm                                     |
+| ----------------------------------------------------------------------------- | ---------------------------------------- |
+| Part of kubectl 👍                                                            | Often used by third-party deployments 👍 |
+| Is built upon standard Kubernetes manifests 👍                                | Supports Release(bundles) 👍             |
+| Different environments are configured by using "overlays" 👍                  | Templating 👍👎                          |
+| No templating / no templating language (thumbs up) (thumbs down) 👍 👎        | not very intuitive/maintainable 👎       |
+| Easy to write and read 👍                                                     | Complexity 👎                            |
+| Flexible and customizable 👍                                                  | Error prune 👎                           |
+| Difficult to bundle different resources 👎                                    | Actual resources need to be templated 👎 |
+| Actual resources need to "calculated". By far, not as complex as with Helm 👎 |                                          |
+| Not so DRY 👎                                                                 |                                          |
 
 ### When to use Kustomize over Helm
 
 {{< hint info >}}
-As with each generalizations keep your specific settings in mind!
+As with each generalization, keep your specific settings in mind!
 {{< /hint >}}
 
 - You want to deploy to different environments
-- You want to deploy self developed microservices that are loosely coupled to each other with respect to their deployment dependencies
-- You don't want to distribute your application with external parties
+- You want to deploy self-developed microservices that are loosely coupled to each other with respect to their deployment dependencies
+- You don't want to distribute your application to external parties
 - You don't need to bundle your application in releases
 - Your deployment does not require complex configuration with loops and Conditional Clauses
 - You want to keep things simple :wink:
@@ -491,11 +491,11 @@ As with each generalizations keep your specific settings in mind!
 
 There are some aspects to consider when working with Kustomize:
 
-- **boiler plate**: For more complex deployments you will write a lot of kustomization.yaml and `version`, `kind`, `name`, etc. fields
-- **redundancy**: There is still some redundancy. For instance in the basic example you have to write the deployment files to be patched three times with only minimal differences.
-- **loose coupling**: components defined with Kustomize are only loosely coupled and dependencies between components are not easy to declare.
+- **Boiler-plate**: For more complex deployments, you will write a lot of kustomization.yaml and `version`, `kind`, `name`, etc. fields
+- **Redundancy**: There is still some redundancy. For instance, in the basic example, you have to write the deployment files to be patched three times with only minimal differences.
+- **Loose coupling**: components defined with Kustomize are only loosely coupled and dependencies between components are not easy to declare.
 - **Limited "language"**: Kustomize, unlike Helm, does not include a templating language and therefore does not offer templating features like loops or control flows.
-- **distribution**: Distributing your applications is not as straightforward as with Helm.
+- **Distribution**: Distributing your applications is not as straightforward as with Helm.
 
 [^1]: **deployment**: general term for all stuff you want to deploy/install/run in Kubernetes
 [^2]: **resources**: Kubernetes objects like a `configmap`, `secret`, `statefulset`, etc.
