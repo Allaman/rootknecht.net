@@ -1,8 +1,8 @@
 ---
 title: Kustomize
 type: posts
-draft: true
-date: 2021-11-01
+draft: false
+date: 2021-11-06
 tags:
   - cloud
   - Kubernetes
@@ -286,7 +286,7 @@ labels:
     includeSelectors: true
 ```
 
-By providing a set of base resources, we can reduce the number of redundant manifests. By applying patches via Kustomize, we can modify only the resources' values we need. By following a clean folder structure (see [resource layout](/blog/kustomize#resource_layout) for more details), it is intuitive and straight-forward to understand and maintain your Kubernetes manifests.
+By providing a set of base resources, we can reduce the number of redundant manifests. By applying patches via Kustomize, we can modify only the resources' values we need. By following a clean folder structure (see [resource layout](/blog/kustomize#resource-layout) for more details), it is intuitive and straight-forward to understand and maintain your Kubernetes manifests.
 
 ### Resource layout
 
