@@ -341,6 +341,12 @@ awk '{if (NR!=1) {print}}'
 echo -n "eins:zwei:drei | awk '{split($0,r,":"); print r[1]}';) # returns zwei
 ```
 
+## Get parent directory of a file
+
+```sh
+parent_dir="$(dirname -- "$(readlink -f -- "$file_name")")"
+```
+
 ## Time/Date
 
 ```sh
