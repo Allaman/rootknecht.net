@@ -107,6 +107,16 @@ fi
 [ "STRING1" != "STRING2" ] # True if strings are (not) equal
 ```
 
+### String in file
+
+```bash
+if grep -q <PATTERN> <FILE>; then
+  echo "True"
+else
+  echo "FALSE"
+fi
+```
+
 ## Integers
 
 ```bash
