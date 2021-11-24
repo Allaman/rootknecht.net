@@ -173,7 +173,7 @@ This layout will provide me my required fail-safe of two disks at the same time,
 {{< img name=Drives lazy=true size=small >}}
 
 {{< hint info >}}
-I could have bought bigger drives for the parity because if I want to increase the capacity I have to buy a drive for the parity as well as for the storage itself. This restriction originates from the fact that parity drives must always be equal or bigger then the biggest array drive and I can not just add another 4 GB drive because of no free SATA ports.
+I should have bought bigger drives for the parity because if I want to increase the capacity I have to buy a drive for the parity as well as for the storage itself. This restriction originates from the fact that parity drives must always be equal or bigger then the biggest array drive and I can not just add another 4 GB drive because of no free SATA ports.
 {{< /hint >}}
 
 ### Shares
