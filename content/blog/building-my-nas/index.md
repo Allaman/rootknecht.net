@@ -87,7 +87,7 @@ My hardware is based on [this article](https://www.elefacts.de/test-120-nas_adva
 - HDD: [WD Rot Pro 4TB 3.5" - 7200 RPM](https://www.amazon.de/gp/product/B07B1WK3N5)
 - SSD: [Samsung SSD 870 EVO, 1 TB](https://www.amazon.de/dp/B08PC5DKZQ)
 
-All components are working and the build itself was not too difficult. The case is quiet big and offers plenty of space for these components as well as for your (thick) fingers 😉
+All components are working and the build itself was not too difficult. The case is quite big and offers plenty of space for these components as well as for your (thick) fingers 😉
 
 {{< hint warning >}}
 Be aware that this is not an ECC RAM build!
@@ -111,14 +111,14 @@ In the following section I want to list the key features of Unraid and TrueNAS.
 
 ### Unraid
 
-- Unraid is based upon Slackware Linux distribution, and I am quite familiar with Linux which makes me fell more comfortable and more confident.
-- Unraid offers a great flexibility regarding your hardware especially your drives. You can mix disks with arbitrary sizes and increase easily increase your storage by adding just a single drive to it. The only limitation is that the parity drive(s) must be equal or greater than your storage disks.
+- Unraid is based upon Slackware Linux distribution, and I am quite familiar with Linux which makes me feel more comfortable and more confident.
+- Unraid offers a great flexibility regarding your hardware especially your drives. You can mix disks with arbitrary sizes and easily increase your storage by adding just a single drive to it. The only limitation is that the parity drive(s) must be equal or greater than your storage disks.
 - As mentioned, the default file systems are XFS for storage disks and [btrfs](https://en.wikipedia.org/wiki/Btrfs) for the cache disks. I have some experience with both file systems and in my opinion they are easier to handle.
 - Unraid requires a [paid license](https://unraid.net/pricing) based upon the number of drives you want to use. There is a 30 days trail with all features available.
 
 ### TrueNAS
 
-- TrueNAS is based upon FreeBSD. Though, (Free)BSD is a Unix based system (at the time writing this)I don't feel very comfortable and confident in using BSD based systems. Additionally, I have doubt that every software I might want to run is available. In the future this might change with [TrueNAS SCALE](https://www.truenas.com/community/threads/truenas-scale-the-voyage-begins-with-version-20-10.88049/) but for now I don't want to run beta software for my NAS.
+- TrueNAS is based upon FreeBSD. Though, (Free)BSD is a Unix based system, at the time writing this post I don't feel very comfortable and confident in using BSD based systems. Additionally, I have doubt that every software I might want to run is available. In the future this might change with [TrueNAS SCALE](https://www.truenas.com/community/threads/truenas-scale-the-voyage-begins-with-version-20-10.88049/) but for now I don't want to run beta software for my NAS.
 - ZFS is the file system of TrueNAS which I consider as superior file system with one drawback. I am not too familiar with it and a solution without learning a new complex file system would be preferable.
 - Being a [RAID](https://en.wikipedia.org/wiki/RAID) based NAS you have to think about your RAID setup and also consider drive swapping. I would prefer a system without the complexity of a RAID.
 - TrueNAS CORE is free and open source.
@@ -158,7 +158,7 @@ Here are the steps to create an Unraid boot USB stick on Linux:
   - Copy the archive's content to the USB stick
   - Run `make_bootable_linux` located on your disk (not the USB). The script should confirm that the stick is ready
 
-You should not require a monitor or keyboard/mouse. If your BIOS is configured to automatically boot from USB, Unraid will start in the default non GUI mode and is available at its local IP. Try to open http://unraid.local or look in your router network settings for the IP of your system.
+You should not require a monitor or keyboard/mouse. If your BIOS is configured to automatically boot from USB, Unraid will start in the default non GUI mode and is available at its local IP. Try to open http://tower.local or look in your router network settings for the IP of your system.
 
 ### Drive set up
 
@@ -178,9 +178,9 @@ I should have bought bigger drives for the parity because if I want to increase 
 
 ### Shares
 
-My data at the top level is structured in folders for personal data, business data, source code, media, etc. For each folder I created a share. Most of my shares are configured to use the cache with the "yes:cache" option. New files are primarily created on the cache (SSDs) if sufficient space is available. As the cache is not protected a so-called mover component moves files from the cache to the array. My mover is set up to start every night. Only critical data is directly written to the array.
+My data at the top level is structured in folders for personal data, business data, source code, media, etc. For each folder I created a share. Most of my shares are configured to use the cache with the `yes:cache` option. New files are primarily created on the cache (SSDs) if sufficient space is available. As the cache is not protected, a so-called mover component moves files from the cache to the array. My mover is set up to run every night. Only critical data is directly written to the array.
 
-My shares are auto mounted at access by [systemd](https://wiki.archlinux.org/title/Samba#automount).
+My shares are automatically mounted at access by [systemd](https://wiki.archlinux.org/title/Samba#automount).
 
 ### Plugins and Apps
 
