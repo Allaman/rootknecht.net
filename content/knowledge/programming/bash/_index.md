@@ -351,6 +351,12 @@ awk '{if (NR!=1) {print}}'
 echo -n "eins:zwei:drei | awk '{split($0,r,":"); print r[1]}';) # returns zwei
 ```
 
+### Sum up time durations
+
+```sh
+awk -F : '{acch+=$1;accm+=$2;} ENDFILE { print acch+int(accm/60)  ":" accm%60; }'
+```
+
 ## Get parent directory of a file
 
 ```sh
