@@ -1,7 +1,7 @@
 ---
 title: Switching from Linux to macOS
 type: posts
-draft: true
+draft: false
 date: 2021-12-30
 tags:
   - business
