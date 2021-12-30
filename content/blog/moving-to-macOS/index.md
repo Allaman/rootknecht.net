@@ -1,5 +1,5 @@
 ---
-title: Switching from Linux to macOS
+title: Moving from Linux to macOS
 type: posts
 draft: false
 date: 2021-12-30
@@ -21,9 +21,9 @@ resources:
 
 In my last [workplace](/blog/my-workplace-2021) setup blog post, I described my setup centered around my Lenovo X1 Carbon Gen 9 running Manjaro Linux and why I prefer Lenovo laptops over all other manufactures. I admit, you could call me a Lenovo fanboy. In this post, I will explain why I switched from Lenovo laptops running Linux for over a decade to the "arch enemy" macOS.
 
-{{< img name=head lazy=false description=false size=small >}}
+<!--more-->
 
-<!-- more -->
+{{< img name=head lazy=false description=false size=small >}}
 
 {{< toc >}}
 
