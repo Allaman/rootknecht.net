@@ -8,6 +8,7 @@ tags:
   - Kubernetes
   - devops
   - deployments
+  - tools
 resources:
   - name: head
     src: head.png
