@@ -87,6 +87,10 @@ Now, let's have a look how to create your news feed. We need to gather new posts
 
 {{< img name=agents lazy=true size=small >}}
 
+{{< hint info >}}
+No need to use this technique for my blog. There is a [RSS feed](https://rootknecht.net/blog/index.xml) available 😉
+{{< /hint >}}
+
 ### Gather new posts
 
 To gather data from websites, Huginn has the `Website Agent`
