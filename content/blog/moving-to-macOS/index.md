@@ -245,6 +245,7 @@ What drives me crazy? 😆
 - [Calibre](https://calibre-ebook.com/) is not (yet) available as native package, and there is no alternative. Calibre runs with Rosetta well, but I don't want to enable the emulation layer.
 - [ueberzug](https://github.com/seebye/ueberzug) depends on x11 and is not available (used for preview files in Terminal in conjunction with [lf](https://github.com/gokcehan/lf)). Till now, I came to no solution for this (special) setup.
 - Missing `primary selection`across the OS. It is available in iTerm2. In Linux every text selected, no matter where, is copied to the clipboard and can be pasted with a mouse middle click.
+- Why is there no `cut` in finder?
 
 ## Conclusion
 
