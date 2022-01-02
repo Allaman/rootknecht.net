@@ -102,7 +102,7 @@ After creating a new agent via the agent's menu, you have some general options a
 For our purpose we just enter a name and set the desired schedule of the agent.
 
 {{< hint warning >}}
-Be conservative with your agent and do not generate unnecessary load!
+Be conservative with your agent and do not generate unnecessary load! Also, keep in mind that you might miss posts if the frequency of new posts is higher than your schedule!
 {{< /hint >}}
 
 The interesting part is the scrape config of the agent after the general settings. You can hit `toggle view` to switch to the JSON view.
