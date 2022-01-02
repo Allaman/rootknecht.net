@@ -30,7 +30,7 @@ resources:
     title: RSS feed url for your RSS reader
 ---
 
-I am (still) a big fan of RSS feeds and have built a neat collection of feeds on my self-hosted [Tiny Tiny RSS](https://tt-rss.org/). However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via [Huginn](https://github.com/huginn/huginn).
+I am (still) a big fan of RSS feeds and I have built a neat collection of feeds on my self-hosted [Tiny Tiny RSS](https://tt-rss.org/). However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via [Huginn](https://github.com/huginn/huginn).
 
 <!--more-->
 
