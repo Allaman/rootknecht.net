@@ -253,5 +253,7 @@ Overall, I am very happy with my move to Apple/macOS. Most of my apps and workfl
 
 Of course, this is not a long term review, as I own the MBP just a couple of weeks now. Stay tuned ([RSS](https://rootknecht.net/blog/index.xml), [Twitter](https://twitter.com/allamann)) for a more in-depth review with a focus on my daily tasks as a **DevOps/Cloud Engineer**.
 
+Here is the [Reddit Discussion](https://www.reddit.com/r/MacOS/comments/ruhi3n/moving_to_macos_after_10_years_of_running_solely/)
+
 [^1]: In this post, Linux is used as a synonym for all Linux based operating systems though technically, Linux is only the Kernel.
 [^2]: All listings are in no particular order
