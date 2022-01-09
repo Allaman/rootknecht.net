@@ -1,5 +1,5 @@
 ---
-title: Kustomize
+title: An intro to Kustomize
 type: posts
 draft: false
 date: 2021-11-06
@@ -10,8 +10,6 @@ tags:
   - deployments
   - tools
 resources:
-  - name: head
-    src: head.png
   - name: folder-structure
     src: folder-structure.png
     title: Top level folder layout
@@ -41,8 +39,6 @@ resources:
 While in my early days of working with [Kustomize](https://kustomize.io/) I was missing some condensed practical hands-on how to build deployments with Kustomize and how to achieve common requirements in a multi-cluster setup. In this blog post, I want to fill this gap and give you a somewhat holistic overview of Kustomize.
 
 <!--more-->
-
-{{< img name=head lazy=false size=huge description=false >}}
 
 {{< toc >}}
 
@@ -382,7 +378,7 @@ You can find the code at my [Github](https://github.com/Allaman/kustomize-demo/t
 
 #### patches
 
-This example demonstrates how to path (replace) a single value, in this case, the host of an ingress resource.
+This example demonstrates how to patch (replace) a single value, in this case, the host of an ingress resource.
 
 {{< img name=host-example lazy=true >}}
 
@@ -486,7 +482,7 @@ As with each generalization, keep your specific settings in mind!
 - You don't want to distribute your application to external parties
 - You don't need to bundle your application in releases
 - Your deployment does not require complex configuration with loops and Conditional Clauses
-- You want to keep things simple :wink:
+- You want to keep things simple 😉
 
 ## Downsides of Kustomize
 
