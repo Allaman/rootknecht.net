@@ -30,7 +30,7 @@ resources:
     title: RSS feed url for your RSS reader
 ---
 
-I am (still) a big fan of RSS feeds and I have built a neat collection of feeds on my self-hosted [Tiny Tiny RSS](https://tt-rss.org/). However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via [Huginn](https://github.com/huginn/huginn).
+I am (still) a big fan of RSS feeds, and I have built a neat collection of feeds on my self-hosted [Tiny Tiny RSS](https://tt-rss.org/). However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via [Huginn](https://github.com/huginn/huginn).
 
 <!--more-->
 
@@ -113,7 +113,7 @@ The interesting part is the scrape config of the agent after the general setting
 
 Now, we want to extract the `title` and the `link` elements because that is sufficient for our needs. We will use the XPath of the according element to tell the agent what data to extract. You can specify the content you want to extract via `xpath` or `css` (CSS selector in your browser).
 
-To get the path of the element open the dev tools in your browser, hit the "inspect" button, hover over the element (the headline) and left-click. The you can copy the path of the highlighted code section.
+To get the path of the element open the dev tools in your browser, hit the "inspect" button, hover over the element (the headline) and left-click. Then, you can copy the path of the highlighted code section.
 
 {{< img name=inspect lazy=true size=small >}}
 
@@ -156,7 +156,7 @@ We can use the `Dry Run` button the test our agent.
 
 {{< img name=dry-run lazy=true size=small >}}
 
-### Create a RSS feed
+### Create an RSS feed
 
 We have an agent that can extract data, but nothing happens with this data. In order to process the data, we utilize the feature that one agent's output can be the input of another agent.
 
@@ -164,7 +164,7 @@ We create a new agent of type `Data Output Agent`. Then, ee give the agent a nam
 
 {{< img name=data-agent lazy=true size=small >}}
 
-After saving the agent we ca see the URL in the agent's summary view. We can subscribe with a RSS reader of our choice with that URL.
+After saving the agent we can see the URL in the agent's summary view. We can subscribe with an RSS reader of our choice with that URL.
 
 {{< img name=feed-url lazy=true size=small >}}
 
