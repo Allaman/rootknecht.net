@@ -93,6 +93,35 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - written in Go
 - shell hooks for zsh, fish, bash, ...
 
+## dua-cli
+
+[dua-cli](https://github.com/Byron/dua-cli)
+
+- alternativ to `du`
+- written in Rust
+- cross platform
+- very fast
+- interactive (`dua i`)
+
+## duf
+
+[duf](https://github.com/muesli/duf)
+
+- alternativ to `df`
+- cross platform
+- written in Go
+- very fast
+- nice looking
+
+## entr
+
+[entr](https://github.com/eradman/entr)
+
+- run arbitary commands when files change
+- cross platform
+- written in Go
+- endless possibilities
+
 ## exa
 
 [exa](https://the.exa.website/)
@@ -164,6 +193,17 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 
 See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 
+## gitui
+
+[gitui](https://github.com/extrawurst/gitui)
+
+- Git TUI
+- written in Rust
+- cross platform
+- customizable
+- vim like bindings
+- [my conf](https://github.com/Allaman/dotfiles/tree/master/config/gitui)
+
 ## glances
 
 [glances](https://github.com/nicolargo/glances)
@@ -234,6 +274,14 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - IMAP and MailDir synchronization
 - written in C
 - control every aspect of synchronization
+
+## jq
+
+[jq](https://github.com/stedolan/jq)
+
+- process json files
+- cross platform
+- written in C
 
 ## khard
 
@@ -328,6 +376,16 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in C
 - PCAP based
 
+## nnn
+
+[nnn](https://github.com/jarun/nnn)
+
+- terminal file manager
+- written in C
+- cross platform
+- very fast
+- highly customizable
+
 ## pandoc
 
 [Pandoc](https://pandoc.org/)
@@ -336,6 +394,14 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in Haskell
 - supports many many formats
 - md to pdf, html, ...
+
+## pdfgrep
+
+[pdfgrep](https://gitlab.com/pdfgrep/pdfgrep)
+
+- grep for pdfs
+- cross platform
+- written in C++
 
 ## prettyping
 
@@ -462,6 +528,14 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in C
 - [basic intro](https://knowledge.rootknecht.net/tmux)
 
+## tokei
+
+[tokei](https://github.com/XAMPPRocky/tokei)
+
+- count lines of code
+- cross platform
+- written in Rust
+
 ## trash-cli
 
 [trash-cli](https://github.com/andreafrancia/trash-cli)
@@ -495,6 +569,16 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in Python
 - CardDAV / CalDAV support
 - fine control
+
+## viddy
+
+[viddy](https://github.com/sachaos/viddy)
+
+- `watch` replacement
+- cross platform
+- written in Go
+- "rewind" function
+- vim like keymaps
 
 ## vidir
 
@@ -540,6 +624,14 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in Python
 - by far not limited to youtube
 - convert videos to mp4
+
+## yq
+
+[yq](https://github.com/mikefarah/yq)
+
+- [jq](#jq) for yaml
+- cross platform
+- written in Go
 
 ## Webservices
 
