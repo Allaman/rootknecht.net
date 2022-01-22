@@ -42,12 +42,14 @@ ARG ARCH=
 FROM ${ARCH}debian:stable-slim
 ```
 
-How to download applications for the specific architecture? The following snippet shows how to determine the architecture at build time and accordingly exports the right `ARCH`variable to use in the download URL.
+How to download applications for the specific architecture? There is a [list](https://docs.docker.com/engine/reference/builder/#automatic-platform-args-in-the-global-scope) of variables that are automatically set when building images with buildkit (the approach in this post). We can use the relevant variables to determine the platform. These variables must be exposed at the top of your Dockerfile before you can use them in RUN sections.
 
 ```Dockerfile
-RUN if [ x"$(uname -m)" = x"aarch64" ]; then export ARCH=arm64; fi && \
-    if [ x"$(uname -m)" = x"x86_64" ]; then export ARCH=amd64; fi && \
-    curl -sLo /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_${ARCH}
+ARG TARGETOS # operating system, e.g. linux
+ARG TARGETARCH # CPU architecture, e.g. amd64
+ARG TARGETVARIANT # e.g. v8
+
+RUN curl -sLo /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_${TARGETARCH}
 ```
 
 ## Building
