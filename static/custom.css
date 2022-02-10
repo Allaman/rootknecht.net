@@ -5,6 +5,10 @@
   font-size: 20px;
 }
 
+body {
+  font-family: 'JetBrainsMono';
+}
+
 #my-services,
 #who-am-i,
 #skills,
