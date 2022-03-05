@@ -1,0 +1,14 @@
+{
+  admin off
+  auto_https off
+}
+:8080 {
+  log {
+    format json
+    output stdout
+  }
+  reverse_proxy /* {
+    to https://google.com
+    header_up Host {http.reverse_proxy.upstream.hostport}
+  }
+}
