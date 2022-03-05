@@ -1,8 +1,8 @@
 ---
 title: Easy reverse proxy with Caddy
 type: posts
-draft: true
-date: 2022-03-03
+draft: false
+date: 2022-03-05
 tags:
   - server
   - tools
