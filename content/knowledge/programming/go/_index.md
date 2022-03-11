@@ -101,3 +101,17 @@ func getEnv(key string) (string, bool) {
 ## Building a CLI
 
 Please refer to my Github [Go CLI](https://github.com/Allaman/toolbox/tree/main/golang/cli) repository for a demonstration of how to build CLI applications with different methods.
+
+## Convert Unix ms timestamp to time
+
+```go
+func msToTime(ms string) (time.Time, error) {
+	msInt, err := strconv.ParseInt(ms, 10, 64)
+	if err != nil {
+		return time.Time{}, err
+	}
+
+	return time.Unix(0, msInt*int64(time.Millisecond)), nil
+}
+
+```
