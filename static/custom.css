@@ -2,7 +2,7 @@
 
 :root {
   --code-max-height: 60rem;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .gdoc-post h1::before {
