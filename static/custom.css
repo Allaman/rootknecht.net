@@ -5,26 +5,32 @@
   font-size: 20px;
 }
 
+.gdoc-post h1::before {
+    position: absolute;
+    left: -0.7rem;
+    color: #f05f40;
+    content: "#";
+    font-size: 1.0rem;
+}
+
+.gdoc-post h2::before {
+    position: absolute;
+    left: -0.7rem;
+    color: #f05f40;
+    content: "#";
+    font-size: 0.8rem;
+}
+
+.gdoc-post h3::before {
+    position: absolute;
+    left: -0.7rem;
+    color: #f05f40;
+    content: "#";
+    font-size: 0.5rem;
+}
+
 body {
   font-family: 'JetBrainsMono';
-}
-
-#my-services,
-#who-am-i,
-#skills,
-#projects {
-  color: #f05f40;
-}
-
-.emphasize,
-.technologies {
-  font-weight: bold;
-}
-
-#aws-migration,
-#enable-cross-functional-product-teams,
-#unified-software-engineering-tool-chain {
-  text-decoration: underline;
 }
 
 /* Light mode theming */
