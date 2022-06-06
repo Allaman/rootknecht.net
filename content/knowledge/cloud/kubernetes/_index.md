@@ -10,7 +10,7 @@ There are quite a lot of options [how to install a kubernetes cluster](https://k
 
 ## Scaling deployment deletion sequence
 
-Pod deletion preference is based on a ordered series of checks, defined in code here:
+Pod deletion preference is based on an ordered series of checks, defined in code here:
 https://github.com/kubernetes/kubernetes/blob/release-1.11/pkg/controller/controller_utils.go#L737
 
 Summarizing- precedence is given to delete pods:
@@ -31,7 +31,7 @@ Summarizing- precedence is given to delete pods:
 kubectl auth can-i list deployment --as=system:serviceaccount:default:<NAME> -n <NAME>
 ```
 
-## Get logs from a unknown pod
+## Get logs from an unknown pod
 
 ```sh
  kubectl logs --tail 20  $(kubectl get pods -l=app=flux -o jsonpath="{.items[0].metadata.name}")
