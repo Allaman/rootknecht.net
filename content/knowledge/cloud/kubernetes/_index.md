@@ -49,6 +49,18 @@ kubectl run test -n NAMESPACE --rm -i --tty --image debian -- bash
 aws --profile=<AWS PROFILE> eks update-kubeconfig --name <CLUSTER NAME>
 ```
 
+## List running pods per namespace
+
+```sh
+#!/bin/bash
+
+for ns in $(kubectl get ns | awk '{print $1}' | awk '{if (NR!=1) {print}}')
+do
+  echo Checking $ns
+  kubectl get pods -n $ns | awk '{print $1}' | awk '{if (NR!=1) {print}}' | grep -v -E ".*flux-system.*|.*helm-operator.*" | wc -l
+done
+```
+
 ## Deploy Dashboard
 
 Deploy dashboard
