@@ -35,7 +35,7 @@ apt-get -qq install htop vim </dev/null > /dev/null
 
 ## Fix apt-get Hashsum mismatch in Debian 9
 
-Usually occuring behind a (enterprise) proxy setup
+Usually occurring behind a (enterprise) proxy setup
 
 /etc/apt/apt.conf.d/99fixbadproxy
 

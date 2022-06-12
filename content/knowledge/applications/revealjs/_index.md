@@ -29,7 +29,7 @@ showNotes: true ## Export notes in pdf
 ---
 ```
 
-## Image formating
+## Image formatting
 
 for `reveal-md`
 

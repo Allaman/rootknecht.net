@@ -54,7 +54,7 @@ or in .git/config
 	proxy = http://proxy.company.com:3128
 ```
 
-or temporarly as command line argument
+or temporarily as command line argument
 
 ```bash
 -c http.proxy http://proxy.company.com:3128
@@ -73,7 +73,7 @@ or in .git/config
 sslVerify = false
 ```
 
-or temporarly as command line argument
+or temporarily as command line argument
 
 ```bash
 -c http.sslVerify=false
@@ -104,7 +104,7 @@ git remote set-url –add origin https://github.com/USER/repo.git
 git push/pull origin
 ```
 
-When the origin is at github vice versa. Now, origin will targed the Gitlab as well as Github remotes
+When the origin is at Github vice versa. Now, origin will target Gitlab as well as Github remotes
 
 ## Edit git config with editor
 
@@ -140,7 +140,7 @@ set -x; GIT_TRACE=2 GIT_CURL_VERBOSE=2 GIT_TRACE_PERFORMANCE=2 GIT_TRACE_PACK_AC
 Small CLI script to list basic overview of our Github repositories
 
 - Access and repositories are based upon the user's permissions
-- Default ouput is a SingleTable (fancier) but ASCII Table is supported as well
+- Default output is a SingleTable (fancier) but ASCII Table is supported as well
 - Show last commit only since a defined period of time to limit required API calls
 
 Install dependencies with 'pip3 install --user PyGithub, terminaltables' or appropriate command
@@ -285,7 +285,7 @@ This will update and replace the most recent commit. Be aware that staged change
 
 **Undo**: `git checkout -- <filename>`
 
-This will modify the file to a state known to git. Be aware that you cannot recover this as nothing was ever commited!
+This will modify the file to a state known to git. Be aware that you cannot recover this as nothing was ever committed!
 
 ### Reset local change
 
@@ -329,7 +329,7 @@ This will
 
 ### Mass undo/redo
 
-**Use case**: You have a dozen commmits but only want some of them and the rest should disappear
+**Use case**: You have a dozen commits but only want some of them and the rest should disappear
 
 **Undo**: `git rebase -i <earlier SHA>`
 
@@ -338,7 +338,7 @@ This will start rebase in interactive mode like above but before replaying any c
 - `pick` is the default action meaning the commit will be applied
 - to delete commits just delete the line
 - `reword` to preserve the content of the commit and rewrite the commit message. Be aware that you cannot edit the message here as rebase ignores everything after the SHA column. After finishing rebasing you will be prompted for new messages.
-- `fixup` or `sqash` to combine commits "upwards". sqash will create a new commit and ask for a new commit message. fixup will use the message from the first commit in the list.
+- `fixup` or `sqash` to combine commits "upwards". squash will create a new commit and ask for a new commit message. fixup will use the message from the first commit in the list.
 - reorder commits by changing the order before saving
 
 ### Fix an earlier commit
@@ -349,8 +349,8 @@ This will start rebase in interactive mode like above but before replaying any c
 
 This will
 
-1. create a new commit with a message like "sqash! Earlier commit"
-2. launch an interactive rebase with any sqash! (and fixup!) commits already paired to the commit target
+1. create a new commit with a message like "squash! Earlier commit"
+2. launch an interactive rebase with any squash! (and fixup!) commits already paired to the commit target
 
 ### Stop tracking a tracked file
 

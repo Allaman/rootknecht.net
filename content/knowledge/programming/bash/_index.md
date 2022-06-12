@@ -440,7 +440,7 @@ command 2> /dev/null
 command 1> /dev/null
 ```
 
-## Replace whitspace with underscore in all filenames in current directory
+## Replace whitespace with underscore in all filenames in current directory
 
 ```bash
 for f in *\ *; do mv "$f" "${f// /_}"; done
@@ -480,7 +480,7 @@ cat /dev/null > FILE
 echo "id=12" | cut -d'=' -f 2 # 12
 ```
 
-## Ommit first line of stdout
+## Omit first line of stdout
 
 ```bash
 awk '{if(NR>1)print}'

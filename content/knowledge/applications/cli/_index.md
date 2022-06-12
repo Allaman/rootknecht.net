@@ -36,7 +36,7 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 
 - `cat` alternative
 - written in Rust
-- syntax highlightning
+- syntax highlighting
 - Git integration
 - automatic paging
 
@@ -117,7 +117,7 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 
 [entr](https://github.com/eradman/entr)
 
-- run arbitary commands when files change
+- run arbitrary commands when files change
 - cross platform
 - written in Go
 - endless possibilities

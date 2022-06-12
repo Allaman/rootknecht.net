@@ -134,7 +134,7 @@ openssl genrsa -out server.key 4096
 openssl req -new -key server.key -out server.csr
 
 # Sign the server CSR with the CA key
-# Enter the pass provied in the first step
+# Enter the pass provided in the first step
 openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
 
 # Generate Client key and CSR
@@ -143,7 +143,7 @@ openssl genrsa -out client.key 4096
 openssl req -new -key client.key -out client.csr
 
 # Singn the client CSR with the CA key
-# Enter the pass provied in the first step
+# Enter the pass provided in the first step
 openssl x509 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt
 
 # Optionally create a PKCS 12 archive for importing client certificate data in web browsers

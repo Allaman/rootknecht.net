@@ -36,10 +36,10 @@ For creating and running the virtual machine:
 - [Vagrant](https://www.vagrantup.com/)
 - Windows machines require Powershell 4
 
-For completness although the following software will be handled by the created virtual machine. If you want to skip the part with the virtual machine and install sapnw native on your machine make sure to fulfill these requirements.
+For completeness although the following software will be handled by the created virtual machine. If you want to skip the part with the virtual machine and install sapnw native on your machine make sure to fulfill these requirements.
 
 - csh, libaio, uuidd
-- LANG=en_US.UTF-8 (defualt system language)
+- LANG=en_US.UTF-8 (default system language)
 - hostname max 13 chars
 - FQDN (Full Qualified Domain Name)
 
@@ -68,7 +68,7 @@ Clone the code provided from wechris:
 git clone https://github.com/wechris/SAPNW75SPS02.git
 ```
 
-Copy the formerly **extracted** sap install files into the `sapinst` subdirectory. Then buid the packer iso image:
+Copy the formerly **extracted** sap install files into the `sapinst` subdirectory. Then build the packer iso image:
 
 ```bash
 cd packer/openSUSE-42.1/

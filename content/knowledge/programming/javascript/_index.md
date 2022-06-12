@@ -125,7 +125,7 @@ del %APPDATA%\npm
 npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm
 ```
 
-Automatically check your dependencies in your package.json for vulnerabilites
+Automatically check your dependencies in your package.json for vulnerabilities
 
 ```bash
 npm install auditjs -g
