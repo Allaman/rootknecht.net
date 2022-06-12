@@ -13,4 +13,4 @@ jobs:
           path: content
           check_filenames: true
           check_hidden: true
-          exclude_file: content/imprint/*,content/privacy/*,content/blog/freelancer/index.md
+          skip: content/imprint/*,content/privacy/*,content/blog/freelancer/index.md
