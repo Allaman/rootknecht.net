@@ -123,7 +123,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 - [posh-git](https://github.com/dahlbyk/posh-git) for Powershell Git integration: Install-Module posh-git `Import-Module posh-git`to your Powershell Profile
 - [posh-docker](https://github.com/samneirinck/posh-docker) for Docker completion: Install-Module posh-docker and add `Import-Module posh-docker` to your Powershell Profile
 
-#### Aliase
+#### Aliases
 
 To create persistent aliases create the file `C:\Users\<user>\Documents\WindowsPowershell\Microsoft.PowerShell_profile.ps1` (folder might not exist).
 
