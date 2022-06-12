@@ -6,17 +6,17 @@ geekdocAlign: center
 geekdocAnchor: false
 ---
 
-## About
+# About
 
 The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I have learned. In my opinion, to share solutions and hints is at least as satisfying as to discover or develop them on your own and allows you to self reflect different aspects.
 
 Besides the knowledge base this page also hosts a blog where I write on things that got my attention.
 
 {{< button size="large" relref="knowledge/" >}}Go to my knowledge base{{< /button >}}
-<br>
+\
 {{< button size="large" relref="blog/" >}}Go to my blog{{< /button >}}
 
-## Me
+# Me
 
 Linux and open source enthusiast.
 
