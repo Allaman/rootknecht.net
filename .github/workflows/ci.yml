@@ -7,10 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Lint Markdown files
-        uses: actionshub/markdownlint@main
-        with:
-          path: content
       - name: Codespell
         uses: codespell-project/actions-codespell@master
         with:
