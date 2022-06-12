@@ -132,7 +132,7 @@ metadata:
   namespace: namespace
   name: scaling
 # Adjust permissions to your specific needs
-# This allows full rights to all ressources in your namespace
+# This allows full rights to all resources in your namespace
 rules:
   - apiGroups: ["*"]
     resources: ["*"]

@@ -204,7 +204,7 @@ output "association-map" {
 
 ## AWS Lambda
 
-Example for creating a Lambda that deletes ES indicies
+Example for creating a Lambda that deletes ES indices
 
 **iam.tf**
 
@@ -312,7 +312,7 @@ def lambda_handler(event, context):
         connection_class=RequestsHttpConnection
     )
 
-    # Get all indecies
+    # Get all indices
     index_list = curator.IndexList(es)
 
     # Remove .kibana indices from result

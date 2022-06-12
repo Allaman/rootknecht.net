@@ -41,7 +41,7 @@ mkfs.ext4 -L nixos /dev/sda1
 mkfs.ext4 -L nixos /dev/sda1
 ```
 
-and mount the fileystem were we gonna install NixOS
+and mount the file system were we gonna install NixOS
 
 ```bash
 mount /dev/disk/by-label/nixos /mnt
@@ -54,7 +54,7 @@ We enable our swap partition with `swapon /dev/disk/by-label/swap`
 In order to install NixOS we need to create a initial configuration skeleton with `nixos-generate-config --root /mnt`. We can adjust the settings in `/mnt/etc/nixos/configuration.nix`. In my case I changed the following lines:
 
 ```
-# Path where the bootloader shoud be installed
+# Path where the bootloader should be installed
 boot.loader.grub.device = "/dev/sda";
 # german keyboard but english system language
 i18n = {
@@ -370,7 +370,7 @@ NixOS comes with a simple stateful firewall which is enabled per default. You ca
 
 ### Configuration commands
 
-#### Activate your configuration but not reboot persistant
+#### Activate your configuration but not reboot persistent
 
 ```bash
 nixos-rebuild test

@@ -10,7 +10,7 @@ resources:
 
 ## Auto complete a command with history-search
 
-This setting allows you to enter shell commands quite efficient. You just enter the first couple of letters of a coomand and press page up/down. The shell tries to auto complete them based on your previous commands.
+This setting allows you to enter shell commands quite efficient. You just enter the first couple of letters of a command and press page up/down. The shell tries to auto complete them based on your previous commands.
 
 In /etc/inputrc
 
@@ -35,7 +35,7 @@ jq -r '.report.problems[] | select(.category=="Error") | [.filename, .sourceId, 
 - `-r` raw format (do not quote)
 - `|` pipe the result to the next query
 - `select` supports `and` and `or`
-- `[ ... ]` transforms objets to an array
+- `[ ... ]` transforms objects to an array
 - @csv converts an array to csv format
 
 Input `conf.yaml`:
@@ -480,7 +480,7 @@ This command recursively syncs two folders with advanced matching options I am r
 ```sh
 rsync -rv \
 --omit-dir-times \ # ignore timestamps
---prune-empty-dirs \ # don't create emtpy directories
+--prune-empty-dirs \ # don't create emtpty directories
 --delete \ # also delete files at the destination
 --exclude='dir1' --exclude='dir2' \ # exclude dir1 and dir2
 --include='*/' \ # but include all other directories

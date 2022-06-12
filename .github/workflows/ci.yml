@@ -1,0 +1,16 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Codespell
+        uses: codespell-project/actions-codespell@master
+        with:
+          path: content
+          check_filenames: true
+          check_hidden: true
+          skip: content/imprint/*,content/privacy/*,content/blog/freelancer/index.md

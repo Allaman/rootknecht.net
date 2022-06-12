@@ -180,10 +180,10 @@ arr=($string)
 	while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost/grafana/login)" != "200" ]]; do sleep 5; done
 ```
 
-### Programm
+### Program
 
 ```bash
-command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
+command -v PROGRAM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
 ```
 
 ```bash
@@ -324,7 +324,7 @@ awk '{gsub(/search_pattern/,x); }'
 ### Custom separator
 
 ```bash
-awk -F= # = separator for e.g. colums
+awk -F= # = separator for e.g. columns
 ```
 
 ### Column of line
@@ -440,7 +440,7 @@ command 2> /dev/null
 command 1> /dev/null
 ```
 
-## Replace whitspace with underscore in all filenames in current directory
+## Replace whitespace with underscore in all filenames in current directory
 
 ```bash
 for f in *\ *; do mv "$f" "${f// /_}"; done
@@ -480,7 +480,7 @@ cat /dev/null > FILE
 echo "id=12" | cut -d'=' -f 2 # 12
 ```
 
-## Ommit first line of stdout
+## Omit first line of stdout
 
 ```bash
 awk '{if(NR>1)print}'

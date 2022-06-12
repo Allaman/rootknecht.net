@@ -10,7 +10,7 @@ tags:
 resources:
   - name: hello-world
     src: hello-world.png
-    title: HTML reponse rendered by Gin
+    title: HTML response rendered by Gin
   - name: hello-world-error
     src: hello-world-error.png
     title: Missing index.tmpl server error
@@ -33,7 +33,7 @@ What is so special about a single binary with Go you might ask? That is nothing 
 
 One decision for my project was that I don't want to write a dedicated front end but keep it old school and rather simple. Enter Server-side rendering (SSR) 🎉
 
-Gin has a nice support for [HTMP rendering](https://github.com/gin-gonic/gin#html-rendering) and it was quite straight forward to work with (maybe because I was used to writing `{{}}` from Helm files 😉)
+Gin has a nice support for [HTML rendering](https://github.com/gin-gonic/gin#html-rendering) and it was quite straight forward to work with (maybe because I was used to writing `{{}}` from Helm files 😉)
 
 ## Rendering HTML
 

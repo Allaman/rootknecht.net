@@ -11,9 +11,9 @@ resources:
   - name: bottom
     src: "bottom.jpg"
     title: The bottom skin
-  - name: cutted
-    src: "cutted.jpg"
-    title: The cutted plate
+  - name: cut
+    src: "cut.jpg"
+    title: The cut plate
   - name: disassembled-x60
     src: "disassembled-x60.jpg"
     title: The disassembled x60
@@ -93,7 +93,7 @@ Luckily, a co-worker sold me a x60 tablet model running a Intel Core **2** Duo p
 
   {{< img name="tablet" lazy=true >}}
 
-- Dissambled x60
+- Disassembled x60
 
   {{< img name="disassembled-x60" lazy=true >}}
 
@@ -103,7 +103,7 @@ Luckily, a co-worker sold me a x60 tablet model running a Intel Core **2** Duo p
 
 ## Backing a motherboard
 
-Stupid enough, my x100e did not survive compiling the gentoo kernel. After a crash it did not boot up just burstig the fan with a blinking cursor. After a lot of research and testing it turned out that some soldered points of the onboard graphics chips were melted. I was quite desperately and tried someting really insane: _Putting the motherboard in a oven!_
+Stupid enough, my x100e did not survive compiling the gentoo kernel. After a crash it did not boot up just burstig the fan with a blinking cursor. After a lot of research and testing it turned out that some soldered points of the onboard graphics chips were melted. I was quite desperately and tried something really insane: _Putting the motherboard in a oven!_
 
 - Disassembled x100e
 
@@ -121,7 +121,7 @@ _After reassembling the unit was working fine!_
 
 ## Replacing x230 keyboard
 
-Unfortunately, my x230 was the first model with the new chiclet style keyboard which is still very good in comparison to other brands but the classic x220 keyboard was far more comfortable in my opinion. Luckily Thinkpads of this era could be easily disambled and parts swaped out.
+Unfortunately, my x230 was the first model with the new chiclet style keyboard which is still very good in comparison to other brands but the classic x220 keyboard was far more comfortable in my opinion. Luckily Thinkpads of this era could be easily disambled and parts swapped out.
 
 I stumbled over a nice tutorial on [install a classic keyboard on a xx30 series thinkpad](http://www.thinkwiki.org/wiki/Install_Classic_Keyboard_on_xx30_Series_ThinkPads).
 
@@ -158,9 +158,9 @@ Be aware that the classic keyboard does not have the backlight feature
 
   {{< img name="glued" lazy=true >}}
 
-- Cutted plate
+- Cut plate
 
-  {{< img name="cutted" lazy=true >}}
+  {{< img name="cut" lazy=true >}}
 
 - Final result
 
@@ -168,7 +168,7 @@ Be aware that the classic keyboard does not have the backlight feature
 
 ## Dbranding my Lenovo X1 Carbon
 
-I am a huge fan of [dbrand](https://dbrand.com). They offer extrem nice looking and perfectly fitting skins for various devices. All my Galaxy Devices had them applied and I thought it was about time to give my X1 Carbon a new look. here is the result
+I am a huge fan of [dbrand](https://dbrand.com). They offer extreme nice looking and perfectly fitting skins for various devices. All my Galaxy Devices had them applied and I thought it was about time to give my X1 Carbon a new look. here is the result
 
 {{< img name="front" lazy=true >}}
 

@@ -78,7 +78,7 @@ For instance to run netstat and show connections of the container.
 
 ## Show file usage of Docker on a btrfs partition
 
-The btrfs storage driver of Docker is kind of different. A normal `df -hkl /var/lib/docker` will not show correct numers. Instead use the tools of btrfs:
+The btrfs storage driver of Docker is kind of different. A normal `df -hkl /var/lib/docker` will not show correct numbers. Instead use the tools of btrfs:
 
 ```bash
 btrfs fi df /varLib/docker

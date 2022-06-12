@@ -13,7 +13,7 @@ Find my tmux config [here](https://raw.githubusercontent.com/Allaman/dotfiles/ma
 ## Why tmux
 
 1. Multiple shell windows and panes from a single connection
-2. Session functionality thtat survives disconnects
+2. Session functionality that survives disconnects
 3. Session sharing
 4. Plugins extend functionality
 5. Keyboard driven

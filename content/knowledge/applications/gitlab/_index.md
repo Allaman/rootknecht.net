@@ -288,7 +288,7 @@ services:
       - '/srv/gitlab/data:/var/opt/gitlab'
 ```
 
-Run `docker-compose up -d` to start the service in the backgroud. You should now be able to access gitlab with your machine's IP
+Run `docker-compose up -d` to start the service in the background. You should now be able to access gitlab with your machine's IP
 
 ### Install openssl and generate certificates
 

@@ -29,7 +29,7 @@ Adjust jenkins prefix accordingly depending on your install method, e.g. in /etc
       }
 ```
 
-In case of bad proxy configuration warning in Jenkins ensure that the `Jenkins URL` in the settings ist with port number!
+In case of bad proxy configuration warning in Jenkins ensure that the `Jenkins URL` in the settings is with port number!
 
 ## Setup Git, Maven, JDK, Docker, and Co
 
@@ -118,7 +118,7 @@ Define your own global vars in "Configure System" -> **Global Pipeline Libraries
 
 ### Repository structure
 
-- ressources directory can have non-groovy resources, e.g. json, that get loaded via the libraryResource step.
+- resources directory can have non-groovy resources, e.g. json, that get loaded via the libraryResource step.
 - src directory uses a structure similar to the standard Java src layout and is added to the classpath when a Pipeline that includes this shared library is executed.
 - vars directory holds global variables that should be accessible from pipeline scripts. A corresponding .txt file can be included that defines documentation for objects here.
 

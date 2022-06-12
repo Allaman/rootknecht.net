@@ -31,7 +31,7 @@ dig DOMAIN.tld ANY +noall +answer # query all DNS records
 traceroute www.google.com # uses UDP data on random port
 traceroute -I www.google.com # uses ICMP data
 traceroute -T -p 80 www.google.com # fix TCP port to test path to services to bypass firewalls
-tracepath www.google.com # similar to traceroute but does not require root priviledge as it does not manipulate raw packages
+tracepath www.google.com # similar to traceroute but does not require root privilege as it does not manipulate raw packages
 mtr -rw www.google.com #send 10 packets and generate report
 ```
 
@@ -159,7 +159,7 @@ nmap -sT # use  TCP connect
 nmap -sS # use TCP SYN
 nmap -sU # scan UDP
 nmap -A # OS and service detection
-nmap -sV [--version-intensity 5] # Standard service detection (increased agressivity
+nmap -sV [--version-intensity 5] # Standard service detection (increased aggressivity
 nmap -oX outputfile.xml # save as XML
 nmap -oG outputfile.txt # save for grep
 nmap -sV -sC # use default save scripts

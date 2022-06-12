@@ -3,7 +3,7 @@ title: "GUI Applications"
 geekdocDescription: A list of GUI applications I can recommend
 ---
 
-A brief overview of **g**raphical **u**ser **i**nterface applications I use and higly recommend!
+A brief overview of graphical user interface applications I use and highly recommend!
 See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for more applications.
 
 {{< toc >}}
@@ -262,4 +262,4 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - cross platform
 - Java based
 - proprietary
-- alteratives are [dia](#dia) and [Edraw Max Pro](#edraw-max-pro)
+- alternatives are [dia](#dia) and [Edraw Max Pro](#edraw-max-pro)

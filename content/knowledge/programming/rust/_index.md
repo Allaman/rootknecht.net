@@ -34,7 +34,7 @@ Directory structure:
     └── main.rs
 ```
 
-`Cargo.toml` contains project meta info and dependancies.
+`Cargo.toml` contains project meta info and dependencies.
 
 ### Run project
 

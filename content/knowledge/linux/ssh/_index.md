@@ -22,7 +22,7 @@ For examlpe:
 ssh -L localhost:9000:127.0.0.1:80 admin@rootknecht.net
 ```
 
-When you now visit `localhost:9000` in your browser you will be tunneled to your machine. There you get the return of the url `127.0.0.1:80` without actually loging into your machine.
+When you now visit `localhost:9000` in your browser you will be tunneled to your machine. There you get the return of the url `127.0.0.1:80` without actually logging into your machine.
 
 ## Remote port forwarding
 

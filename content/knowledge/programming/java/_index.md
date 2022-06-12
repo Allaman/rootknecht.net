@@ -224,7 +224,7 @@ public class Test {
             }
         });
         for (int i=0; i<100000; i++) {
-            System.out.println("Wating....");
+            System.out.println("Waiting....");
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {

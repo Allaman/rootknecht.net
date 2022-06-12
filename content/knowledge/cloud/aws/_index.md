@@ -73,7 +73,7 @@ aws ec2 attach-volume --volume-id <NEW_SNAPSHOT_ID>--instance-id <INSTANCE_ID> -
 | immediate      | dynamic     |
 | pending-reboot | static      |
 
-## Search vpc dependecies
+## Search vpc dependencies
 
 ```sh
 #!/bin/bash

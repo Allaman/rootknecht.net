@@ -72,7 +72,7 @@ Examples in the Amazon ecosystem:
 | FaaS     | [Amazon Web Services Lambda (AWS Lambda)](https://aws.amazon.com/lambda/)                                        |
 | SaaS[^1] | [Amazon Web Services SaaS](https://aws.amazon.com/de/partners/saas-on-aws/)                                      |
 
-### Types of Cloud Computing Delievery
+### Types of Cloud Computing Delivery
 
 | Cloud         | Characteristic                                                            |
 | :------------ | :------------------------------------------------------------------------ |
@@ -108,7 +108,7 @@ Infrastructure as Code is an approach of infrastructure automation based on prac
 5. Automation Fear
 6. Erosion
 
-### Priciples
+### Principles
 
 1. **Systems should be reproducible**
 

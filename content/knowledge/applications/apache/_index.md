@@ -135,7 +135,7 @@ echo "<?php phpinfo(); ?>" > /var/www/test/index.php
 
 ## SVN + Auth
 
-Setup SVN accessable through Apache with local + ldap authentication and user based authorization
+Setup SVN accessible through Apache with local + ldap authentication and user based authorization
 
 ### Create svn repo
 
