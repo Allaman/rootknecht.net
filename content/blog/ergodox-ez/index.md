@@ -83,7 +83,7 @@ Other models which I have considered but lacked some requirements and/or are DIY
 
 I ordered the ErgoDox EZ Glow model via the official [Shop](https://ergodox-ez.com/pages/customize). I configured my exemplar with backlit keys, black color, and Cherry MX brown switches with non-sculpted Tai-Hao keycaps.
 
-Addtionally, I ordered the wrist wings for more typing comfort. It took thirteen days to build(!) and deliver from Taiwan via UPS and there was no issue with german customs.
+Additionally, I ordered the wrist wings for more typing comfort. It took thirteen days to build(!) and deliver from Taiwan via UPS and there was no issue with german customs.
 
 ## Unboxing
 
@@ -139,7 +139,7 @@ Linux and Windows work out of the box only for OS X there is little [configurati
 
 ## Challenges
 
-I will face multiple challenges by getting used to this new keyboard as this completly differs from my keyboards I am used to.
+I will face multiple challenges by getting used to this new keyboard as this completely differs from my keyboards I am used to.
 
 1. I have never used something other than a traditional qwertz layout. At work I use the excellent [Lioncast LK 20](https://www.lioncast.com/en/product/lk20-gaming-keyboard/) and at home the [classical Thinkpad keyboard](https://knowledge.rootknecht.net/thinkpad-adventures#replacing-x230-keyboard) works well for me.
 2. I have never used a columnar stagger ordering.

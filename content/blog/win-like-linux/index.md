@@ -31,7 +31,7 @@ Windows 10 finally has built-in functionality that is available on Linux since m
 
 You can access the clipboard manager by pressing `Win + v`. Although it is not as powerful as some Linux managers it is a start. Also have a look at [ditto](https://ditto-cp.sourceforge.io/) for a replacement.
 
-Virtual desktops are crucial for my workflow! I use them to structure my apps and keep my applications organized on different desktops. Unfortunatley, the shortcuts for interacting with virtual desktops are not customizable out of the box. [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) fills the gap and allows me to create more "home row friendly" shortcuts.
+Virtual desktops are crucial for my workflow! I use them to structure my apps and keep my applications organized on different desktops. Unfortunately, the shortcuts for interacting with virtual desktops are not customizable out of the box. [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) fills the gap and allows me to create more "home row friendly" shortcuts.
 
 ## Software
 
@@ -166,7 +166,7 @@ Requirements:
 - Choose and install a Linux distribution from. As of now the choice is Ubuntu, OpenSUSE, SLES, Kali Linux, or Debian GNU/Linux. I prefer Ubuntu for the easiest usage
 - [Bonus](https://blog.joaograssi.com/windows-subsystem-for-linux-with-oh-my-zsh-conemu/]
 
-Basically, configure it like your Linux. Install zsh, clone your dotfiles, install tools like ripgrep, fzf, etc. Generally speaking WSL is intended to be used to access Linux toolchain and not for server or GUI applications (altough possible). Also keep in mind that there might be issues due to differences in both, Windows' and Linux' filessystems.
+Basically, configure it like your Linux. Install zsh, clone your dotfiles, install tools like ripgrep, fzf, etc. Generally speaking WSL is intended to be used to access Linux toolchain and not for server or GUI applications (although possible). Also keep in mind that there might be issues due to differences in both, Windows' and Linux' file system.
 
 | Pros                    | Cons                            |
 | ----------------------- | ------------------------------- |
@@ -188,7 +188,7 @@ Requirements:
 
 ## Start Linux GUI Applications in Winodws
 
-Linux GUI applications usually require a running [X Server](https://en.wikipedia.org/wiki/X_Window_System) in order to display their window. You can dowload some X server implementation for Winodws like [Xming](https://sourceforge.net/projects/xming/). After installing and starting the x server on your Windows machine you just enter `export DISPLAY=:0` in your WSL. Now you can launch GUI applications within this WSL shell.
+Linux GUI applications usually require a running [X Server](https://en.wikipedia.org/wiki/X_Window_System) in order to display their window. You can download some X server implementation for Winodws like [Xming](https://sourceforge.net/projects/xming/). After installing and starting the x server on your Windows machine you just enter `export DISPLAY=:0` in your WSL. Now you can launch GUI applications within this WSL shell.
 
 [^1]: Linux is referred to as an Linux based operations system like Ubuntu, Arch, Debian
 [^2]: or CLI, console, terminal, you name it

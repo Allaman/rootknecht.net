@@ -11,7 +11,7 @@ tags:
 I switched from Hugo to Grav. A follow up will come shortly
 {{< /hint >}}
 
-In this article I explain why I have choosen [Grav CMS](https://getgrav.org/), maybe a rather unknown solution, for [knowledge.rootknecht.net](#).
+In this article I explain why I have chosen [Grav CMS](https://getgrav.org/), maybe a rather unknown solution, for [knowledge.rootknecht.net](#).
 
 <!--more-->
 
@@ -62,7 +62,7 @@ I looked at four systems:
 An overview of techniques to improve Grav page speed to increase the rank in various kinds of web performance raks
 
 - Enable compression
-- Minify CSS, HTML, adn JavaScript
+- Minify CSS, HTML, and JavaScript
 - Optimize images
 - Browser cache control
 - Activate cache in grav (here Redis)
