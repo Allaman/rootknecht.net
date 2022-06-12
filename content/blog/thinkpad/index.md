@@ -13,7 +13,7 @@ resources:
     title: The bottom skin
   - name: cut
     src: "cut.jpg"
-    title: The cutted plate
+    title: The cut plate
   - name: disassembled-x60
     src: "disassembled-x60.jpg"
     title: The disassembled x60

@@ -141,7 +141,7 @@ from ldap3 import Server, Connection, ALL
 
 def ldap_initialize(server, port, user, password):
     """
-    Simple ldap conncection test function
+    Simple ldap connection test function
         :param server: mail server address
         :param port: mail server port
         :param user: user to auth
@@ -225,7 +225,7 @@ def tags(path):
 @click.option('--row', default='complete', help='Which column to search')
 @click.argument('keywords', nargs=-1)
 def search(path, row, keywords):
-    """Fulltext search all rows or specified row"""
+    """Full text search all rows or specified row"""
     print(filter_entries(path, row, keywords))
 
 if __name__ == '__main__':
@@ -244,7 +244,7 @@ for row in entries:
 print(table.draw() + "\n")
 ```
 
-## Count occurence with hash values
+## Count occurrence with hash values
 
 '0' if the key is set for the first time. Otherwise adds '1' every assignment
 

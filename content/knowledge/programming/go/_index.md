@@ -16,7 +16,7 @@ type status struct {
 s := status{power, cores, memory}
 ```
 
-## Print formated string
+## Print formatted string
 
 ```go
 fmt.Printf("Current Status: Power %v, Cores %v, Memory %v", s.status, s.cores, s.memory)
