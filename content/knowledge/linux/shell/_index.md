@@ -613,8 +613,8 @@ Ensure that the vboxsf module is loaded (`sudo modprobe -a vboxsf`)
 
 ## Run (Git) cmd in multiple repos
 
-Requires [fd](https://github.com/sharkdp/fd)
-
 ```sh
 for i in $(fd -t d -d 1); do ( echo PULLING $i; cd $i; if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then git pull; fi ); done
 ```
+
+Requires [fd](https://github.com/sharkdp/fd)
