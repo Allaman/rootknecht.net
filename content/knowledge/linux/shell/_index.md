@@ -212,10 +212,10 @@ groupadd -g ${gid} ${name} && useradd -d /home/${name} -u ${uid} -g ${gid} -m -s
 1. Create group, create user with homedirectory, uid/gi, zsh login shell, system account
 2. Add line to sudoers file to allow user passwordless sudo
 
-````
-
 ## Curl for REST API
+
 **Auth**
+
 ```bash
 # Auth with username password and store cookie information
 curl -c cookies.txt -X POST -d 'username=admin&password=admin' https://example.com/login
@@ -223,7 +223,7 @@ curl -c cookies.txt -X POST -d 'username=admin&password=admin' https://example.c
 curl -b cookies.txt -d @data.json -H "Content-Type: application/json" -X POST https://example.com/rest
 # Use auth token
 curl -H "X-Auth-Token: <Token ID>" https://example.com/login
-````
+```
 
 **GET**
 
@@ -247,7 +247,7 @@ https://httpbin.org/
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=OPTION -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
 ```
 
-common options for dPDFSETTINGS are:
+Common options for dPDFSETTINGS are:
 
 - dPDFSETTINGS=/screen lower quality, smaller size.
 - dPDFSETTINGS=/ebook for better quality, but slightly larger pdfs.
@@ -610,3 +610,11 @@ Ensure that your linux user is in vboxsf group ( `sudo usermod -aG vboxsf USER`)
 
 Ensure that the vboxsf module is loaded (`sudo modprobe -a vboxsf`)
 {{< /hint >}}
+
+## Run (Git) cmd in multiple repos
+
+Requires [fd](https://github.com/sharkdp/fd)
+
+```sh
+for i in $(fd -t d -d 1); do ( echo PULLING $i; cd $i; if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then git pull; fi ); done
+```
