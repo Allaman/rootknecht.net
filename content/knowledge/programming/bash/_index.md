@@ -273,6 +273,16 @@ done
   fi
 ```
 
+### Git directory
+
+```sh
+if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then
+  echo "This is a git directory"
+else
+  echo "This is not a git directory"
+fi
+```
+
 ## SED
 
 ### Prepend text on multiple files
