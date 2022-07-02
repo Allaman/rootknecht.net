@@ -296,3 +296,24 @@ open `pycallgraph.png`
 ## Static code analysis
 
 [Pyan}(https://github.com/davidfraser/pyan)
+
+## Verify Redis connection
+
+```python
+import redis
+import os
+
+try:
+    conn = redis.StrictRedis(
+        host="localhost",
+        port=6379,
+        password="s3cret",
+        ssl=True,
+    )
+    print(conn)
+    conn.ping()
+    print("Connected!")
+except Exception as ex:
+    print("Error ", ex)
+    exit("Failed to connect, terminating.")
+```
