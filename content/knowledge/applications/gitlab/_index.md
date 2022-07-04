@@ -297,7 +297,7 @@ Add `openssl` to `environment.systemPackages`
 
 {{< hint info >}}
 Alternative: Use lets encrypt
-{{ /hint >}}
+{{< /hint >}}
 
 ### Gitlab configuration
 
