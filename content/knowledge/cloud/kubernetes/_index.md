@@ -61,6 +61,57 @@ do
 done
 ```
 
+## Kubernetes limits and requests
+
+### CPU
+
+If no CPU limit is specified then one of these situations applies:
+
+- The Container has no upper bound on the CPU resources it can use. The Container could use all of the CPU resources available on the Node where it is running.
+- The Container is running in a namespace that has a default CPU limit, and the Container is automatically assigned the default limit. Cluster administrators can use a LimitRange to specify a default value for the CPU limit
+
+If you specify a CPU limit for a Container but do not specify a CPU request, Kubernetes automatically assigns a CPU request that matches the limit. Similarly, if a Container specifies its own memory limit, but does not specify a memory request, Kubernetes automatically assigns a memory request that matches the limit.
+
+By configuring CPU requests and limits, you can make efficient use of the CPU resources available on your cluster's Nodes. By keeping a pod's CPU request low, you give the pod a good chance of being scheduled. By having a CPU limit that is greater than the CPU request, you accomplish two things:
+
+- the pod can have bursts of high processing demands
+- The amount of CPU resources a pod can use during a burst is limited to some reasonable amount.
+
+### Memory
+
+A container's memory request can be exceeded if a node has memory available but a container is not allowed to use more than its memory limit. If a Container allocates more memory than its limit, the Container becomes a candidate for termination. If the Container continues to consume memory beyond its limit, the Container is terminated. If a terminated Container can be restarted, the kubelet restarts it, as with any other type of runtime failure.
+
+If no memory limit is specified on of these situations applies:
+
+- The container could use all of the memory available on the node where it is running which could invoke the OOM killer. In case of an OOM kill, a container with no resource limits will have a greater change of being killed.
+- The Container is running in a namespace that has a default memory limit, and the Container is automatically assigned the default limit. Cluster administrators can use a LimitRange to specify a default value for the memory limit.
+
+If you specify a CPU limit for a Container but do not specify a CPU request, Kubernetes automatically assigns a CPU request that matches the limit. Similarly, if a Container specifies its own memory limit, but does not specify a memory request, Kubernetes automatically assigns a memory request that matches the limit.
+
+By configuring memory requests and limits, you can make efficient use of the memory resources available on your cluster's Nodes. By keeping a pod's memory request low, you give the pod a good chance of being scheduled. By having a memory limit that is greater than the memory request, you accomplish two things:
+
+- the pod can survive bursts of high memory demands, e.g. exceptional high traffic
+- the amount of memory in case of a burst is limited and the pod will not affect the node's health
+
+### Quality of service
+
+> Kubernetes uses QoS classes to make decisions about scheduling and evicting pods.
+
+- BestEffort
+
+  The container(s) of a pod do not have any memory or CPU limis or requests.
+
+- Guaranteed
+
+  - Every container must have a memory limit and a memory request which must be equal
+  - Every container must have a CPU limit and a CPU request which must be equal
+
+  These restrictions apply to init containers and app containers equally.
+
+- Burstable
+
+  At least one of the pod's container has a memory or CPU request or limit but the criteria of Guaranteed are not fulfilled.
+
 ## Deploy Dashboard
 
 Deploy dashboard
