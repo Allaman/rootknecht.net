@@ -43,9 +43,9 @@ pandoc my-article.md --pdf-engine=tectonic -o my-article.pdf
 
 This command will create `my-article.pdf`from `my-article.md`. In my case I set [tectonic](https://github.com/tectonic-typesetting/tectonic) as pdf-engine. Other popular engines are `pdflatex` and `xelatex`. Refer to tutorials how to install [Latex](https://www.latex-project.org/) on your system.
 
-We are getting closer! Now we need to move the pdf to our RM2! As I said, ther RM2 is a hackable device so we will stick to good old [SSH](https://en.wikipedia.org/wiki/Secure_Shell) and ditch all cloud solutions!
+We are getting closer! Now we need to move the pdf to our RM2! As I said, the RM2 is a hackable device so we will stick to good old [SSH](https://en.wikipedia.org/wiki/Secure_Shell) and ditch all cloud solutions!
 
-At first you should get familiar with [SSH access on the RM2](https://remarkablewiki.com/tech/ssh). Keep atention to the stated warnings! When you can connect to your RM2 you must configure `Passwordless Login with SSH Keys`.
+At first you should get familiar with [SSH access on the RM2](https://remarkablewiki.com/tech/ssh). Keep attention to the stated warnings! When you can connect to your RM2 you must configure `Passwordless Login with SSH Keys`.
 
 After you can connect to your RM2 without a password we are ready for the final step! As RM2 stores files in its own format we **can't** just copy our pdf via `scp` and are done. There are various scripts that create and copy the RM2's internal file structure from a pdf. My choice is [pdf2remarkable.sh](https://github.com/adaerr/reMarkableScripts/blob/master/pdf2remarkable.sh) (read the comments in the file for explanation).
 
