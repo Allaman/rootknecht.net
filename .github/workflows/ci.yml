@@ -14,3 +14,4 @@ jobs:
           check_filenames: true
           check_hidden: true
           skip: content/imprint/*,content/privacy/*,content/blog/freelancer/index.md
+          ignore_words_file: .codespelignore

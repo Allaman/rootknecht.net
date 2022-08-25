@@ -13,7 +13,7 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 [code-server](https://github.com/codercom/code-server)
 
 - run [Visual Studio Code](#visual-studio-code) on a server
-- accessiable via web browser
+- accessible via web browser
 - written in TypeScript/JavaScript
 - Docker deployment available
 

@@ -16,7 +16,7 @@ ssh -i ~/.ssh/id_rsa -p PORT USER@HOST
 ssh -L BINDADDRESS:PORT:DSTHOST:DSTPORT USER@HOST
 ```
 
-For examlpe:
+For example:
 
 ```bash
 ssh -L localhost:9000:127.0.0.1:80 admin@rootknecht.net
