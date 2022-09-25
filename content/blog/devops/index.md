@@ -40,7 +40,7 @@ An enterprise **culture** aiming to deliver high quality software within a short
 
 ### Principles
 
-**CAMS**<small> by Damon Edwards and John Willis</small>
+**CAMS**<small> by D. Edwards and J. Willis</small>
 
 - **C**ulture
 - **A**utomation
