@@ -6,8 +6,6 @@ geekdocAlign: center
 geekdocAnchor: false
 ---
 
-# About
-
 The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I have learned. In my opinion, to share solutions and hints is at least as satisfying as to discover or develop them on your own and allows you to self reflect different aspects.
 
 Besides the knowledge base this page also hosts a blog where I write on things that got my attention.
@@ -18,14 +16,30 @@ Besides the knowledge base this page also hosts a blog where I write on things t
 
 # Me
 
+## The Nerd
+
 Linux and open source enthusiast.
 
 Wants to automate everything.
 
-Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃
+Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift.
 
 Believes in the only true file format - plain text.
 
-You live and learn.
+Spends to much time with my [Neovim configuration](https://github.com/Allaman/nvim/).
 
-[Automation Professional](https://mijope.de)
+## The IT Consultant
+
+Building awesome stuff for my customers.
+
+Cloud/Devops/Platform engineering.
+
+Simplicity over complexity.
+
+Maintainability over sophistication.
+
+## The Entrepreneur
+
+Founder and managing director of [mijope GmbH](https://mijope.de).
+
+Always looking for exciting projects and connections.
