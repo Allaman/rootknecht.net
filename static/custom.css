@@ -6,31 +6,40 @@
 }
 
 .gdoc-post h1::before {
-    position: absolute;
-    left: -0.7rem;
-    color: #f05f40;
-    content: "#";
-    font-size: 1.0rem;
+  position: absolute;
+  left: -0.7rem;
+  color: #f05f40;
+  content: "#";
+  font-size: 1rem;
 }
 
 .gdoc-post h2::before {
-    position: absolute;
-    left: -0.7rem;
-    color: #f05f40;
-    content: "#";
-    font-size: 0.8rem;
+  position: absolute;
+  left: -0.7rem;
+  color: #f05f40;
+  content: "#";
+  font-size: 0.8rem;
 }
 
 .gdoc-post h3::before {
-    position: absolute;
-    left: -0.7rem;
-    color: #f05f40;
-    content: "#";
-    font-size: 0.5rem;
+  position: absolute;
+  left: -0.7rem;
+  color: #f05f40;
+  content: "#";
+  font-size: 0.5rem;
 }
 
 body {
-  font-family: 'JetBrainsMono';
+  font-family: "JetBrainsMono";
+}
+
+/* Start page customization */
+#me::before {
+}
+#the-nerd,
+#the-it-consultant,
+#the-entrepreneur {
+  color: #f05f40;
 }
 
 /* Light mode theming */

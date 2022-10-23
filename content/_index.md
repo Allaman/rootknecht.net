@@ -14,9 +14,9 @@ Besides the knowledge base this page also hosts a blog where I write on things t
 \
 {{< button size="large" relref="blog/" >}}Go to my blog{{< /button >}}
 
-# Me
+## Me
 
-## The Nerd
+### The Nerd
 
 Linux and open source enthusiast.
 
@@ -28,7 +28,7 @@ Believes in the only true file format - plain text.
 
 Spends to much time with my [Neovim configuration](https://github.com/Allaman/nvim/).
 
-## The IT Consultant
+### The IT Consultant
 
 Building awesome stuff for my customers.
 
@@ -38,7 +38,7 @@ Simplicity over complexity.
 
 Maintainability over sophistication.
 
-## The Entrepreneur
+### The Entrepreneur
 
 Founder and managing director of [mijope GmbH](https://mijope.de).
 
