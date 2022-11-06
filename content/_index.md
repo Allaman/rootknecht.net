@@ -43,3 +43,7 @@ Maintainability over sophistication.
 Founder and managing director of [mijope GmbH](https://mijope.de).
 
 Always looking for exciting projects and connections.
+
+ <!-- Used to verify owenership for Mastodon -->
+
+<a rel="me" href="https://mastodontech.de/@allaman"></a>

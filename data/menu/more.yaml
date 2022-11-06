@@ -19,3 +19,11 @@ more:
     ref: "https://github.com/allaman/rootknecht.net"
     external: true
     icon: "code"
+  - name: Twitter
+    ref: "https://twitter.com/Allamann"
+    external: true
+    icon: "twitter"
+  - name: Mastodon
+    ref: "https://mastodontech.de/@allaman"
+    external: true
+    icon: "mastodon"
