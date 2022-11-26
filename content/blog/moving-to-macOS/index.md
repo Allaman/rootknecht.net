@@ -23,6 +23,10 @@ In my last [workplace](/blog/my-workplace-2021) setup blog post, I described my 
 
 <!--more-->
 
+{{< hint info >}}
+There is an update to this post: [One year with macOS](/blog/one-year-mac)
+{{< /hint >}}
+
 {{< img name=head lazy=false description=false size=small >}}
 
 {{< toc >}}
