@@ -9,7 +9,7 @@ Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
     86633 Neuburg an der Donau<br>
     Deutschland<br>
     <br>
-    Mailadresse: me@mijope.de<br>
+    Mailadresse: michaeljohannpeter (at) gmail.com<br>
     <br>
   </span></p>
 
