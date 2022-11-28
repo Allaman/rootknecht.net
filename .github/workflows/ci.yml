@@ -15,7 +15,6 @@ jobs:
           check_hidden: true
           skip: content/imprint/*,content/privacy/*,content/blog/freelancer/index.md
           ignore_words_file: .codespellignore
-    steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
