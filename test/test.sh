@@ -18,10 +18,8 @@ wait_for_url () {
     return 1
 }
 
-if [[ -z $CI ]]; then
-  echo "Building Docker image"
-  docker build . -t rootknecht
-fi
+echo "Building Docker image"
+docker buildx build -t rootknecht . --load
 
 echo "Starting container"
 docker run --name rootknecht --rm --detach --publish 1313:1313 rootknecht
