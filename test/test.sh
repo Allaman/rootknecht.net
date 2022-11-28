@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eu
+set -e
 
 wait_for_url () {
     echo "Testing $1"
@@ -18,8 +18,11 @@ wait_for_url () {
     return 1
 }
 
-echo "Building Docker image"
-docker build . -t rootknecht
+if [[ -n "$CI" ]]; then
+  echo "Building Docker image"
+  docker build . -t rootknecht
+fi
+
 echo "Starting container"
 docker run --name rootknecht --rm --detach --publish 1313:1313 rootknecht
 
