@@ -18,7 +18,7 @@ wait_for_url () {
     return 1
 }
 
-if [[ -n "$CI" ]]; then
+if [[ -z $CI ]]; then
   echo "Building Docker image"
   docker build . -t rootknecht
 fi
