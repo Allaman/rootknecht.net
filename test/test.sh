@@ -19,7 +19,7 @@ wait_for_url () {
 }
 
 echo "Building Docker image"
-docker buildx build -t rootknecht . --load
+docker buildx build -t rootknecht .
 
 echo "Starting container"
 docker run --name rootknecht --rm --detach --publish 1313:1313 rootknecht
