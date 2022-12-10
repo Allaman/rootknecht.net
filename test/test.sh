@@ -30,5 +30,5 @@ wait_for_url 'http://localhost:1313' 60
 echo "Running Hurl tests"
 hurl --test test/test.hurl
 
-echo "Stopping Quiz instance"
+echo "Stopping container"
 docker stop rootknecht
