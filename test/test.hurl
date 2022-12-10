@@ -8,8 +8,6 @@ xpath "string(/html/body/div/footer/div/div[1]/span[1])" contains "Michael Peter
 # Check error handling
 GET http://localhost:1313/foobar
 HTTP/1.1 404
-[Asserts]
-xpath "string(/html/body/div/main/div/div[2]/div[1])" == "Lost?"
 
 # Check imprint is available
 GET http://localhost:1313/imprint/
