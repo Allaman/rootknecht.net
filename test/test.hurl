@@ -8,14 +8,20 @@ xpath "string(/html/body/div/footer/div/div[1]/span[1])" contains "Michael Peter
 # Check error handling
 GET http://localhost:1313/foobar
 HTTP/1.1 404
+[Asserts]
+xpath "string(/html/body/div/main/div/div[2]/div[1])" == "Lost?"
 
 # Check imprint is available
 GET http://localhost:1313/imprint/
 HTTP/1.1 200
+[Asserts]
+xpath "string(/html/body/div/main/div/article/p[3])" contains "Verantwortlich für den Inhalt"
 
 # Check privacy is available
 GET http://localhost:1313/privacy/
 HTTP/1.1 200
+[Asserts]
+xpath "string(//*[@id=\"dsg-general-controller\"])" contains "Verantwortlicher"
 
 # Check RSS elements
 GET http://localhost:1313/blog/index.xml
