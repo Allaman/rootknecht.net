@@ -1,4 +1,4 @@
-<h1 align="center">rootknecht.net</h1>
+<h1 align="center"><a src="https://rootknecht.net">rootknecht.net</a></h1>
 
 <div align="center"><p>
     <a href="https://github.com/Allaman/rootknecht.net/actions/workflows/ci.yml">
@@ -10,5 +10,3 @@
 </p></div>
 
 My personal homepage with my knowledge base and blog all around Linux, DevOps, Cloud, and workflows
-
-[rootknecht.net](https://rootknecht.net)
