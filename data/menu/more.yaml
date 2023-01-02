@@ -8,17 +8,13 @@ more:
     ref: "/blog"
     icon: "gdoc_notification"
   - name: RSS
-    ref: "https://rootknecht.net/blog/index.xml"
+    ref: "/blog/index.xml"
     external: true
     icon: "rss"
   - name: Github
     ref: "https://github.com/allaman/"
     external: true
     icon: "gdoc_github"
-  - name: Source
-    ref: "https://github.com/allaman/rootknecht.net"
-    external: true
-    icon: "code"
   - name: Twitter
     ref: "https://twitter.com/Allamann"
     external: true
@@ -27,3 +23,11 @@ more:
     ref: "https://mastodontech.de/@allaman"
     external: true
     icon: "mastodon"
+  - name: PGP
+    ref: "/Michael_Peter.pgp"
+    external: true
+    icon: "paper-plane"
+  - name: Source Code
+    ref: "https://github.com/allaman/rootknecht.net"
+    external: true
+    icon: "code"

@@ -39,3 +39,9 @@ GET http://localhost:1313/knowledge/programming/
 HTTP/1.1 200
 [Asserts]
 xpath "string(/html/body/div/main/div/article/h1)" ==  "Programming"
+
+# Check PGP public key
+GET http://localhost:1313/Michael_Peter.pgp
+HTTP/1.1 200
+[Asserts]
+body contains "-----BEGIN PGP PUBLIC KEY BLOCK-----"
