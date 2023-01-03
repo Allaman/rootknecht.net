@@ -24,7 +24,7 @@ more:
     external: true
     icon: "mastodon"
   - name: PGP
-    ref: "/Michael_Peter.pgp"
+    ref: "/Michael_Peter.asc"
     external: true
     icon: "paper-plane"
   - name: Source Code

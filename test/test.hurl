@@ -41,7 +41,7 @@ HTTP/1.1 200
 xpath "string(/html/body/div/main/div/article/h1)" ==  "Programming"
 
 # Check PGP public key
-GET http://localhost:1313/Michael_Peter.pgp
+GET http://localhost:1313/Michael_Peter.asc
 HTTP/1.1 200
 [Asserts]
 body contains "-----BEGIN PGP PUBLIC KEY BLOCK-----"
