@@ -618,3 +618,11 @@ for i in $(fd -t d -d 1); do ( echo PULLING $i; cd $i; if [ "$(git rev-parse --i
 ```
 
 Requires [fd](https://github.com/sharkdp/fd)
+
+## Convert all mp4 to mp3 in a folder
+
+Requires ffmpeg
+
+```sh
+for f in *.mp4; do ffmpeg -i "$f" -vn "$(basename "$f" .mp4).mp3"; done
+```
