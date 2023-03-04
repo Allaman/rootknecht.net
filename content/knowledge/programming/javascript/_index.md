@@ -108,6 +108,48 @@ document.getElementById("id").value = data;
 
 ## NPM
 
+### Access modules hosted is a private Nexus
+
+Tested with NPM 8.19.3/9.5.0 and Node 16.19.0/19.7.0
+
+{{< hint info >}}
+These options will configure your user's npmrc file. Refer to the docs which config files are available.
+{{< /hint >}}
+
+```sh
+npm config set @foo:registry https://nexus.example.com/repository/npm-group/
+npm config set //nexus.example.com/repository/npm-group/_auth="$(echo -n 'admin:password' | base64)"
+```
+
+or
+
+```sh
+npm login --scope=@foo --registry=https://nexus.example.com/repository/npm-group/
+```
+
+{{< hint info >}}
+recommended from the [docs](https://docs.npmjs.com/cli/v9/using-npm/config#_auth)
+{{< /hint >}}
+
+{{< hint warning >}}
+This generates a bearer token for the provided user. Therefore, your Nexus must be configured with the bearer token permission.
+{{< /hint >}}
+
+or
+
+```sh
+
+npm config set @id:registry https://nexus.example.com/repository/npm-group/
+export NEXUS_TOKEN=YETc...
+npm config set //nexus.example.com/repository/npm-group/\_auth=${NEXUS_TOKEN}
+```
+
+Test
+
+```sh
+npm install --save @foo/awesome_module
+```
+
 ### Module management
 
 ```bash
