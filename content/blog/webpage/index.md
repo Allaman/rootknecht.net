@@ -17,7 +17,7 @@ In this article I explain why I have chosen [Grav CMS](https://getgrav.org/), ma
 
 ## Classic CMS
 
-The main players in the area of heavy duty CMSs are [Wordpress](https://wordpress.org/), [Joomla](https://www.joomla.com/), [Drupal](http://www.drupal.org/) and [Typo3](https://typo3.org/). I have tried Wordpress and I run a hosted Joomla instance. All of these are an overkill for my use case of a relatively simple and small webpage considering the complexity in operation and usage. This always reminds me of my eary beginnings in computer science when I started Visual Studio for a Hello World :-)
+The main players in the area of heavy duty CMSs are [Wordpress](https://wordpress.org/), [Joomla](https://www.joomla.com/), [Drupal](http://www.drupal.org/) and [Typo3](https://typo3.org/). I have tried Wordpress and I run a hosted Joomla instance. All of these are an overkill for my use case of a relatively simple and small webpage considering the complexity in operation and usage. This always reminds me of my early beginnings in computer science when I started Visual Studio for a Hello World :-)
 
 ## Static site generators
 

@@ -10,7 +10,7 @@ tags:
   - workflow
 ---
 
-In my post [moving from Linux to macOS](/blog/moving-to-macOS/) from Dezember 2021 I described my motivation and my process of switching from Linux to macOS as my daily driver. In this post I want to describe my experience with macOS and especially "the bad" and "the ugly" topics from last year's post.
+In my post [moving from Linux to macOS](/blog/moving-to-macOS/) from December 2021 I described my motivation and my process of switching from Linux to macOS as my daily driver. In this post I want to describe my experience with macOS and especially "the bad" and "the ugly" topics from last year's post.
 
 <!--more-->
 
