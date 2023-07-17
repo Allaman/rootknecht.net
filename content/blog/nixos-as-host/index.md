@@ -99,7 +99,7 @@ environment.systemPackages = with pkgs; [
     gnumake
     htop
     networkmanagerapplet # tray icon
-    pulseaudio # for audio controlls
+    pulseaudio # for audio controls
     unzip
     wget
     xorg.xhost # give permission to access X-server from a container
