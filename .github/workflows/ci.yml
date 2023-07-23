@@ -21,6 +21,6 @@ jobs:
         uses: docker/setup-buildx-action@v2
       - name: Test
         run: |
-          curl -LO https://github.com/Orange-OpenSource/hurl/releases/download/3.0.0/hurl_3.0.0_amd64.deb
-          sudo dpkg -i hurl_3.0.0_amd64.deb
+          curl -LO https://github.com/Orange-OpenSource/hurl/releases/download/4.0.0/hurl_4.0.0_amd64.deb
+          sudo dpkg -i hurl_4.0.0_amd64.deb
           test/test.sh
