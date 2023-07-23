@@ -1,8 +1,8 @@
 ARG ARCH=
-FROM ${ARCH}alpine:3.17 as builder
+FROM ${ARCH}alpine:3.18 as builder
 
 # config
-ENV HUGO_VERSION=0.107.0
+ENV HUGO_VERSION=0.112.0
 
 ARG TARGETOS
 ARG TARGETARCH
@@ -11,8 +11,8 @@ RUN wget --quiet -O - https://github.com/gohugoio/hugo/releases/download/v${HUGO
     && mv /tmp/hugo /usr/local/bin/ \
     && rm -rf /tmp/*
 
-# libc dependencies
-RUN apk add --update libc6-compat libstdc++
+# dependencies
+RUN apk add --update libc6-compat libstdc++ gcompat
 
 RUN mkdir /src
 WORKDIR /src
