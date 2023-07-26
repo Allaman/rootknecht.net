@@ -115,3 +115,29 @@ func msToTime(ms string) (time.Time, error) {
 }
 
 ```
+
+## Bubbletea Interface Skeleton
+
+```go
+type model struct {
+}
+
+func (m model) Init() tea.Cmd {
+    return nil
+}
+
+func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+    return nil,nil
+}
+
+func (m model) View() string {
+    return ""
+}
+```
+
+## Get the type of variable
+
+```go
+p := "foo"
+fmt.Println(reflect.TypeOf(p)
+```
