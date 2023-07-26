@@ -388,6 +388,36 @@ for i in ${arr[*]}; do
 done
 ```
 
+## Iterate over a list of strings
+
+```sh
+LIST="crazymax/diun:4.20.1
+grafana/grafana:8.3.2
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.2.4
+prom/blackbox-exporter:v0.19.0
+prom/pushgateway:v1.4.1
+quay.io/prometheus-operator/prometheus-config-reloader:v0.52.1
+quay.io/prometheus-operator/prometheus-operator:v0.52.1
+quay.io/prometheusmsteams/prometheus-msteams:v1.5.0"
+
+while IFS= read -r line; do
+	echo "$line" | awk -F':' '{print $2}'
+done < <(printf '%s\n' "$LIST")
+```
+
+Will output:
+
+```
+4.20.1
+8.3.2
+v2.2.4
+v0.19.0
+v1.4.1
+v0.52.1
+v0.52.1
+v1.5.0
+```
+
 ## Yes no choice selection
 
 with known options
@@ -527,6 +557,23 @@ find deployments ! -path deployments -type d -printf "%f\n"
 
 ```sh
 find . -printf "%f\n"
+```
+
+## Working with geopts
+
+```sh
+#!/bin/bash
+
+OPTIND=1
+while getopts "ewa:" opt
+do
+  case "$opt" in
+    e) echo "ethernet" ;;
+    w) echo "wifi" ;;
+    a) echo $OPTARG ;;
+  esac
+done
+shift $(expr $OPTIND - 1)
 ```
 
 ## Create a simple menu with zenity
