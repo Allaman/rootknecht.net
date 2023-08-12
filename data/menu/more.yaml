@@ -18,7 +18,7 @@ more:
   - name: Twitter
     ref: "https://twitter.com/Allamann"
     external: true
-    icon: "twitter"
+    icon: "x-twitter"
   - name: Mastodon
     ref: "https://mastodontech.de/@allaman"
     external: true
