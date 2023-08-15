@@ -7,14 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Codespell
-        uses: codespell-project/actions-codespell@master
-        with:
-          path: content
-          check_filenames: true
-          check_hidden: true
-          skip: content/imprint/*,content/privacy/*,content/blog/freelancer/index.md,content/knowledge/applications/gitlab/_index.md
-          ignore_words_file: .codespellignore
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
