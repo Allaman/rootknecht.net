@@ -141,3 +141,95 @@ func (m model) View() string {
 p := "foo"
 fmt.Println(reflect.TypeOf(p)
 ```
+
+## Basic matrix testing
+
+```go
+// sum.go
+package main
+
+func Sum(a, b int) int {
+	return a + b
+}
+```
+
+```go
+// sum_test.go
+package main
+
+import "testing"
+
+func TestSum(t *testing.T) {
+	tests := []struct {
+		name string
+		a, b int
+		want int
+	}{
+		{"normal", 2, 3, 5},
+		{"zero", 0, 0, 0},
+		{"negativ", -5, 1, -4},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			ans := Sum(tt.a, tt.b)
+			if ans != tt.want {
+				t.Errorf("got %d, want %d", ans, tt.want)
+			}
+		})
+	}
+}
+```
+
+## Read a file
+
+```go
+f, err := openFile(dataFile)
+if err != nil {
+    return nil, errors.Wrap(err, "opening data file")
+}
+defer f.Close()
+s, err := ioReadAll(f)
+if err != nil {
+    return nil, errors.Wrap(err, "reading data file")
+}
+fmt.Println(string(s))
+```
+
+## Functional options pattern
+
+```go
+
+type client struct {
+	redis *redis.Client // can be a http client or any other type
+}
+
+type clientoptions func(*client)
+
+// createDefaultClient returns a default redis client
+// redis.Options are set with functional arguments
+func createDefaultClient(opts ...clientoptions) *client {
+	c := &client{redis.NewClient(&redis.Options{})}
+	for _, opt := range opts {
+		opt(c)
+	}
+	return c
+}
+
+func withAddr(addr string) clientoptions {
+	return func(c *client) {
+		c.redis.Options().Addr = addr
+	}
+}
+
+func withPassword(pw string) clientoptions {
+	return func(c *client) {
+		c.redis.Options().Password = pw
+	}
+}
+
+c = createDefaultClient(
+    withAddr("http://localhost:6379"),
+    withPassword("FooBar"),
+)
+```
