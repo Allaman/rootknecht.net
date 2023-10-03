@@ -1,3 +1,13 @@
 User-agent: *
 
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: CCBot
+Disallow: /
+
 Sitemap: {{ "sitemap.xml" | absURL }}
+
