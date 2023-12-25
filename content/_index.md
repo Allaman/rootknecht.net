@@ -26,7 +26,7 @@ Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s*
 
 Believes in the only true file format - plain text.
 
-Spends to much time with my [Neovim configuration](https://github.com/Allaman/nvim/).
+Spends to much time with [Neovim configuration](https://github.com/Allaman/nvim/).
 
 ### The IT Consultant
 
