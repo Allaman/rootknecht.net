@@ -8,7 +8,7 @@ tags:
 ---
 
 {{< hint alert >}}
-I switched from Hugo to Grav. A follow up will come shortly
+I switched from Grav to Hugo!
 {{< /hint >}}
 
 In this article I explain why I have chosen [Grav CMS](https://getgrav.org/), maybe a rather unknown solution, for [knowledge.rootknecht.net](#).
