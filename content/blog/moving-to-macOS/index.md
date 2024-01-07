@@ -27,6 +27,10 @@ In my last [workplace](/blog/my-workplace-2021) setup blog post, I described my 
 There is an update to this post: [One year with macOS](/blog/one-year-mac)
 {{< /hint >}}
 
+{{< hint info >}}
+2024-01-07: After two years, Lenovo finally released a firmware which fixes the fan behaviour. Thanks to [u/ElRamenKnight of Reddit](https://reddit.com/r/thinkpad/comments/18vjdb6/x1_carbon_gen9_latest_update_omg_they_finally/). I can confirm that with this patch the fan won't fire up when the system is practically idle. This is how the notebook should be at launch!
+{{< /hint >}}
+
 {{< img name=head lazy=false description=false size=small >}}
 
 {{< toc >}}
