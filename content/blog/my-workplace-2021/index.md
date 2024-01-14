@@ -1,50 +1,25 @@
 ---
 title: My Workplace
+summary: A blog post about my current workplace setup
+description: workflow configuration hardware
 type: posts
 draft: false
 date: 2021-10-11
 tags:
-  - business
   - configuration
   - hardware
   - workflow
-resources:
-  - name: head
-    src: head.png
-  - name: carbon
-    src: carbon.jpg
-    title: Lenovo x1 Carbon Gen 9
-  - name: desktop
-    src: desktop.png
-    title: Minimal desktop view
-  - name: shell
-    src: shell.png
-    title: Alacritty with tmux and Git/K8s context/AWS profile info
-  - name: neovim
-    src: neovim.png
-    title: Neovim and Go
-  - name: ansible
-    src: ansible.png
-    title: Ansible playbook running
-  - name: desk
-    src: desk.jpg
-    title: office
+  - linux
 ---
 
 This is the successor of my blog post [my laptop setup](/blog/my-laptop-setup) where I want to give an update for my hardware and software I use for my daily business.
 This article is divided into three parts. In the first part I want to give you an overview about the hardware I am currently working with. In the second part I want to talk about the software running on my laptop and in the last part I want to talk about my desk.
 
-<!--more-->
-
-{{< img name=head lazy=false description=false >}}
-
-{{< toc >}}
-
 ## Hardware[^1]
 
 ### Laptop
 
-{{< img name=carbon lazy=true >}}
+{{< figure src=carbon.png caption="Lenovo x1 Carbon Gen 9" >}}
 
 Recently, I upgraded my [Lenovo X1 Carbon Gen 6](/blog/my-laptop-setup/#laptop) to the [Gen 9 model](https://www.lenovo.com/de/de/laptops/thinkpad/thinkpad-x1/X1-Carbon-G9/p/22TP2X1X1C9) with the following specs:
 
@@ -73,9 +48,9 @@ My keyboard of choice is currently a [Razer BlackWidow Elite](https://www.razer.
 
 There is no difference for my mice to my previous setup. My main mouse is a [Logitech MX vertical](https://www.logitech.com/de-de/product/mx-vertical-ergonomic-mouse) because of the ergonomic advantages compared to a "traditional" mouse. My travel mouse is a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow). I am very happy with both of them and the ability to safe three devices on the Logitechs and switch per hardware button is awesome!
 
-{{< hint info >}}
+{{< alert >}}
 I am not running any software from Razer or Logitech, so I cannot tell something about the value of their software, e.g. customizing. All functionality I use from my mice/keyboard is in the default kernel drivers.
-{{< /hint >}}
+{{< /alert >}}
 
 ### Periphery
 
@@ -101,11 +76,11 @@ Reasons for my switch from i3wm to XFCE:
 2. XFCE offers a lightweight alternative to KDE (which I was using for several years) or GNOME
 3. I started my computer story with Windows, and I am used to a traditional layout (task bar)🙈. XFCE offers a classic desktop, although you can heavily customize this (surprise 😉).
 
-{{< img name=desktop lazy=true >}}
+{{< figure src=desktop.png caption="Minimal desktop view" >}}
 
 ### Applications
 
-{{< img name=shell lazy=true >}}
+{{< figure src=shell.png caption="Alacritty with tmux and Git/K8s context/AWS profile info" >}}
 
 #### PIM
 
@@ -115,7 +90,7 @@ I am still running the [same setup](/blog/my-laptop-setup/#pim-setup) expect tha
 
 I removed every text editor from my toolbox and all my text editing / coding needs are satisfied with NeoVim. You can find my config at [Github](https://github.com/Allaman/nvim).
 
-{{< img name=neovim lazy=true >}}
+{{< figure src=neovim.png caption="Neovim and Go" >}}
 
 #### Shell
 
@@ -146,11 +121,11 @@ For the configuration of my laptop I use [Ansible](https://www.ansible.com/). An
 
 You can find my playbook at [Github](https://github.com/Allaman/rice). This playbook allows me to automatically configure 90% of my settings and tools of a fresh installation in a matter of minutes.
 
-{{< img name=ansible lazy=true >}}
+{{< figure src=ansible.png caption="Ansible playbook running" >}}
 
 ## Desk/Chair
 
-{{< img name=desk lazy=true >}}
+{{< figure src=desk.png caption="My office" >}}
 
 My desk consists of two parts:
 

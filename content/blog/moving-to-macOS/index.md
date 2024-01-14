@@ -1,43 +1,29 @@
 ---
 title: Moving from Linux to macOS
-type: posts
+summary: In this post, I will explain why I switched from Lenovo laptops running Linux for over a decade to the "arch enemy" macOS.
+description: workplace, configuration, hardware
 draft: false
 date: 2021-12-30
 tags:
-  - business
   - configuration
   - hardware
   - workflow
-resources:
-  - name: head
-    src: apple.png
-  - name: fan
-    src: fan.png
-    title: CPU frequency, utilization, temperature, and fan speed
-  - name: terminal
-    src: terminal.png
-    title: Iterm2, Tmux, Neovim, Neofetch
+  - my experience
 ---
 
-In my last [workplace](/blog/my-workplace-2021) setup blog post, I described my setup centered around my Lenovo X1 Carbon Gen 9 running Manjaro Linux and why I prefer Lenovo laptops over all other manufactures. I admit, you could call me a Lenovo fanboy. In this post, I will explain why I switched from Lenovo laptops running Linux for over a decade to the "arch enemy" macOS.
+In my last [workplace](/blog/my-workplace-2021) setup blog post, I described my setup centered around my Lenovo X1 Carbon Gen 9 running Manjaro Linux and why I prefer Lenovo laptops over all other manufactures. I admit, you could call me a Lenovo fanboy.
 
-<!--more-->
-
-{{< hint info >}}
+{{< alert >}}
 There is an update to this post: [One year with macOS](/blog/one-year-mac)
-{{< /hint >}}
+{{< /alert >}}
 
-{{< hint info >}}
+{{< alert >}}
 2024-01-07: After two years, Lenovo finally released a firmware which fixes the fan behaviour. Thanks to [u/ElRamenKnight of Reddit](https://reddit.com/r/thinkpad/comments/18vjdb6/x1_carbon_gen9_latest_update_omg_they_finally/). I can confirm that with this patch the fan won't fire up when the system is practically idle. This is how the notebook should be at launch!
-{{< /hint >}}
+{{< /alert >}}
 
-{{< img name=head lazy=false description=false size=small >}}
-
-{{< toc >}}
-
-{{< hint info >}}
+{{< alert >}}
 No brand or company is sponsoring/paying me. This is my personal opinion and experience, your mileage may vary.
-{{< /hint >}}
+{{< /alert >}}
 
 ## Why
 
@@ -60,7 +46,7 @@ After solving both issues, the only one left was a [buzzing sound](https://forum
 
 Unfortunately, a new issue raised. The most annoying thing with my X1C was the unpredictable and not justifiable fan behavior. The fans often spin up when no system load at all was present or after waking up from standby. I spent hours and hours troubleshooting this weird behavior and came to no solution. For me, this is a big deal because firstly I am easily distracted by fan noise and second I lose faith in the hardware. The following picture shows a screenshot of [s-tui](https://github.com/amanusk/s-tui). You can see that the fan is spinning at the maximum of ~6700 rounds per minute (bluish chart) while all other metrics are barely waving.
 
-{{< img name=fan lazy=true size=small >}}
+{{< figure src=fan.png caption="CPU frequency, utilization, temperature, and fan speed" >}}
 
 Although I spent money for extended guarantee and on-site service, I was not willing to invest more of my valuable time into dealing with issues of a premium business device. This also includes not to install Windows because I need to get things done and make money. Furthermore, if this behavior will not occur with Windows, what should I do then? I am used to running Linux for years and Windows has for sure its own flaws.
 
@@ -107,7 +93,7 @@ Finally, in the next section, I briefly describe my migration path. 🤓
 
 ## Migrating from Linux to Mac
 
-{{< img name=terminal lazy=true size=small >}}
+{{< figure src=terminal.png caption="Iterm2, Tmux, Neovim, Neofetch" >}}
 
 After researching for experience others made with such a switch and not finding too much I decided to give it a shot and write down my experience. My excuse was that Apple hardware does not lose value and I can always sell the MBP after the 14 days refund policy.
 
@@ -138,9 +124,9 @@ The migration of my data was straight forward. I copied the top level data folde
 
 For migrating applications, I must distinguish between terminal apps and GUI apps. For the latter ones, there usually exist more alternative apps in the macOS ecosystem. The following table shows my former GUI apps and their replacement on my MBP.
 
-{{< hint info >}}
+{{< alert >}}
 My message here is not to say that the Linux apps are worse than their counterparts. Every app does have its strengths and weaknesses!
-{{< /hint >}}
+{{< /alert >}}
 
 | Type            | Linux                                                                     | macOS                                                                          |
 | --------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -171,9 +157,9 @@ For my MBP, I wanted something similar and created a [repo](https://github.com/A
 
 Check [doesitarm](https://doesitarm.com/) if your program runs on ARM or Rosetta.
 
-{{< hint info >}}
+{{< alert >}}
 For now, I haven't enabled Apple's Rosetta emulation layer and I try to not do so! All programs do run natively!
-{{< /hint >}}
+{{< /alert >}}
 
 ## The good[^2]
 

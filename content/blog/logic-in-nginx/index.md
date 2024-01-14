@@ -1,30 +1,15 @@
 ---
 title: Business Logic in Nginx
+summary: Nginx is a popular Web-server/-proxy that is often used to serve frontend applications within a Docker container. But did you know that you can also implement some (business) logic with Nginx? Here is how!
+description: nginx, lua, proxy, web-server
 type: posts
 draft: false
 date: 2023-10-02
 tags:
-  - docker
   - devops
   - tools
   - web
-resources:
-  - name: google
-    src: google.png
-    title: Our request is forwarded to Google
-  - name: bing
-    src: bing.png
-    title: Our request is forwarded to Bing
-  - name: default
-    src: default.png
-    title: The default page; this might be your frontend
 ---
-
-[Nginx](https://www.nginx.com/) is a popular Web-server/-proxy that is often used to serve frontend applications within a Docker container. But did you know that you can also implement some (business) logic with Nginx? Here is how!
-
-<!--more-->
-
-{{< toc >}}
 
 ## Motivation
 
@@ -36,9 +21,9 @@ In some cases, you need a little bit more logic in your web proxy to handle cert
 
 ## Example
 
-{{< hint info >}}
-To follow this example, you need [Docker](https://www.docker.com/) or [Podman](https://podman.io/) installed (untested).
-{{< /hint >}}
+{{< alert >}}
+To follow this example, you need [Docker](https://www.docker.com/) or [Podman](https://podman.io/) installed.
+{{< /alert >}}
 
 The following snippets illustrate a simple use case:
 
@@ -116,19 +101,19 @@ Now let's query our service (in my screenshots, I use [httpie](https://httpie.io
 curl -I -L localhost:3000/?id=9
 ```
 
-{{< img name=bing lazy=true >}}
+{{< figure src=bing.png caption="Our request is forwarded to Bing" >}}
 
 ```
 curl -I -L localhost:3000/?id=11
 ```
 
-{{< img name=google lazy=true >}}
+{{< figure src=google.png caption="Our request is forwarded to Google" >}}
 
 ```
 curl -I -L localhost:3000
 ```
 
-{{< img name=default lazy=true >}}
+{{< figure src=default.png caption="The default page; this might be your frontend" >}}
 
 ## Conclusion
 

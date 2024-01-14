@@ -1,45 +1,17 @@
 ---
 title: Building my DIY NAS
+description: "diy, nas, self-hosted, unraid"
+summary: "Are you planning to get a NAS (network attached storage) because your data is growing? Do you think about building a small home lab? You are a little more technical and not afraid of DIY builds and installing operating systems? Then, this post is for you :nerd_face: You will read about my requirements and use cases as well as my hardware and software choices for building my first DIY NAS."
 type: posts
 draft: false
 date: 2021-11-24
+showHero: true
 tags:
   - diy
   - hardware
-  - server
-resources:
-  - name: head
-    src: head.jpeg
-  - name: case
-    src: case.jpg
-    title: Finished build - Lenovo X1 Carbon for scale
-  - name: inside
-    src: inside.jpg
-    title: A closer look
-  - name: drives
-    src: drives.png
-    title: Drive layout in Unraid web UI
-  - name: user-scripts
-    src: user-scripts.png
-    title: User-scripts web UI with default scripts
-  - name: krusader
-    src: krusader.png
-    title: Krusader file manager
-  - name: syncthing
-    src: syncthing.png
-    title: Syncthing statistics
-  - name: grafana
-    src: grafana.png
-    title: Some metrics from Prometheus visualized in Grafana
+  - self-hosted
+  - linux
 ---
-
-Are you planning to get a NAS (network attached storage) because your data is growing? Do you think about building a small home lab? You are a little more technical and not afraid of DIY builds and installing operating systems? Then, this post is for you 🤓 You will read about my requirements and use cases as well as my hardware and software choices for building my first DIY NAS.
-
-<!-- more -->
-
-{{< img name=head lazy=false description=false size=tiny >}}
-
-{{< toc >}}
 
 After reworking my backup concept and my expected growth of data I came to the conclusion that I need a NAS. So I decided to give my good old Synology DS211j from 2011(!) a shoot (again). Turns out that it was indeed still working, and I was happy to save time and money. Unfortunately, the NAS was extremely slow due to its weak hardware. Updating the DSM software itself took two days and the web UI was sluggish. Overall, the file operation performance was also not exciting. Finally, there is a reason to spend money on new stuff 🙈
 
@@ -72,9 +44,9 @@ In the next chapter I will give you an overview of my shopping list for the new 
 
 ## Hardware
 
-{{< hint info >}}
+{{< alert >}}
 I am not a hardware guy and my last DIY build was in my youth 😆
-{{< /hint >}}
+{{< /alert >}}
 
 My hardware is based on [this article](https://www.elefacts.de/test-120-nas_advanced_3.0b__6x_sata_mit_amd_athlon_3000g) (GER). I must admit that I was a little overwhelmed thinking about my hardware choices, so I was very happy to find this article.
 
@@ -89,13 +61,13 @@ My hardware is based on [this article](https://www.elefacts.de/test-120-nas_adva
 
 All components are working and the build itself was not too difficult. The case is quite big and offers plenty of space for these components as well as for your (thick) fingers 😉
 
-{{< hint warning >}}
+{{< alert cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 Be aware that this is not an ECC RAM build!
-{{< /hint >}}
+{{< /alert >}}
 
-{{< img name=case lazy=true size=small >}}
+{{< figure src=case.png caption="Finished build - Lenovo X1 Carbon for scale" >}}
 
-{{< img name=inside lazy=true size=small >}}
+{{< figure src=inside.png caption="A closer look" >}}
 
 ## Software
 
@@ -141,9 +113,9 @@ Unraid boots **only** from a USB disk and runs completely from memory.
 
 > Your USB drive must contain a unique GUID (Globally Unique Identifier) and be a minimum 1GB in size and a maximum 32GB in size.
 
-{{< hint warning >}}
+{{< alert cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 You should consider buying a stick from a well known brand.
-{{< /hint >}}
+{{< /alert >}}
 
 Strangely, Unraid does not offer the official [USB-creator](https://github.com/limetech/usb-creator) for Linux.
 
@@ -170,11 +142,11 @@ The Asus Prime A320M-A mainboard has 6 SATA ports. My decision for the drive lay
 
 This layout will provide me my required fail-safe of two disks at the same time, a fast SSD cache and for my purpose enough space with the 2x4GB Array.
 
-{{< img name=Drives lazy=true size=small >}}
+{{< figure src=drives.png caption="Drive layout in Unraid web UI" >}}
 
-{{< hint info >}}
+{{< alert >}}
 I should have bought bigger drives for the parity because if I want to increase the capacity I have to buy a drive for the parity as well as for the storage itself. This restriction originates from the fact that parity drives must always be equal or bigger then the biggest array drive and I can not just add another 4 GB drive because of no free SATA ports.
-{{< /hint >}}
+{{< /alert >}}
 
 ### Shares
 
@@ -190,7 +162,7 @@ This section gives an overview of my most important plugins and apps. Installati
 
 I use [Syncthing](https://syncthing.net/) for many years as my synchronization software. Never had an issue with it. Folders are synchronized between my Laptop, NAS, and my root server. Syncthing is available as Docker app (via community apps).
 
-{{< img name=syncthing lazy=true size=small >}}
+{{< figure src=syncthing.png caption="Syncthing statistics" >}}
 
 #### Restic
 
@@ -207,19 +179,19 @@ Here is a snippet of my backup script. The first line runs the backup command fo
 
 [User scripts](https://forums.unraid.net/topic/48286-plugin-ca-user-scripts/) is a plugin that provides a front end to manage scripts that run periodically. Think of it as a cron management UI. My formerly mentioned restic script is triggered by this plugin. It also provides a log viewer via the web browser.
 
-{{< img name=user-scripts lazy=true >}}
+{{< figure src=user-scripts.png caption="User-scripts web UI with default scripts" >}}
 
 #### Krusader
 
 [Krusader](https://krusader.org/) is a file manager similar to [Midnight](http://midnight-commander.org/) and [Total Commander](https://www.ghisler.com/). It is available as Docker app (via community apps) and I use it for browsing my files directly on the NAS.
 
-{{< img name=krusader lazy=true >}}
+{{< figure src=krusader.png caption="Krusader file manager" >}}
 
 #### Prometheus/Grafana
 
 I use [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) for monitoring my system. Both tools are very common across the industry ranging from large enterprises to small startups or private users. Prometheus is a time series database which stores metrics. Grafana is used to visualize those metrics via dashboards. [Node-exporter](https://forums.unraid.net/topic/110995-plugin-prometheus-unraid-plugins/) is a plugin that provides the actual metrics to Prometheus.
 
-{{< img name=grafana lazy=true >}}
+{{< figure src=grafana.png caption="Some metrics from Prometheus visualized in Grafana" >}}
 
 ## Conclusion
 

@@ -1,5 +1,7 @@
 ---
 title: Single binary web app with Gin-Gonic
+summary: What is so special about a single binary with Go you might ask? That is nothing special and a major feature of Go out of the box. Things change when you want to bundle template files and static assets for your Gin-Gonic web application in one binary. In this post I'll explain how I built a single binary web application with HTML templates, CSS, JS and more included.
+description: golang, gin, web development, binary, deployment
 type: posts
 draft: false
 date: 2022-02-24
@@ -7,23 +9,7 @@ tags:
   - tools
   - golang
   - programming
-resources:
-  - name: hello-world
-    src: hello-world.png
-    title: HTML response rendered by Gin
-  - name: hello-world-error
-    src: hello-world-error.png
-    title: Missing index.tmpl server error
-  - name: assets
-    src: assets.png
-    title: CSS and favicon as well as HTML are served
 ---
-
-What is so special about a single binary with Go you might ask? That is nothing special and a major feature of Go out of the box. Things change when you want to bundle template files and static assets for your Gin-Gonic web application in one binary. In this post I'll explain how I built a single binary web application with HTML templates, CSS, JS and more included.
-
-<!--more-->
-
-{{< toc >}}
 
 ## Gin-Gonic
 
@@ -80,7 +66,7 @@ go run .
 
 You can visit `http://localhost:8080` in your browser and should see your Hello Gin!
 
-{{< img name=hello-world lazy=true size=tiny >}}
+{{< figure src=hello-world.png caption="HTML response rendered by Gin" >}}
 
 To build our application and distribute it to our server we run `go build`.
 
@@ -94,7 +80,7 @@ cd /tmp
 
 Now, when you visit `http://localhost:8080` you will see an empty screen and your application will throw an error like this
 
-{{< img name=hello-world-error lazy=true >}}
+{{< figure src=hello-world-error.png caption="Missing index.tmpl server error" >}}
 
 Obviously, Gin cannot find the template file which is only in our project's directory together with the source files. By loading a template file I included an external dependency for my application. For me, this is a major drawback as I cannot emphasize the simplicity of only having to deal with a single binary. Therefore, I took some time and researched ways to bundle everything my Gin application requires in one single binary.
 
@@ -121,9 +107,9 @@ Since version 1.16 Golang supports [embed](https://pkg.go.dev/embed) which basic
 
 Creating a new file system is very easy. You just add the `go:embed` directive before a variable declaration.
 
-{{< hint warning >}}
+{{< alert >}}
 You can not use `.` and `..` in your directive. So you cannot include files files from parent directories just from the current directory or subdirectories!
-{{< /hint >}}
+{{< /alert >}}
 
 ```go
 //go:embed assets templates
@@ -140,6 +126,8 @@ This results in the following structure of the embedded file system:
     ├── index.tmpl
     └── ping.tmpl
 ```
+
+{{< figure src=assets.png caption="CSS and favicon as well as HTML are served" >}}
 
 ### HTML templates
 
@@ -186,9 +174,9 @@ func FaviconFS() http.FileSystem {
 }
 ```
 
-{{< hint info >}}
+{{< alert >}}
 [Here](https://github.com/Allaman/gin-demo) is the full source code
-{{< /hint >}}
+{{< /alert >}}
 
 Now let's build out app, move it to a different folder, and run it:
 

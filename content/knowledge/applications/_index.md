@@ -1,8 +1,4 @@
 ---
 title: Applications
-geekdocCollapseSection: true
+summary: Notes on configuring and runnig various applications
 ---
-
-My notes on various applications.
-
-{{< toc-tree >}}

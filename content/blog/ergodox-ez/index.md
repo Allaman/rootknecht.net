@@ -1,51 +1,15 @@
 ---
-title: "ErgoDox EZ"
+title: ErgoDox EZ
+description: keyboard, workflow, ergonomic, ergodox
+summary: Impressions about my new keyboard - the ErgoDox EZ
 type: posts
 date: 2020-03-09
 tags:
   - workflow
   - hardware
-resources:
-  - name: boxes
-    src: "01-boxes.jpg"
-    title: The package
-  - name: wings
-    src: "02-wings.jpg"
-    title: The palm wings
-  - name: board
-    src: "03-board.jpg"
-    title: The board
-  - name: board2
-    src: "04-board.jpg"
-    title: The board unpacked
-  - name: board3
-    src: "05-board.jpg"
-    title: The board from the side
-  - name: board4
-    src: "06-board.jpg"
-    title: The board close up
-  - name: switches
-    src: "07-switches.jpg"
-    title: Switches
-  - name: caps
-    src: "08-caps.jpg"
-    title: Caps
-  - name: full
-    src: "09-full.jpg"
-    title: The full package
-  - name: wing
-    src: "10-wing.jpg"
-    title: The palm wings
-  - name: glow
-    src: "11-glow.jpg"
-    title: Glowing
 ---
 
-Thinking about my new keyboard - the [ErgoDox EZ](https://ergodox-ez.com/) and my impressions with this exciting piece of hardware.
-
-<!--more-->
-
-{{< toc >}}
+[ErgoDox EZ](https://ergodox-ez.com/)
 
 ## Why ErgoDox EZ
 
@@ -89,47 +53,47 @@ Additionally, I ordered the wrist wings for more typing comfort. It took thirtee
 
 The keyboard and the wings came in a two minimalstic but elegant black boxes.
 
-{{< img name="boxes" lazy=true >}}
+{{< figure src=01-boxes.jpg caption="The package" >}}
 
 The wing's box contains the two wrist wings which seem to be very sturdy and heavier then I thought.
 
-{{< img name="wings" lazy=true >}}
+{{< figure src=02-wings.jpg caption="The palm wings" >}}
 
 The keyboard's box contains the two pieces of the keyboard a TRRS cable to connect with each other and a USB Type B cable to connect the right halve to a device. Additionally, a caps/switch removal tool, F/J caps without nubs, and six washers to disable the clicks for the tilt/tent legs allowing infinite adjustability
 
-{{< img name="board" lazy=true >}}
+{{< figure src=03-board.jg caption="The board" >}}
 
 The two halves of the board in their natural beauty. Note the six legs which allow to adjust the angle in all directions.
 
-{{< img name="board2" lazy=true >}}
+{{< figure src=04-board.jpg caption="The board unpacked" >}}
 
-{{< img name="board3" lazy=true >}}
+{{< figure src=05-board.jpg caption="The board from the side" >}}
 
-{{< img name="board4" lazy=true >}}
+{{< figure src=06-board.jpg caption="The board close up" >}}
 
 A closer look at the Cherry MX brown (RGB) switches.
 
-{{< img name="switches" lazy=true >}}
+{{< figure src=07-switches.jpg caption="Switches" >}}
 
 The Tai-Hao keycaps (doubleshoot, see-thorugh).
 
-{{< img name="caps" lazy=true >}}
+{{< figure src=08-caps.jpg caption="Caps" >}}
 
 A closer look at a wrist wing.
 
-{{< img name="wing" lazy=true >}}
+{{< figure src=10-wing.jpg caption="The palm wings" >}}
 
 The keyboard connected and the wrist wings.
 
-{{< img name="full" lazy=true >}}
+{{< figure src=09-full.jpg caption="The full package" >}}
 
 The backlit in action.
 
-{{< img name="glow" lazy=true >}}
+{{< figure src=11-glow.jpg caption="Glowing" >}}
 
 The limited edition transport case I was offered:
 
-{{< img name="case" lazy=true >}}
+{{< figure src=case.jpg caption="The case" >}}
 
 ## Configuration
 

@@ -1,8 +1,4 @@
 ---
 title: Linux
-geekdocCollapseSection: true
+summary: Notes on working with and configuring Linux
 ---
-
-My notes on Linux topics.
-
-{{< toc-tree >}}

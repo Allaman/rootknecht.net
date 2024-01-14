@@ -1,20 +1,11 @@
 ---
 title: Reading/storing articles with Obisidan and Remarkable2
-type: posts
+description: "remarkable, pim, knowledge base, obsidian, workflow"
+summary: My workflow for reading and storing articles from the web with reMarkable2 and Obsidian.
 draft: false
 date: 2022-08-02
 tags:
   - workflow
-resources:
-  - name: rm2
-    src: rm2.jpg
-    title: This article on my RM2
----
-
-My workflow for reading and storing articles from the web with reMarkable2 and Obsidian.
-
-<!--more-->
-
 ---
 
 Whenever I stumble over an interesting article in the web I want to "archive" this article so that I can access it anytime even when the original blog/webpage is shut down. For years I paid for [Pocket](https://getpocket.com/en/) Premium plan that does not only save the URLs but the whole page, keeping the content accessible.
@@ -57,7 +48,7 @@ Copying a pdf is as simple as calling the script with the file as argument:
 
 The script will create the internal representation of the pdf an copy it over SSH via scp to the RM2 (xochitl needs to be restarted by the script via ENV variable or by you via systemctl restart xochitl).
 
-{{< img name=rm2 lazy=true size=small >}}
+{{< figure src=rm2.jpg caption="This article on my RM2" >}}
 
 [Here](https://github.com/Allaman/dotfiles/blob/master/local/bin/article-to-rm.sh) you can find my complete script integrating all parts.
 

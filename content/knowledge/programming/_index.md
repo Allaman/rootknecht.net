@@ -1,8 +1,4 @@
 ---
 title: Programming
-geekdocCollapseSection: true
+summary: Notes on various programming languages
 ---
-
-My notes on programming topics.
-
-{{< toc-tree >}}

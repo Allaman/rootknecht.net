@@ -1,10 +1,20 @@
 ---
-title: Knowledge Base
-geekdocToC: 1
+title: "Knowledge Base"
+cascade:
+  showReadingTime: false
+  showSummary: true
+  showWordCount: false
+  showDate: false
+  showAuthor: false
+  showRecentItems: false
+  showBreadcrumbs: true
+  showPagination: false
+  groupByYear: false
+  showZenMode: false
 ---
 
-## Categories
+{{< lead >}}
+This is my personal knowledge base where I write down important learnings that you might find useful, too!
 
-My knowledge topics is structured in the following categories. Click on one category to open the topics.
-
-{{< toc-tree >}}
+I try to keep things up to date, but keep in mind that we live in a fast-paced industry and things change
+{{< /lead >}}

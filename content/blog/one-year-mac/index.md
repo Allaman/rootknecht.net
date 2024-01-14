@@ -1,24 +1,20 @@
 ---
 title: One year macOS (after 10 years Linux)
-type: posts
-draft: false
+summary: In this post I want to describe my experience with macOS and especially "the bad" and "the ugly" topics from last year's post.
+description: macos, linux, workflow, configuration, my experience
 date: 2022-11-26
 tags:
-  - business
   - configuration
   - hardware
   - workflow
+  - my experience
 ---
 
-In my post [moving from Linux to macOS](/blog/moving-to-macOS/) from December 2021 I described my motivation and my process of switching from Linux to macOS as my daily driver. In this post I want to describe my experience with macOS and especially "the bad" and "the ugly" topics from last year's post.
+In my post [moving from Linux to macOS](/blog/moving-to-macOS/) from December 2021 I described my motivation and my process of switching from Linux to macOS as my daily driver. Here is how it worked out :nerd_face:
 
-<!--more-->
-
-{{< toc >}}
-
-{{< hint info >}}
+{{< alert >}}
 No brand or company is sponsoring/paying me. This is my personal opinion and experience, your mileage may vary.
-{{< /hint >}}
+{{< /alert >}}
 
 ## Overall experience
 

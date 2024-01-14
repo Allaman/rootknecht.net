@@ -1,42 +1,23 @@
 ---
 title: List network resources of a webpage via a script
-type: posts
-draft: false
+summary: Due to recent written warnings because of including Google fonts I wrote a little python script that checks the resources, like fonts, a webpage loads.
+description: web font, compliance, privacy, web development
 date: 2022-11-02
 tags:
   - web
   - programming
   - tools
-resources:
-  - name: dev-tools
-    src: dev-tools.png
-    title: Firefox dev tools filtering fonts for this page
-  - name: fonts
-    src: fonts.png
-    title: The same output as with Firefox dev tools
-  - name: check
-    src: check.png
-    title: Check for third party resources
-  - name: multiple
-    src: multiple.png
-    title: List of URLs
 ---
 
-Due to recent written warnings because of including Google fonts I wrote a little python script that checks the resources, like fonts, a webpage loads.
-
-<!--more-->
-
-{{< toc >}}
-
-{{< hint warning >}}
+{{< alert >}}
 There is no warranty for this code. That being said, your page might be complex enough that this script will not detect all resources. Always double or triple check your setup and consult a lawyer.
-{{< /hint >}}
+{{< /alert >}}
 
 ## Webbrowser
 
 An easy method to check a website's loaded resources is via your browser's dev tools. The following screenshot shows Firefox and the network tab while loading this webpage. Additionally, I filtered for the string "font".
 
-{{< img name=dev-tools lazy=true >}}
+{{< figure src=dev-tools.png caption="Firefox dev tools filtering fonts for this page" >}}
 
 As you can see, this homepage loads two fonts from the same host where the homepage is getting served from. The browser does not need to connect to a third party in order to download the required fonts. They are delivered from the same host as the webpage.
 
@@ -130,17 +111,17 @@ if __name__ == "__main__":
 
 Running `python network-resources url "https://rootknecht.net"` will list all resources a webpage loads:
 
-{{< img name=fonts lazy=true >}}
+{{< figure src=fonts.png caption="The same output as with Firefox dev tools" >}}
 
 Running `python network-resources -c url "https://google.com"` will check the domain of the homepage and the resources:
 
-{{< img name=check lazy=true >}}
+{{< figure src=check.png caption="Check for third party resources" >}}
 
 Here you can see that google.com loads some assets from another domain than google.com.
 
 You can also specify multiple URLs at once:
 
-{{< img name=multiple lazy=true >}}
+{{< figure src=multiple.png caption="List of URLs" >}}
 
 With this script I can check resources loaded by a webpage without leaving my loved shell 🚀
 

@@ -1,8 +1,4 @@
 ---
-title: Cloud
-geekdocCollapseSection: true
+title: Cloud Computing
+summary: Notes on cloud computing
 ---
-
-My notes on various topics related to cloud computing.
-
-{{< toc-tree >}}

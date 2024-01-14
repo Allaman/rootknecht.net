@@ -1,12 +1,9 @@
 ---
 title: Tmux
-resources:
-  - name: tmux
-    src: "tmux.png"
-    title: Tmux in Action
+summary: "Notes on Tmux - the best terminal multiplexer"
 ---
 
-{{< img name="tmux" lazy=true >}}
+{{< figure src=tmux.png >}}
 
 Find my tmux config [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf) and [here](https://github.com/Allaman/dotfiles) all of my dotfiles
 

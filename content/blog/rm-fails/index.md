@@ -1,26 +1,19 @@
 ---
 title: How to not accidentally delete your data with rm
-type: posts
-draft: false
+summary: In this blog post, I want to illustrate technical and “organizational” strategies to prevent you from accidentally deleting your $HOME (guess who has achieved this medal 🙈).
+description: linux, tutorial, best-practices, my experience
 date: 2023-10-30
 tags:
-  - server
-  - tools
-  - cli
+  - workflow
   - linux
+  - shell
 ---
 
 When you are working with the shell on Linux, there is, in my opinion, one law: There will be a point when you accidentally delete important data by running `rm -rf` in the wrong place or with the wrong arguments!
 
-In this blog post, I want to illustrate technical and “organizational” strategies to prevent you from accidentally deleting your $HOME (guess who has achieved this medal 🙈).
-
-<!--more-->
-
 In my early days working with Linux, I was deleting some logs or temp files with `rm -rf *`. By now, you might guess what happened further … When I wanted to delete some stuff in my $HOME folder, I accidentally hit the arrow up key too often, and boom. I executed `rm -rf *` in my $HOME directory 🤯. I immediately recognized my mistake and hit ctrl-c but as you probably know, the rm command is really fast, and the damage was done. All my files in my $HOME directory are gone. The rm command is nasty in that it deletes files pretty quickly and well. One could try to immediately turn off the affected storage and run recovery tools, or send the storage to a professional provider.
 
 What have I changed since then to prevent such a mistake? Here is my list of technical and “organizational” strategies I have taken to prevent an accidental deletion.
-
-{{< toc >}}
 
 ## Backup Backup Backup
 

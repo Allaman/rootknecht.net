@@ -1,31 +1,20 @@
 ---
 title: Building multi arch Docker images
+summary: In this post I want to briefly describe how to build Docker images for both platforms at the example of a Docker image for troubleshooting purposes especially within a Kubernetes cluster.
+description: kubernetes, docker, arm, amd64, macOS, apple silicone, multi-arch
 type: posts
-draft: false
 date: 2022-01-19
 tags:
-  - docker
   - devops
   - tools
-  - kubernetes
-resources:
-  - name: build
-    src: build.png
-    title: AMD64 build on my ARM M1 MacBook
-  - name: dockerhub
-    src: dockerhub.png
-    title: Image detail view with all available architectures
+  - docker
 ---
 
-In my blog post [Moving from Linux to macOS](/blog/moving-to-macos), I described my motivation for moving to macOS. One consequence of this move is that my CPU architecture changed from [x86-64](https://en.wikipedia.org/wiki/X86-64) to [ARM](https://en.wikipedia.org/wiki/ARM_architecture). In this post I want to briefly describe how to build Docker images for both platforms at the example of a Docker image for troubleshooting purposes especially within a Kubernetes cluster.
+In my blog post [Moving from Linux to macOS](/blog/moving-to-macos), I described my motivation for moving to macOS. One consequence of this move is that my CPU architecture changed from [x86-64](https://en.wikipedia.org/wiki/X86-64) to [ARM](https://en.wikipedia.org/wiki/ARM_architecture).
 
-<!--more-->
-
-{{< toc >}}
-
-{{< hint info >}}
+{{< alert >}}
 The source of the Docker image can be found [here](https://github.com/Allaman/problemsolver)
-{{< /hint >}}
+{{< /alert >}}
 
 ## Requirements
 
@@ -56,7 +45,7 @@ RUN curl -sLo /usr/local/bin/yq https://github.com/mikefarah/yq/releases/downloa
 
 Building is almost as easy as your usual build. Just add your target platform(s) to the command. Refer to [build multi platform images](https://docs.docker.com/buildx/working-with-buildx/#build-multi-platform-images) for more details.
 
-{{< img name=build lazy=true size=small >}}
+{{< figure src=build.png caption="AMD64 build on my ARM M1 MacBook" >}}
 
 ```sh
 docker buildx build --platform linux/amd64 -t test .
@@ -66,4 +55,4 @@ docker buildx build --platform linux/amd64 -t test .
 
 If you want to automatically build (and push) your image via Github actions there is workflow available. Refer to my [repo's workflow](https://github.com/Allaman/problemsolver/blob/main/.github/workflows/ci.yml).
 
-{{< img name=dockerhub lazy=true >}}
+{{< figure src=dockerhub.png caption="Image detail view with all available architectures" >}}

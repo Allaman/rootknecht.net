@@ -1,19 +1,13 @@
 ---
 title: Testing this webpage (Hurl+Hugo+Docker)
-type: posts
-draft: false
+summary: Recently, I stumbled over Hurl which is an exciting tool in my opinion. To play around with it, I created a sort of integration test for this homepage utilizing Hugo, Docker, GitHub actions, and Hurl.
+description: web development, testing, integration, hurl
 date: 2022-12-10
 tags:
   - tools
   - web
   - devops
 ---
-
-Recently, I stumbled over [Hurl](https://hurl.dev/) which is an exciting tool in my opinion. To play around with it, I created a sort of integration test for this homepage utilizing Hugo, Docker, GitHub actions, and Hurl.
-
-<!--more-->
-
-{{< toc >}}
 
 # Overview of Hurl
 
@@ -48,17 +42,17 @@ PASSED 😃
 
 In the following section, I describe how I use hurl to run certain tests against the webpage you are reading.
 
-{{< hint info >}}
+{{< alert >}}
 I barely scratch the surface of what Hurl is capable of. Refer to their excellent [Tutorial](https://hurl.dev/docs/tutorial/your-first-hurl-file.html) to get a deeper insight!
-{{< /hint >}}
+{{< /alert >}}
 
 # Tests for my webpage
 
 My webpage is a static website built with [Hugo](https://gohugo.io/). There is no database and no server, expect a plain web server, involved. With Hurl, it is also possible to test certain elements of the page.
 
-{{< hint note >}}
+{{< alert >}}
 The test file runs against localhost because it is integrated in my CICD. More on that in [Automation with GitHub actions](#automation-with-github-actions)
-{{< /hint >}}
+{{< /alert >}}
 
 The source code of my test file is [here](https://raw.githubusercontent.com/Allaman/rootknecht.net/main/test/test.hurl)
 
@@ -123,9 +117,9 @@ xpath "count(/html/body/div/main/div/article)" >= 22
 
 You can also count certain elements. In this case a test the number of blog posts on my webpage.
 
-{{< hint info >}}
+{{< alert >}}
 As I said, I barely scratch the surface of what is possible. Due to the simplicity of my homepage, there are not many super useful test cases. This changes with more complex pages or APIs (JSON is also supported). For instance, when you have to chain requests or capture certain responses and more.
-{{< /hint >}}
+{{< /alert >}}
 
 # Automation with GitHub actions
 
@@ -141,9 +135,9 @@ First things first, I had to build a Docker image that serves my webpage within 
 
 [ci.yml](https://raw.githubusercontent.com/Allaman/rootknecht.net/main/.github/workflows/ci.yml) is the workflow that triggers `test.sh` via GitHub action.
 
-{{< hint info >}}
+{{< alert >}}
 This workflow utilizes `docker buildx` because the Dockerfile utilizes multi-platform-images. See my blog post on [Building multi arch Docker images](/blog/multi-arch-docker/)
-{{< /hint >}}
+{{< /alert >}}
 
 # Outlook
 

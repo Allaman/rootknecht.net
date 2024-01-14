@@ -1,17 +1,12 @@
 ---
-title: "Make Windows 10 more Linux like"
-type: posts
+title: Make Windows 10 more Linux like
+summary: Trying to make Windows work as a Linux user.
+description: linux, workflow, windows, configuration
 date: 2020-01-22
 tags:
   - workflow
   - configuration
 ---
-
-Trying to make Windows work as a Linux user.
-
-<!--more-->
-
-{{< toc >}}
 
 ## Motivation
 
@@ -128,9 +123,9 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 To create persistent aliases create the file `C:\Users\<user>\Documents\WindowsPowershell\Microsoft.PowerShell_profile.ps1` (folder might not exist).
 
 You might have to allow the execution of Powershell scripts on your system: `Set-ExecutionPolicy -Scope CurrentUser BYPASS`
-{{< hint warning >}}
+{{< alert >}}
 keep security policies in mind
-{{< /hint >}}
+{{< /alert >}}
 
 ```powershell
 function f_workspace {Set-Location "C:\Users\<user>\Documents\workspace"}

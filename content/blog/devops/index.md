@@ -1,34 +1,26 @@
 ---
 title: DevOps
-type: posts
+description: "devops, definition, methodology"
+summary: "What do I understand with DevOps and the related topics Cloud Computing and Infrastructure as Code"
 date: 2019-10-06
+showHero: false
 tags:
   - devops
   - cloud
-  - infrastructure
-resources:
-  - name: cc
-    src: "cc.png"
-    title: cloud computing
+  - my experiene
 ---
-
-DevOps can usually unleash its full potential in combination with [Cloud Computing](#cloud-computing) and [Infrastructure as Code](#infrastructure-as-code), which are described in the following article as well.
-
-<!--more-->
-
-{{< toc >}}
 
 ## Terms and definitions
 
-{{< hint warning >}}
+{{< alert >}}
 This page describes certain aspects in the area of DevOps. If not marked these statements are my own wording based upon my own thinking and experience without any engagement with respect to correctness and other opinions.
-{{< /hint >}}
+{{< /alert >}}
 
 ## DevOps
 
-{{< hint info >}}
+{{< alert >}}
 An enterprise **culture** aiming to deliver high quality software within a short lead time and high efficiency taking all the stakeholders into account.
-{{< /hint >}}
+{{< /alert >}}
 
 ### Dev vs Ops
 
@@ -53,15 +45,15 @@ An enterprise **culture** aiming to deliver high quality software within a short
 
 ## Cloud Computing
 
-{{< hint info >}}
+{{< alert >}}
 Utilization of **dynamic** IT resources offered by a cloud service platform through a network.
-{{< /hint >}}
+{{< /alert >}}
 
 ### Types of Cloud Computing Services
 
 Cloud Computing can be distinguished in _infrastructure as a Service_, _Platform as a Service_, _Software as a Service_ and _Function as a Service_. The following picture illustrated the main differences of those types and compares them to classical on premise datacenters.
 
-{{< img name="cc" lazy="true" >}}
+{{< figure src=cc.png caption="Cloud Computing" >}}
 
 Examples in the Amazon ecosystem:
 
@@ -91,9 +83,9 @@ Examples in the Amazon ecosystem:
 
 ## Infrastructure as Code
 
-{{< hint info >}}
+{{< alert >}}
 Automated management of the life cycle of all infrastructure components in their entirety by utilization of methods and best practices from the area of software engineering.
-{{< /hint >}}
+{{< /alert >}}
 
 ### Definition
 

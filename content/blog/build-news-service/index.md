@@ -1,40 +1,13 @@
 ---
-title: Building your own news service with Huginn
-type: posts
-draft: false
+title: "Building your own news service with Huginn"
+description: "rss, self-hosted, knowledge base"
+summary: "I am (still) a big fan of RSS feeds, and I have built a neat collection of feeds on my self-hosted Tiny Tiny RSS. However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via Huginn."
 date: 2022-01-02
 tags:
   - diy
   - tools
-  - web
-resources:
-  - name: head
-    src: head.jpeg
-  - name: agents
-    src: agents.png
-    title: Overview of all of my agents
-  - name: new-agent
-    src: new-agent.png
-    title: The new website agent form
-  - name: inspect
-    src: inspect.png
-    title: Inspecting the headline of the latest Docker blog post (Firefox)
-  - name: dry-run
-    src: dry-run.png
-    title: Dry run of the applied Go Blog agent returning the title and link of the latest post
-  - name: data-agent
-    src: data-agent.png
-    title: The new data output agent form
-  - name: feed-url
-    src: feed-url.png
-    title: RSS feed url for your RSS reader
+  - self-hosted
 ---
-
-I am (still) a big fan of RSS feeds, and I have built a neat collection of feeds on my self-hosted [Tiny Tiny RSS](https://tt-rss.org/). However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via [Huginn](https://github.com/huginn/huginn).
-
-<!--more-->
-
-{{< toc >}}
 
 ## Huginn
 
@@ -85,11 +58,11 @@ services:
 
 Now, let's have a look how to create your news feed. We need to gather new posts and publish an RSS feed from them. The following picture illustrates my setup:
 
-{{< img name=agents lazy=true size=small >}}
+{{< figure src=agents.png caption="Overview of all of my agents" >}}
 
-{{< hint info >}}
+{{< alert >}}
 No need to use this technique for my blog. There is a [RSS feed](https://rootknecht.net/blog/index.xml) available 😉
-{{< /hint >}}
+{{< /alert >}}
 
 ### Gather new posts
 
@@ -101,13 +74,13 @@ In the following example, we want to get new blog posts from https://appliedgo.c
 
 After creating a new agent via the agent's menu, you have some general options and the agent's settings on the left side. On the right side you find the documentation of the agent with all its options.
 
-{{< img name=new-agent lazy=true size=small >}}
+{{< figure src=new-agent.png caption="The new website agent form" >}}
 
 For our purpose we just enter a name and set the desired schedule of the agent.
 
-{{< hint warning >}}
+{{< alert cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 Be conservative with your agent and do not generate unnecessary load! Also, keep in mind that you might miss posts if the frequency of new posts is higher than your schedule!
-{{< /hint >}}
+{{< /alert >}}
 
 The interesting part is the scrape config of the agent after the general settings. You can hit `toggle view` to switch to the JSON view.
 
@@ -115,11 +88,11 @@ Now, we want to extract the `title` and the `link` elements because that is suff
 
 To get the path of the element open the dev tools in your browser, hit the "inspect" button, hover over the element (the headline) and left-click. Then, you can copy the path of the highlighted code section.
 
-{{< img name=inspect lazy=true size=small >}}
+{{< figure src=inspect.png caption="Inspecting the headline of the latest Docker blog post (Firefox)" >}}
 
-{{< hint warning >}}
+{{< alert cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
 Obviously, these methods are not as stable as a regular API and there is a high chance that there will break something with your paths. You can set the `expected_update_period_in_days` value to a number you would expect to gather a new post. If there is no post in this time period, for example due to changes in the paths, Huginn will mark the agent as "not working" (but continue to run it).
-{{< /hint >}}
+{{< /alert >}}
 
 To get the value of the headline we use `./node()` and to get the value of the link we use `@href`.
 
@@ -154,7 +127,7 @@ The following JSON shows the configuration for the agent:
 
 We can use the `Dry Run` button the test our agent.
 
-{{< img name=dry-run lazy=true size=small >}}
+{{< figure src=dry-run.png caption="Dry run of the applied Go Blog agent returning the title and link of the latest post" >}}
 
 ### Create an RSS feed
 
@@ -162,19 +135,19 @@ We have an agent that can extract data, but nothing happens with this data. In o
 
 We create a new agent of type `Data Output Agent`. Then, ee give the agent a name and add our website agent to the `Soures` option. Furthermore, we also need to change the secret-key in the options. This will be part of the URL and should be kept private if your Huginn instance is public.
 
-{{< img name=data-agent lazy=true size=small >}}
+{{< figure src=data-agent.png caption="The new data output agent form" >}}
 
 After saving the agent we can see the URL in the agent's summary view. We can subscribe with an RSS reader of our choice with that URL.
 
-{{< img name=feed-url lazy=true size=small >}}
+{{< figure src=feed-url.png caption="RSS feed url for your RSS reader" >}}
 
 ### Alternative: Mail
 
 If you are not into RSS you can Huginn let you notify via Mail.
 
-{{< hint info >}}
+{{< alert >}}
 Ensure that you have configured your SMTP settings in Huginn!
-{{< /hint >}}
+{{< /alert >}}
 
 Create a new agent of type `Email Agent`. Give your agent a name, add your website agent as `Source`, and configure your mail headline and subject. Save the agent and your agent will wait for events from your website agent to mail to your Huginn account's default mail. To specify a mail address, we can set the `recipient` key in the options.
 
@@ -183,6 +156,6 @@ Create a new agent of type `Email Agent`. Give your agent a name, add your websi
 In this post, we created our own news service from blogs that do not offer RSS feeds or only newsletters via mail. With this approach, you don't have to subscribe to a newsletter or manually check all interesting blogs.
 However, this solution requires some technical knowledge and effort and there might be easier ways to accomplish this. Nevertheless, I like the advantage of having full control over each aspect.
 
-{{< hint info >}}
+{{< alert >}}
 Please keep also in mind that we only scratched the surface of what Huginn is able to do!
-{{< /hint >}}
+{{< /alert >}}

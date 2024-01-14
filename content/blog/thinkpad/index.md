@@ -1,79 +1,14 @@
 ---
 title: Thinkpad Stories
-type: posts
+summary: Some shenanigans with ThinkPads
+description: thinkpad, diy
 date: 2020-02-06
 tags:
-  - DIY
+  - diy
   - hardware
-resources:
-  - name: head
-    src: "head.jpg"
-  - name: bottom
-    src: "bottom.jpg"
-    title: The bottom skin
-  - name: cut
-    src: "cut.jpg"
-    title: The cut plate
-  - name: disassembled-x60
-    src: "disassembled-x60.jpg"
-    title: The disassembled x60
-  - name: disassembled
-    src: "disassembled.jpg"
-    title: The disassembled device
-  - name: disassembledx100
-    src: "disassembledx100.jpg"
-    title: The disassembled x100
-  - name: final
-    src: "final.jpg"
-    title: The final result
-  - name: fingerprint-plate
-    src: "fingerprint-plate.jpg"
-    title: The fingerprint plate
-  - name: fixed_palmrest
-    src: "fixed_palmrest.jpg"
-    title: The fixed palmrest
-  - name: front
-    src: "front.jpg"
-    title: The front skin
-  - name: glued
-    src: "glued.jpg"
-    title: The glued board
-  - name: motherboard
-    src: "motherboard.jpg"
-    title: The x100 motherboard
-  - name: open
-    src: "open.jpg"
-    title: The inner skin
-  - name: original
-    src: "original.jpg"
-    title: The original keyboard
-  - name: oven
-    src: "oven.jpg"
-    title: The motherboard baking in the oven
-  - name: palmrests
-    src: "palmrests.jpg"
-    title: Palmrests next to each other
-  - name: sidetoside
-    src: "sidetoside.jpg"
-    title: Side to side
-  - name: tablet
-    src: "tablet.jpg"
-    title: x60 tablet
-  - name: workingx60
-    src: "workingx60.jpg"
-    title: The final x60
-  - name: x60
-    src: "x60.jpg"
-    title: x60 (non tablet)
 ---
 
 I ❤️ Thinkpads. Here you can read about some of my stories with them 🙂
-
-<!--more-->
-
-{{< img name=head lazy=false description=false >}}
-
-{{< toc >}}
 
 ## Two x60 getting one
 
@@ -83,23 +18,23 @@ Luckily, a co-worker sold me a x60 tablet model running a Intel Core **2** Duo p
 
 - Side to side comparison. On the left side the x60 and on the right side the x60 tablet! Pay attention to the form factor of the fan unit. Luckily, the x60 tablet's unit is smaller than the x60's. The x60's unit won't fit into the tablet's case without further modding.
 
-  {{< img name="sidetoside" lazy=true >}}
+  {{< figure src=sidetoside.jpg caption="Side to side" >}}
 
 - Closer view of the x60
 
-  {{< img name="x60" lazy=true >}}
+  {{< figure src=x60.jpg caption="x60 (non tablet)" >}}
 
 - Closer view of the x60 tablet
 
-  {{< img name="tablet" lazy=true >}}
+  {{< figure src=tablet.jpg caption="x60 tablet" >}}
 
 - Disassembled x60
 
-  {{< img name="disassembled-x60" lazy=true >}}
+  {{< figure src=disassembled-x60.jpg caption="The disassembled x60" >}}
 
 - Working x60 with the tablet's motherboard
 
-  {{< img name="workingx60" lazy=true >}}
+  {{< figure src=workingx60.jpg caption="The final x60" >}}
 
 ## Backing a motherboard
 
@@ -107,15 +42,15 @@ Stupid enough, my x100e did not survive compiling the gentoo kernel. After a cra
 
 - Disassembled x100e
 
-  {{< img name="disassembledx100" lazy=true >}}
+  {{< figure src=disassembledx100.jpg caption="The disassembled x100" >}}
 
 - The motherboard
 
-  {{< img name="motherboard" lazy=true >}}
+  {{< figure src=motherboard.jpg caption="The x100 motherboard" >}}
 
 - Wrapped into alloy and put into the oven for 10 minutes at 180 degrees celsius circulating air
 
-  {{< img name="oven" lazy=true >}}
+  {{< figure src=oven.jpg caption="The motherboard baking in the oven" >}}
 
 _After reassembling the unit was working fine!_
 
@@ -130,48 +65,48 @@ I ordered the following parts at ebay:
 - Lenovo **45N2153** Tastatur Deutsch für Thinkpad T410 T420 T510 T520 W510 W520 for 60 Euros
 - Lenovo Thinkpad X220 X220i X220s Palmrest Plastic Cover **04W1410 H44** (with fingerprint cut out) for 16 Euros
 
-{{< hint warning >}}
+{{< alert >}}
 Be aware that the classic keyboard does not have the backlight feature
-{{< /hint >}}
+{{< /alert >}}
 
 - Original keyboard
 
-  {{< img name="original" lazy=true >}}
+  {{< figure src=original.jpg caption="The original keyboard" >}}
 
 - Disassembled device
 
-  {{< img name="disassembled" lazy=true >}}
+  {{< figure src=disassembled.jpg caption="The disassembled device" >}}
 
 - Palmrest comparison. Note the different layout which we must fix
 
-  {{< img name="palmrests" lazy=true >}}
+  {{< figure src=palmrests.jpg caption="Palmrests next to each other" >}}
 
 - Palmrest fix
 
-  {{< img name="fixed_palmrest" lazy=true >}}
+  {{< figure src=fixed_palmrest.jpg caption="The fixed palmrest" >}}
 
 - Original fingerprint plate not fitting
 
-  {{< img name="fingerprint-plate" lazy=true >}}
+  {{< figure src=fingerprint-plate.jpg caption="The fingerprint plate" >}}
 
 - Glued fingerprint module
 
-  {{< img name="glued" lazy=true >}}
+  {{< figure src=glued.jpg caption="The glued board" >}}
 
 - Cut plate
 
-  {{< img name="cut" lazy=true >}}
+  {{< figure src=cut.jpg caption="The cut plate" >}}
 
 - Final result
 
-  {{< img name="final" lazy=true >}}
+  {{< figure src=final.jpg caption="The final result" >}}
 
 ## Dbranding my Lenovo X1 Carbon
 
 I am a huge fan of [dbrand](https://dbrand.com). They offer extreme nice looking and perfectly fitting skins for various devices. All my Galaxy Devices had them applied and I thought it was about time to give my X1 Carbon a new look. here is the result
 
-{{< img name="front" lazy=true >}}
+{{< figure src=front.jpg caption="The front skin" >}}
 
-{{< img name="bottom" lazy=true >}}
+{{< figure src=bottom.jpg caption="The bottom skin" >}}
 
-{{< img name="open" lazy=true >}}
+{{< figure src=open.jpg caption="The inner skin" >}}

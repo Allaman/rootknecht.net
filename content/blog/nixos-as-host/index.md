@@ -1,20 +1,13 @@
 ---
 title: NixOS as Container Host
-type: posts
-draft: false
+summary: My first experiment with NixOS was likely in October 2021 😄. Since then, I tried to get used to NixOS and/or Nix as a package manager alternative several times but with little success. In this post I want to illustrate how I finally found a purpose for NixOS and also how this allowed me to dodge its steep learning curve!
+description: nixos, nix, configuration, linux
 date: 2023-07-17
 tags:
-  - container
   - tools
   - workflow
   - nixos
 ---
-
-My first experiment with NixOS was likely in October 2021, at least according to my Git log for my slightly outdated [NixOS](https://rootknecht.net/knowledge/linux/nixos/) page 😄. Since then, I tried to get used to NixOS and/or Nix as a package manager alternative several times but with little success. In this post I want to illustrate how I finally found a purpose for NixOS and also how this allowed me to dodge its steep learning curve!
-
-<!--more-->
-
-{{< toc >}}
 
 ## Background
 
@@ -44,9 +37,9 @@ This time, instead of running NixOS in a virtual machine or trying to replicate 
 
 My plan is to use NixOS as a base system / host system with very little basic programs / tools. On top of NixOS I will spawn [distrobox](https://github.com/89luca89/distrobox) containers including all the tools necessary for my workflows. Those containers are disposable as a) no data is stored inside and b) they are automatically configured.
 
-{{< hint info >}}
+{{< alert >}}
 You can have a look at my configuration in my [dots](https://github.com/Allaman/dots/tree/main/dot_nixos) repo.
-{{< /hint >}}
+{{< /alert >}}
 
 ### NixOS aka the host system
 
@@ -208,9 +201,9 @@ wget https://raw.githubusercontent.com/Allaman/dots/main/bootstrap.sh
 chmod +x bootstrap.sh
 ```
 
-{{< hint info >}}
+{{< alert >}}
 Refer to the [homepage](https://distrobox.privatedns.org/) for more details.
-{{< /hint >}}
+{{< /alert >}}
 
 ### Host integration
 

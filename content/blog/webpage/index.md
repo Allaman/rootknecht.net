@@ -1,19 +1,16 @@
 ---
 title: "How is this page built (and why)"
-type: posts
+summary: In this article I explain why I have chosen Grav CMS, maybe a rather unknown solution, for knowledge.rootknecht.net.
+description: web development, grav, cms, my experience
 date: 2019-09-15
 tags:
   - web
-  - opinion
+  - self-hosted
 ---
 
-{{< hint alert >}}
+{{< alert >}}
 I switched from Grav to Hugo!
-{{< /hint >}}
-
-In this article I explain why I have chosen [Grav CMS](https://getgrav.org/), maybe a rather unknown solution, for [knowledge.rootknecht.net](#).
-
-<!--more-->
+{{< /alert >}}
 
 ## Classic CMS
 

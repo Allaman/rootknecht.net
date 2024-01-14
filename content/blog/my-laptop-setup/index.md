@@ -1,41 +1,19 @@
 ---
-title: "My Laptop Setup"
+title: My Laptop Setup
+summary: In this post I give an overview of my current Laptop and some of my hardware I use for work.
+description: lenovo, linux, workflow, configuration
 type: posts
 date: 2020-08-30
 tags:
   - workflow
   - hardware
   - configuration
-resources:
-  - name: de
-    src: "de.png"
-    title: Some terminals
-  - name: desktop
-    src: "desktop.png"
-    title: My wallpaper of choice
-  - name: fzf
-    src: "fzf.png"
-    title: Fzf in action
-  - name: gtop
-    src: "gtop.png"
-    title: Running gtop
-  - name: neofetch
-    src: "neofetch.png"
-    title: Compulsory neofetch output
-  - name: x1carbon
-    src: "x1carbon.jpg"
-    title: Lenovo x1 Carbon 6th Gen
+  - linux
 ---
 
-In this post I give an overview of my current Laptop and some of my hardware I use for work.
-
-<!--more-->
-
-{{< toc >}}
-
-{{< hint info >}}
+{{< alert >}}
 Please visit [My Workplace 2021](/blog/my-workplace-2021/) for an updated version!
-{{< /hint >}}
+{{< /alert >}}
 
 ## Hardware
 
@@ -51,7 +29,7 @@ I am running a Lenovo X1 Carbon 6th Generation[^1] with following specs:
 - Intel Dualband-Wireless-AC 8265 (2x2) WLAN
 - Fibocom Cat9 L850-GL 4G LTE
 
-{{< img name="x1carbon" lazy="true" >}}
+{{< figure src=x1carbon.png caption="Lenovo x1 Carbon 6th Gen" >}}
 
 ### Why Lenovo
 
@@ -84,15 +62,15 @@ Currently, I am not running a [Desktop Environment (DE)](https://en.wikipedia.or
 
 Impressions of my setup:
 
-{{< img name="desktop" lazy="true" >}}
-{{< img name="de" lazy="true" >}}
-{{< img name="gtop" lazy="true" >}}
+{{< figure src=desktop.png caption="My wallpaper of choice" >}}
+{{< figure src=de.png caption="Some terminals" >}}
+{{< figure src=gtop.png caption="Running gtop" >}}
 
 ## Applications
 
-{{< hint info >}}
+{{< alert >}}
 Please have a look at [CLI-Applications](https://knowledge.rootknecht.net/cli-applications) and [GUI-Applications](https://knowledge.rootknecht.net/gui-applications) for additional applications I use and recommend.
-{{< /hint >}}
+{{< /alert >}}
 
 ### PIM setup
 
@@ -117,13 +95,13 @@ My workflow is mainly terminal based. Except browsing the web I spend most of th
 Let's begin with the shell itself. I am using zsh with [Fish-like autosuggestions for zsh](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-completions](https://github.com/zsh-users/zsh-completions).
 Additionally, I created some dozens of aliases in order to fast execute commands or remap old commands to the new executables. Another important feature of each shell should be a sane history configuration meaning an unlimited history file, shared history between sessions and immediately appending items to the history.
 
-{{< img name="neofetch" lazy="true" >}}
+{{< figure src=neofetch.png caption="Compulsory neofetch output" >}}
 
 As terminal I use [termite](https://github.com/thestinger/termite) which is very fast, minimalistic and keyboard-driven or [alacritty](https://github.com/alacritty/alacritty) a super fast cross platform terminal.
 
 In order to move around and find things fast in my terminal there I use a couple of commandline tools. The most important tools are [fzf](https://github.com/junegunn/fzf) and [fasd](https://github.com/clvv/fasd). fzf allows you to quickly fuzzy find files and folders and search your history. Due to the ability to stdin to fzf the customizations are nearly endless.
 
-{{< img name="fzf" lazy="true" >}}
+{{< figure src=fzf.png >}}
 
 Here you can see fzf find invoked by `Ctrl+t`. Notice also the preview window on the right side. By hitting `Ctrl+o` I can open the selected file in my editor or by just entering the path to the file is entered at the cursor in my terminal. As I said the possibilities are endless and you should really give it a try. There is also a [Vim integration](https://github.com/junegunn/fzf.vim).
 
@@ -140,9 +118,9 @@ fasd allows you to quickly jump to folders by indexing and weighting your visite
 | ls       | [exa](https://github.com/ogham/exa) or [lsd](https://github.com/Peltoche/lsd/) |
 | htop     | [gtop](https://github.com/aksakalli/gtop)                                      |
 
-{{< hint info >}}
+{{< alert >}}
 Nevertheless, I strongly recommend to learn the original tools as you cannot assume to find those replacements on each system!
-{{< /hint >}}
+{{< /alert >}}
 
 ## Dotfiles
 

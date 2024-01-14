@@ -1,21 +1,16 @@
 ---
 title: "(GER) Mein Weg zum Freiberufler"
+summary: In diesem Artikel möchte ich meine Erfahrungen und typische Bedenken auf dem Weg zum Freiberufler in der IT schildern.
+description: freelancer, karriere, my experience
 type: posts
 date: 2020-01-07
 tags:
-  - opinion
-  - business
+  - my experience
 ---
 
-In diesem Artikel möchte ich meine Erfahrungen und typische Bedenken auf dem Weg zum Freiberufler in der IT schildern.
-
-<!--more-->
-
-{{< toc >}}
-
-{{< hint warning >}}
+{{< alert >}}
 Alle Angaben ohne Gewähr! Der Artikel ist kein Ersatz für adäquate Beratungsdienstleistungen von Steuerberatern, Finanz- und Versicherungsberatern, etc. und spiegelt ausschließlich meine Erfahrung und Meinung wider.
-{{< /hint >}}
+{{< /alert >}}
 
 ## Meine Motivation
 

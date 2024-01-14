@@ -1,24 +1,13 @@
 ---
 title: Pre-commit hook for YAML doc-start
-type: posts
-draft: false
+summary: In my daily business I have to deal with a lot of YAML files. In my opinion, it is best practice to write `---` (three dashes) at the beginning of a YAML file. This post describes how to utilize Git pre-commit hooks to automatically insert `---` at the beginning of your YAML files before committing them.
+description: git, yaml, workflow, best-practices
 date: 2022-03-19
 tags:
-  - tools
   - devops
   - programming
   - configuration
-resources:
-  - name: precommit
-    src: pre-commit.png
-    title: A symlinked pre-commit hook
 ---
-
-In my daily business I have to deal with a lot of YAML files. In my opinion, it is best practice to write `---` (three dashes) at the beginning of a YAML file. This post describes how to utilize Git pre-commit hooks to automatically insert `---` at the beginning of your YAML files before committing them.
-
-<!--more-->
-
-{{< toc >}}
 
 ## What even is ---?
 
@@ -53,9 +42,9 @@ This perfectly matches our use case:
 
 **Before** we commit stuff we want to ensure that our YAMLs start with `---`. If `---` is missing we want to add it to the beginning of the file and abort the commit to be able to stash the mad changes.
 
-{{< hint warning >}}
+{{< alert >}}
 YAML directives must be written before `---` and are not considered in this use case. Please enhance the script if you have to deal with such YAML files.
-{{< /hint>}}
+{{< /alert>}}
 
 ## Automate it!
 
@@ -152,7 +141,7 @@ hooks: ## Install Git hooks
 
 When running `make hooks` the pre-commit hook will be symlinked to the local Git repo and therefore will be "active".
 
-{{< img name=precommit lazy=true >}}
+{{< figure src=precommit.png caption="A symlinked pre-commit hook" >}}
 
 To test your hook you can call `bash .git/hooks/pre-commit`.
 

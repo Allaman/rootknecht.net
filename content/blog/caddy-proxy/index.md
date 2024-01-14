@@ -1,22 +1,16 @@
 ---
 title: Easy reverse proxy with Caddy
-type: posts
+description: "devops, proxy, caddy, self-hosted"
+summary: "Imagine you require a simple reverse proxy for one of your servers but you don't have the permission to install Nginx, Apache etc. Or you really just need a simple proxy and don't want to mess around with proxy configuration. In this post we will have a look for an comparatively new proxy called `Caddy` which is a perfect match for this scenario."
 draft: false
 date: 2022-03-05
 tags:
-  - server
+  - self-hosted
   - tools
-  - web
   - devops
 ---
 
-Imagine you require a simple reverse proxy for one of your servers but you don't have the permission to install Nginx, Apache etc. Or you really just need a simple proxy and don't want to mess around with proxy configuration. In this post we will have a look for an comparatively new proxy called `Caddy` which is a perfect match for this scenario.
-
-<!--more-->
-
-{{< toc >}}
-
-## What is Caddy
+## What is Caddy[^1]
 
 [Caddy](https://github.com/caddyserver/caddy)
 
@@ -103,3 +97,5 @@ Now, Caddy is running in a screen session and you can log out from your server w
 ## Wrap up
 
 In this post we only scratched the surface of the features of Caddy and there is much more to discover. Coming from old school Apache/HAproxy/Nginx servers, it is so exciting how easy and fast you can spin up a functional (proxy) server that is production ready. There are also solutions for topics not covered in this post, like [monitoring](https://caddyserver.com/docs/metrics), [logging](https://caddyserver.com/docs/logging), or [TLS](https://caddyserver.com/docs/automatic-https).
+
+[^1]: Did you recognize the misspelled name in the hero image? DALL-E is to blame :grinning_face:
