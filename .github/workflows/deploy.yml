@@ -16,11 +16,11 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.112.7"
+          hugo-version: "0.120.4"
           extended: true
 
       - name: Build
-        run: hugo
+        run: hugo --minify
 
       - name: SSH setup
         env:
