@@ -45,6 +45,7 @@ A selection of my open-source work
 ## Slides
 
 {{< github repo="allaman/productivity" >}}
+
 {{< github repo="allaman/reveal-js-intro" >}}
 
 ## Misc
