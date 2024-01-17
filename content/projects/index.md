@@ -26,20 +26,27 @@ A selection of my open-source work
 ## Neovim
 
 {{< github repo="allaman/nvim" >}}
+
 {{< github repo="allaman/kustomize.nvim" >}}
+
 {{< github repo="allaman/nvim-docker" >}}
 
 ## Configs
 
 {{< github repo="allaman/dots" >}}
+
 {{< github repo="allaman/mac-setup" >}}
 
 ## DevOps
 
 {{< github repo="allaman/chkRedis" >}}
+
 {{< github repo="allaman/problemsolver" >}}
+
 {{< github repo="allaman/toolbox" >}}
+
 {{< github repo="allaman/go-cli-skeleton" >}}
+
 {{< github repo="allaman/hands-on-nomad" >}}
 
 ## Slides
