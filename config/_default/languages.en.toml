@@ -11,7 +11,7 @@ title = "Rootknecht.net"
   logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
   description = "My personal homepage with my knowledge-base and blog about Linux, DevOps, self-hosting, workflows and more"
-  copyright = "Michael Peter - since 2017 :copyright:"
+  copyright = ":copyright: Michael Peter - since 2017"
 
 [author]
   name = "Michael"
