@@ -421,22 +421,23 @@ v1.5.0
 with known options
 
 ```bash
-  echo "Continue?"
-  select choice in "Yes" "No"; do
+echo "Continue?"
+select choice in "Yes" "No"; do
     case $choice in
-      Yes ) echo "Going on; break;;
-      No ) exit;;
+        Yes ) echo "Going on; break;;
+        No ) exit;;
     esac
-  done
+done
 ```
 
 with unknown options
 
 ```bash
-  select choice in "${array[@]}"; do
+array=("Option1" "Option2" "Option3")
+select choice in "${array[@]}"; do
     [[ -n $choice ]] || { echo "Invalid choice. Please try again." >&2; continue; }
     break
-  done
+done
 ```
 
 or
