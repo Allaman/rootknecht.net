@@ -7,6 +7,7 @@ date: 2020-03-09
 tags:
   - workflow
   - hardware
+  - my experience
 ---
 
 [ErgoDox EZ](https://ergodox-ez.com/)

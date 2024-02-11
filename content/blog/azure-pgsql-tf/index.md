@@ -1,6 +1,6 @@
 ---
 title: Passwordless Azure PostgreSQL with Terraform and connection via Container App
-summary: How to create an Azure PostgreSQL without public access and no passwords via Terraform but still secure. In addition, I will describe how you can access this database from a container app with access tokens.
+summary: How to create an Azure PostgreSQL instance without public access and passwords using Terraform while ensuring security. Additionally, I will explain how to access this database from a container app using access tokens.
 description: Azure, PostgreSQL, Terraform, DevOps, Database, cloud Computing, Infrastructure as Code, IaC, Python
 date: 2024-01-27T13:00:25+10:00
 tags:
@@ -234,7 +234,7 @@ resource "azurerm_container_app" "app" {
 }
 ```
 
-We give the container app the created identity, which also functions as a PostgreSQL admin. Also note that we define environment variables with parameters required to connect to the database. An advantage of using a managed identity is that there is no need to define an ENV var `DB_PASSWORD` because we obtain an access token for the database, as you will soon see.
+We provide the container app with the created identity, which also serves as a PostgreSQL admin. Additionally, it is important to mention that we define environment variables with the necessary parameters to establish a connection to the database. One benefit of utilizing a managed identity is that there is no requirement to define an environment variable `DB_PASSWORD` since we acquire an access token for the database, as you will soon witness.
 
 {{< alert >}}
 Terraform stores those values ([traditionally](https://github.com/hashicorp/terraform/issues/516) :laughing:) in plain text in its state, so from this point of view, it is also a major win to not have to define a password!
@@ -250,8 +250,7 @@ In the following part, I describe how to finally connect to the database.
 
 ## Connecting to the database
 
-Now, how can you connect to the database from your container app? At first, I will describe how to use good old `posgresql-client` and bash and then provide a little Python example.
-Here, I was running a `debian:12-slim` container with `sleep infinity` as CMD so that the container would not immediately shut down. Your mileage may vary with different images (Alpine, Python, ...).
+Now, how can you connect to the database from your container app? First, I will describe how to use the traditional `postgresql-client` and bash, and then provide a small Python example. In this case, I was running a `debian:12-slim` container with `sleep infinity` as the CMD, so that the container would not shut down immediately. Your experience may differ with different images (such as Alpine, Python, etc.).
 
 ### Bash
 
