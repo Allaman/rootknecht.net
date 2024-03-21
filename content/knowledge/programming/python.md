@@ -314,3 +314,40 @@ except Exception as ex:
     print("Error ", ex)
     exit("Failed to connect, terminating.")
 ```
+
+## Create container in Azure storage account
+
+```python
+def createStorageAccountContainer(storage_account_name, container_name):
+    account_url = f"https://{storage_account_name}.blob.core.windows.net"
+    azure_credential = DefaultAzureCredential()
+    blob_service_client = BlobServiceClient(account_url, credential=azure_credential)
+    try:
+        blob_service_client.create_container(name=container_name)  # private by default
+    except ResourceExistsError:
+        print(
+            f"A container in {storage_account_name} named {container_name} already exists"
+        )
+```
+
+## Upload blob to Azure storage account
+
+```python
+def uploadBlob(storage_account_name, container_name):
+    account_url = f"https://{storage_account_name}.blob.core.windows.net"
+    azure_credential = DefaultAzureCredential()
+    blob_service_client = BlobServiceClient(account_url, credential=azure_credential)
+
+    ctime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    fp = tempfile.NamedTemporaryFile()
+    fp.write(ctime.encode("utf-8"))
+
+    blob_client = blob_service_client.get_blob_client(
+        container=container_name, blob=ctime
+    )
+    with open(fp.name, "rb") as data:
+        blob_client.upload_blob(data)
+
+    fp.close()
+```
