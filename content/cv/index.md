@@ -49,7 +49,7 @@ mijope.de
 
 {{< /timeline >}}
 
-# Skils
+# Skills
 
 ## Cloud
 
