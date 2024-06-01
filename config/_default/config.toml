@@ -16,6 +16,9 @@ summaryLength = 0
 buildDrafts = false
 buildFuture = false
 
+# https://github.com/nunocoracao/blowfish/releases/tag/v2.69.0
+enableEmoji = true
+
 # googleAnalytics = "G-XXXXXXXXX"
 
 [imaging]
