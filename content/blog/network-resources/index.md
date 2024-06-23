@@ -33,7 +33,7 @@ Our use cases are:
 2. Get the resources loaded from that webpages
 3. Compare the domain of the webpage with each resource's domain
 
-Here is the little (hacky) script I came up with. It requires [Firefox](https://www.mozilla.org/en-US/firefox/new/) (my browser of choice), [geckodriver](https://github.com/mozilla/geckodriver/releases/) (put it in your PATH) and `selenium` as well as `selenium-wire` (`pip install --user selenium selenium-wire`).
+Here is the little (hacky) script I came up with. It requires [Firefox](https://www.mozilla.org/en-US/firefox/new/) (my browser of choice), [geckodriver](https://github.com/mozilla/geckodriver/releases/) (put it in your PATH) and `selenium` as well as `selenium-wire` and some aux modules (`pip install --user selenium selenium-wire blinker==1.7.0 packaging setuptools`).
 
 ```python
 from seleniumwire import webdriver
@@ -51,7 +51,8 @@ def notHomePageInResource(homepage, res):
 
 def getNetworkResources(homepage):
     options = webdriver.FirefoxOptions()
-    options.headless = True
+    # options.headless = True # older versions
+    options.add_argument("--headless")
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 \
         (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
