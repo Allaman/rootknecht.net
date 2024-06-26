@@ -29,6 +29,8 @@ A selection of my open-source work
 
 {{< github repo="allaman/kustomize.nvim" >}}
 
+{{< github repo="allaman/emoji.nvim" >}}
+
 {{< github repo="allaman/nvim-docker" >}}
 
 ## Configs
@@ -42,6 +44,8 @@ A selection of my open-source work
 {{< github repo="allaman/chkRedis" >}}
 
 {{< github repo="allaman/problemsolver" >}}
+
+{{< github repo="allaman/gstring" >}}
 
 {{< github repo="allaman/toolbox" >}}
 
