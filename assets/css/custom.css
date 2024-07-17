@@ -1,4 +1,10 @@
+@font-face {
+    font-family: font;
+    src: url('/fonts/IBMPlexMono-Regular.ttf');
+}
+
 /* Increase the default font size */
 html {
-  font-size: 13pt;
+  font-size: 12pt;
+  font-family: font;
 }
