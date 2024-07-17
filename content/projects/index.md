@@ -43,6 +43,8 @@ A selection of my open-source work
 
 {{< github repo="allaman/chkRedis" >}}
 
+{{< github repo="allaman/werkzeugkasten" >}}
+
 {{< github repo="allaman/problemsolver" >}}
 
 {{< github repo="allaman/gstring" >}}
