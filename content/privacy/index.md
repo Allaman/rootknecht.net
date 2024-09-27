@@ -20,7 +20,7 @@ showZenMode: false
 </p>
 <h3 id="dsg-general-controller">Verantwortlicher</h3>
 <p><span class="tsmcontroller">Michael Peter<br>
-    Amalienst. 58<br>
+    Dr.-Max-Schneider-Str. 4<br>
     86633 Neuburg an der Donau<br>
     Deutschland<br>
     <br>

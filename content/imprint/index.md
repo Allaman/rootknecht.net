@@ -20,7 +20,7 @@ Imprint (Impressum) in German language:
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
 <p><span class="tsmcontroller">Michael Peter<br>
-    Amalienstr. 58<br>
+    Dr.-Max-Schneider-Str. 4<br>
     86633 Neuburg an der Donau<br>
     Deutschland<br>
     <br>
