@@ -618,3 +618,51 @@ function notify {
 	fi
 }
 ```
+
+## Arch check
+
+```sh
+go_arch() {
+  arch="$(uname -m)"
+  case "${arch}" in
+    aarch64_be|aarch64|arm64|armv8b|armv8l)
+      echo "arm64" ;;
+    arm)
+      echo "arm" ;;
+    i386|i686)
+      echo "386" ;;
+    mips)
+      echo "mips" ;;
+    mips64)
+      echo "mips64" ;;
+    s390|s390x)
+      echo "s390x" ;;
+    x86_64)
+      echo "amd64" ;;
+  esac
+}
+```
+
+## OS check
+
+```sh
+os_name() {
+  os="$(uname -o)"
+  case "${os}" in
+    "GNU/Linux")
+      echo "linux" ;;
+    "Darwin")
+      echo "darwin" ;;
+  esac
+}
+```
+
+## die
+
+```sh
+readonly ERR="❌"
+die() {
+  echo >&2 "${ERR} ${*}"
+  exit 1
+}
+```
