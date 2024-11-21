@@ -13,8 +13,9 @@ title = "Rootknecht.net"
   description = "My personal homepage with my knowledge-base and blog about Linux, DevOps, self-hosting, workflows and more"
   copyright = ":copyright: Michael Peter - since 2017"
 
-[author]
+[params.author]
   name = "Michael"
+  email = "feedback@mjpeter.de"
   image = "img/authors/profile.jpg"
   headline = "DevOps / Cloud Computing"
   bio = "Jack of all trades, master of none :ghost:"
@@ -64,4 +65,4 @@ title = "Rootknecht.net"
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
-  ]
+    ]

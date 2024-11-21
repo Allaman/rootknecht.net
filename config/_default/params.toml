@@ -15,6 +15,8 @@ enableCodeCopy = true
 mainSections = ["blog"]
 # robots = ""
 
+replyByEmail = true
+
 disableImageOptimization = false
 disableTextInHeader = false
 
@@ -73,7 +75,7 @@ smartTOCHideUnfocusedChildren = true
   showAuthorsBadges = false
   showWordCount = true
   # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
-  sharingLinks = ["linkedin", "twitter", "reddit", "email"]
+  sharingLinks = ["linkedin", "twitter", "mastodon", "reddit", "email"]
   showZenMode = true
 
 [list]
