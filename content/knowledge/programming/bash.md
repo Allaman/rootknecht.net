@@ -424,7 +424,7 @@ with known options
 echo "Continue?"
 select choice in "Yes" "No"; do
     case $choice in
-        Yes ) echo "Going on; break;;
+        Yes ) echo "Going on"; break;;
         No ) exit;;
     esac
 done
