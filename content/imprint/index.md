@@ -24,7 +24,7 @@ Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
     86633 Neuburg an der Donau<br>
     Deutschland<br>
     <br>
-    Mailadresse: michaeljohannpeter (at) gmail.com<br>
+    Mailadresse: contact (at) mjpeter.de<br>
     <br>
   </span></p>
 

@@ -35,7 +35,7 @@ case $param in
         ;;
     github )
         notify "Generating github config"
-        git config --global user.email "michaeljohannpeter@gmail.com"
+        git config --global user.email "mail@example.com"
         git config --global user.name "Michael"
         git config --global credential.username "allaman"
         ;;
@@ -95,7 +95,7 @@ Due to those disadvantages I was thinking about a new approach how to handle my 
 
 ```ini
 [user]
-	email = michaeljohannpeter@gmail.com
+	email = mail@example.com
 	name = Michael
 ```
 

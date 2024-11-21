@@ -24,7 +24,7 @@ showZenMode: false
     86633 Neuburg an der Donau<br>
     Deutschland<br>
     <br>
-    Mailadresse: michaeljohannpeter (at) gmail.com<br>
+    Mailadresse: webmaster (at) mjpeter.de<br>
     <br>
   </span></p>
 <h3 id="dsg-general-datatype">Arten der verarbeiteten Daten</h3>
