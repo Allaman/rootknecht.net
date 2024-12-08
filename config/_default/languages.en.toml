@@ -21,6 +21,7 @@ title = "Rootknecht.net"
   bio = "Jack of all trades, master of none :ghost:"
   links = [
     { github = "https://github.com/allaman" },
+    { bluesky = "https://bsky.app/profile/allamann.bsky.social" },
     { mastodon = "https://mastodontech.de/@allaman" },
     { x-twitter = "https://twitter.com/Allaman" },
     { linkedin = "https://linkedin.com/in/michael-peter-4aa918107" },
