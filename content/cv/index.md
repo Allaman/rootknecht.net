@@ -21,7 +21,7 @@ This is just a summary of my CV. An extended version is available upon request!
 
 {{< timeline >}}
 
-{{< timelineItem icon="github" header="Managing Director" badge="2022 - present" subheader="mijope GmbH" >}}
+{{< timelineItem icon="code" header="Managing Director" badge="2022 - present" subheader="mijope GmbH" >}}
 {{< button href="https://mijope.de" target="_blank" >}}
 mijope.de
 {{< /button >}}
