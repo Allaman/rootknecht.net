@@ -136,9 +136,9 @@ yazi.nvim
 
 {{< /collapse >}}
 
-Additionally, I came up with the crazy idea of making my config sort of "configurable," allowing me to overwrite or extend some parts of my configuration through a “user config file.” This approach added more complexity to my configuration as I kept making more and more of my config configurable—not just for myself but for others, too.
+Additionally, I came up with the crazy idea of making my config sort of "configurable," allowing me to overwrite or extend some parts of my configuration through a “user config file.” This approach added more complexity to my configuration as I kept making more and more of my config configurable — not just for myself but for others, too.
 
-By no means would I call my config a Neovim distribution, but I was slowly working toward something like a half-baked distribution. It happens quite often that when I want to change some configuration, I must update the user config file (eat your own dog food 😄), which is in my dotfile repository. After applying[^3] my [dotfile](https://github.com/Allaman/dots), I move back to my Neovim configuration and check my changes in the user config file. This process became quite cumbersome as I made more and more things configurable.
+By no means would I call my config a Neovim distribution, but I was slowly working toward something like a half-baked distribution. It happens quite often that when I want to change some configuration, I must update the user config file (eat your own dog food 😄), which is in my dotfile repository. After applying[^3] my [dotfiles repo](https://github.com/Allaman/dots), I move back to my Neovim configuration and check my changes in the user config file. This process became quite cumbersome as I made more and more things configurable.
 
 {{< collapse "My own user config file" >}}
 
@@ -332,7 +332,7 @@ return {
 
 {{< /collapse >}}
 
-I think you get the idea. My config became a [big ball of mud](https://en.wikipedia.org/wiki/Anti-pattern#Software_engineering_anti-patterns) 🤣. Additionally, many plugins mean frequent (and sometimes breaking) updates, which take up even more time. Last but not least, I am not [folke](https://github.com/folke) or any other Neovim distribution maintainer. Implementing a user config was too ambitious.
+I think you get the idea. My config became a [big ball of mud](https://en.wikipedia.org/wiki/Anti-pattern#Software_engineering_anti-patterns) 🤣. Additionally, many plugins mean frequent (and sometimes breaking) updates, which take up even more time. Last but not least, I am not [Folke](https://github.com/folke) or any other Neovim distribution maintainer. Implementing a user config was too ambitious.
 
 ## A new beginning
 
@@ -403,7 +403,7 @@ My current structure:
 
 1. **Stick to the default theme.** Neovim's [default theme](https://github.com/neovim/neovim/pull/26334) was updated by no other than [echasnovski](https://github.com/echasnovski), the author of the [mini.nvim](https://github.com/echasnovski) suite. In my opinion he did a great job and it gets "the job done". Fun fact: A theme adds according to Lazy 4 or 5 ms.
 
-2. **No DAP.** I work as a DevOps/Cloud Engineer, and my work primarily involves dealing with HCL, YAML, and Bash. Additionally, I work with relatively small Go and Python projects where I rarely need debugging—mostly just to confirm that my configuration is functioning properly 🤣.
+2. **No DAP.** I work as a DevOps/Cloud Engineer, and my work primarily involves dealing with HCL, YAML, and Bash. Additionally, I work with relatively small Go and Python projects where I rarely need debugging — mostly just to confirm that my cloud resources are set up properly 🤣.
 
 3. **No AI.** I installed several AI plugins ([ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim), [gp.nvim](https://github.com/Robitx/gp.nvim), [copilot.lua](https://github.com/zbirenbaum/copilot.lua), [supermave-nvim](https://github.com/supermaven-inc/supermaven-nvim)) but I barely ever touched them. To be honest, AI is not a major part of my workflow. Maybe I am a boomer ...
 
@@ -413,7 +413,7 @@ My current structure:
 
 ### Extra folder
 
-You’ve probably noticed the `extra` folder in my config. Well, I couldn’t resist. If someone out there wants to fork or use my config and can live with my decisions, this is the place for customizations. This folder is merged with the LazySpecs in the `plugins`, allowing you to add your own plugins, disable plugins, or overwrite plugin options. For example, to disable dropbar, simply add:
+You’ve probably noticed the `extra` folder in my config. Well, I couldn’t resist. If someone out there wants to fork or use my config and can live with some of my decisions, this is the place for customizations. This folder is merged with the LazySpecs in the `plugins` folder, allowing you to add your own plugins, disable plugins, or overwrite plugin options. For example, to disable dropbar, simply add:
 
 ```lua
 return {
