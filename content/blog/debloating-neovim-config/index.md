@@ -409,7 +409,7 @@ My current structure:
 
 4. **[Luasnip](https://github.com/L3MON4D3/LuaSnip) instead of the built-in [snippet API](https://github.com/neovim/neovim/pull/25301).** The migration path was not clear to me and I didn't want to spent more time. In addition, Luasnip is more powerful.
 
-5. **Only account for my environment.** For instance, Tmux is always running, so there’s no need for a Neovim terminal plugin—I can simply split a Tmux pane instead.
+5. **Only account for my environment.** For instance, Tmux is always running, so there’s no need for a Neovim terminal plugin — I can simply split a Tmux pane instead.
 
 ### Extra folder
 
