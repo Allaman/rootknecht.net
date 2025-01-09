@@ -2,9 +2,8 @@
 title: Debloating my Neovim configuration
 summary: "Back to the basics: a little journey about a custom Neovim configuration that got out of control and how I simplified my setup to make it faster and more maintainable than ever."
 description: neovim, lua, workflow, development, IDE, configuration
-type: posts
 draft: false
-date: 2025-01-09
+date: 2025-01-09T01:33:45+10:00
 tags:
   - tools
   - neovim
