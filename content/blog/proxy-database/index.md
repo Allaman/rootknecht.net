@@ -62,6 +62,12 @@ networks:
 In this example, we configured port 443 for our SSH proxy (instead of the usual port 22).
 This can be useful in environments that allow only HTTP(s) ports."
 
+Start the demo
+
+```sh
+docker compose up [-d]
+```
+
 Open the forwarding on your local machine.[^1]:
 
 ```sh
