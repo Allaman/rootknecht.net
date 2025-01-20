@@ -1,0 +1,38 @@
+---
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ssh-proxy:
+    image: debian
+    command: >
+      bash -c "apt-get update &&
+              apt-get install -y openssh-server &&
+              mkdir /run/sshd &&
+              echo 'root:test' | chpasswd &&
+              sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config &&
+              sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config &&
+              sed -i 's/UsePAM yes/UsePAM no/' /etc/ssh/sshd_config &&
+              /usr/sbin/sshd -D"
+    ports:
+      - "443:22"
+    networks:
+      - backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+networks:
+  backend:
+    driver: bridge
