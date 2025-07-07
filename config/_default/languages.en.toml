@@ -11,7 +11,7 @@ dateFormat = "2 January 2006"
 logo = "img/logo.png"
 # secondaryLogo = "img/secondary-logo.png"
 description = "My personal homepage with my knowledge-base and blog about Linux, DevOps, self-hosting, workflows and more"
-copyright = ":copyright: Michael Peter - since 2017"
+copyright = "©️ Michael Peter - since 2017"
 
 [params.author]
 name = "Michael"
