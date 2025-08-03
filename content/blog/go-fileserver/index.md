@@ -63,7 +63,6 @@ Finally, setup routes
 {{< collapse "Click to open the complete code" >}}
 
 ```go
----
 package main
 
 import (
