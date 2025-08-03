@@ -1,5 +1,5 @@
 ARG ARCH=
-FROM ${ARCH}alpine:3.18 as builder
+FROM ${ARCH}alpine:3.18 AS builder
 
 # config
 ENV HUGO_VERSION=0.112.0
@@ -22,7 +22,7 @@ COPY . .
 RUN hugo --minify
 
 
-FROM caddy:2.6-alpine as page
+FROM caddy:2.6-alpine AS page
 
 COPY --from=builder /src/public/ /usr/share/caddy/
 
