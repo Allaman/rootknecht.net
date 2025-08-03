@@ -32,7 +32,7 @@ xpath "string(//rss/channel/description)" == "Recent content in Rootknecht's Blo
 GET http://localhost:1314/blog/
 HTTP/1.1 200
 [Asserts]
-xpath "count(/html/body/div[4]/main/section[2]/a[*])" == 10
+xpath "count(/html/body/div[4]/main/section[2]/div[*])" == 10
 
 # Checking pagination count
 GET http://localhost:1314/blog/
