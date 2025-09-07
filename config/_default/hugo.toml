@@ -1,9 +1,8 @@
-theme = "blowfish"
 # -- Site Configuration --
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/
 
-# theme = "blowfish"
+theme = "blowfish"
 baseURL = "https://rootknecht.net/"
 defaultContentLanguage = "en"
 
@@ -11,18 +10,18 @@ defaultContentLanguage = "en"
 
 enableRobotsTXT = false
 summaryLength = 0
-
-[pagination]
-pagerSize = 10
-
-buildDrafts = false
-buildFuture = false
+hasCJKLanguage = true
 
 # https://github.com/nunocoracao/blowfish/releases/tag/v2.69.0
 enableEmoji = true
 
 # googleAnalytics = "G-XXXXXXXXX"
 
+[pagination]
+pagerSize = 10
+
+buildDrafts = false
+buildFuture = false
 [imaging]
   anchor = 'Center'
 
@@ -33,7 +32,7 @@ enableEmoji = true
   series = "series"
 
 [sitemap]
-  changefreq = 'daily'
+  changefreq = 'always'
   filename = 'sitemap.xml'
   priority = 0.5
 
