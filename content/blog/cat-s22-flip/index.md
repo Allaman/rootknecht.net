@@ -4,7 +4,7 @@ summary: I bought a 2019 (not so dumb) feature phone in the year 2024. Here is w
 description: Smartphone, Disconnect, Feature Phone, Review, Focus, Habits, hardware, Android, Dumbphone, digital detox
 date: 2024-02-11T18:37:37+10:00
 tags:
-  - workflow
+  - productivity
   - my experience
   - hardware
 ---
@@ -189,15 +189,19 @@ In summary, I can say that the S22 Flip meets my minimal requirements and has al
 
 ## Links
 
-- https://www.youtube.com/@DumbphonesUK
-- https://www.youtube.com/watch?v=AOfq-wZqNoc (German)
-- https://www.youtube.com/watch?v=GVzuT6eYZUA&t=364s
-- https://www.youtube.com/@oareyou
-- https://www.youtube.com/watch?v=x_gekpsoIuY
-- https://www.youtube.com/watch?v=xN4MuUkzLlg
+- <https://www.youtube.com/@DumbphonesUK>
+- <https://www.youtube.com/watch?v=AOfq-wZqNoc> (German)
+- <https://www.youtube.com/watch?v=GVzuT6eYZUA&t=364s>
+- <https://www.youtube.com/@oareyou>
+- <https://www.youtube.com/watch?v=x_gekpsoIuY>
+- <https://www.youtube.com/watch?v=xN4MuUkzLlg>
 
 [^1]: [Official](https://www.catphones.com/en-us/cat-s22-flip/) marketing phrase :wink:
+
 [^2]: [F-Druid](https://f-droid.org/en/) is an alternative app store with free and open source software.
+
 [^3]: The outer display can't show notifications from apps. Only missed calls and SMS are shown.
+
 [^4]: I always carry my plastic cards with me because there can be always the case that a terminal reader does not work with mobile. However, paying with Apple Pay does not require entering a PIN in the terminal which is extremely convenient.
+
 [^5]: Due to the old Android version and the implication to security patches.

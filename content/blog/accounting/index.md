@@ -1,6 +1,6 @@
 ---
 title: My plain text accounting workflow with hledger
-description: "plain text, accounting, hledger, finance, hledger, cli"
+description: "plain text, accounting, hledger, finance, hledger, cli, productivity"
 summary: "As you probably know, I am a big fan of the plain text file format. Whenever there is the possibility of a solution based upon plain text files, I'll (likely) take it. In this post, I will explain how I follow this principle with my personal accounting workflow."
 draft: false
 date: 2023-03-26
@@ -8,7 +8,7 @@ showHero: true
 tags:
   - diy
   - tools
-  - workflow
+  - productivity
   - shell
 ---
 
@@ -160,6 +160,9 @@ One could automate the generation of the SQLite files as well, but for now, I wi
     ```
 
 [^2]: I was inspired by the comments to my qestion on [reddit](https://www.reddit.com/r/plaintextaccounting/comments/121ka8m/how_do_you_visualize_drill_down_your_financial/) on "How do you visualize / drill down your financial data with hledger"
+
 [^3]: hledger has a quite powerful [reporting](https://hledger.org/1.29/hledger.html#reporting) included. There are various commands to query and filter your transaction and a cheat sheet like [this](https://devhints.io/hledger) comes in handy. There are also options to output your entries to various formats, including csv and plot your data with e.g. gnuplot. These might be sufficient for you!
+
 [^4]: Refer to [this](https://github.com/simonmichael/hledger/issues/2017) GitHub issue for an explanation of the `sed` part.
+
 [^5]: See the [Metabase docs](https://www.metabase.com/docs/latest/) for more details on how to work with Metabase!

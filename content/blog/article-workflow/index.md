@@ -1,11 +1,11 @@
 ---
 title: Reading/storing articles with Obisidan and Remarkable2
-description: "remarkable, pim, knowledge base, obsidian, workflow"
+description: "remarkable, pim, knowledge base, obsidian, productivity"
 summary: My workflow for reading and storing articles from the web with reMarkable2 and Obsidian.
 draft: false
 date: 2022-08-02
 tags:
-  - workflow
+  - productivity
 ---
 
 Whenever I stumble over an interesting article in the web I want to "archive" this article so that I can access it anytime even when the original blog/webpage is shut down. For years I paid for [Pocket](https://getpocket.com/en/) Premium plan that does not only save the URLs but the whole page, keeping the content accessible.

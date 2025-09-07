@@ -5,7 +5,6 @@ description: nixos, configuration, linux
 date: 2023-07-25
 tags:
   - tools
-  - workflow
   - nixos
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: One year macOS (after 10 years Linux)
 summary: In this post I want to describe my experience with macOS and especially "the bad" and "the ugly" topics from last year's post.
-description: macos, linux, workflow, configuration, my experience
+description: macos, linux, productivity, configuration, my experience
 date: 2022-11-26
 tags:
   - configuration
   - hardware
-  - workflow
+  - productivity
   - my experience
 ---
 

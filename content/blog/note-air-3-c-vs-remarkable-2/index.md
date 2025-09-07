@@ -1,10 +1,10 @@
 ---
 title: Onyx Boox Note Air 3 C vs Remarkable 2
 summary: A comparison between the Onyx Boox Note Air 3 C and the Remarkable 2 reveals that both are highly capable E-ink note-taking devices, but they also differ in various aspects..
-description: Workflow, E-ink, Note-taking, Onyx Boox Note Air 3 C, Remarkable 2, Paperless
+description: productivity, E-ink, Note-taking, Onyx Boox Note Air 3 C, Remarkable 2, Paperless
 date: 2024-03-30T11:26:31+10:00
 tags:
-  - workflow
+  - productivity
   - my experience
   - hardware
 ---

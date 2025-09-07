@@ -1,10 +1,10 @@
 ---
 title: How to not accidentally delete your data with rm
 summary: In this blog post, I want to illustrate technical and “organizational” strategies to prevent you from accidentally deleting your $HOME (guess who has achieved this medal 🙈).
-description: linux, tutorial, best-practices, my experience
+description: linux, tutorial, best-practices, my experience, productivity
 date: 2023-10-30
 tags:
-  - workflow
+  - productivity
   - linux
   - shell
 ---

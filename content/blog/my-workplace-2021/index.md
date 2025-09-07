@@ -1,14 +1,14 @@
 ---
 title: My Workplace
 summary: A blog post about my current workplace setup
-description: workflow configuration hardware
+description: productivity configuration hardware
 type: posts
 draft: false
 date: 2021-10-11
 tags:
   - configuration
   - hardware
-  - workflow
+  - productivity
   - linux
 ---
 

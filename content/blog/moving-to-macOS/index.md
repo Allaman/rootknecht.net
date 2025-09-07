@@ -1,13 +1,13 @@
 ---
 title: Moving from Linux to macOS
 summary: In this post, I will explain why I switched from Lenovo laptops running Linux for over a decade to the "arch enemy" macOS.
-description: workplace, configuration, hardware
+description: workplace, configuration, hardware, productivity
 draft: false
 date: 2021-12-30
 tags:
   - configuration
   - hardware
-  - workflow
+  - productivity
   - my experience
 ---
 
@@ -250,4 +250,5 @@ Of course, this is not a long term review, as I own the MBP just a couple of wee
 Here is the [Reddit Discussion](https://www.reddit.com/r/MacOS/comments/ruhi3n/moving_to_macos_after_10_years_of_running_solely/)
 
 [^1]: In this post, Linux is used as a synonym for all Linux based operating systems though technically, Linux is only the Kernel.
+
 [^2]: All listings are in no particular order

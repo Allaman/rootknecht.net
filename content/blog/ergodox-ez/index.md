@@ -1,11 +1,11 @@
 ---
 title: ErgoDox EZ
-description: keyboard, workflow, ergonomic, ergodox
+description: keyboard, productivity, ergonomic, ergodox
 summary: Impressions about my new keyboard - the ErgoDox EZ
 type: posts
 date: 2020-03-09
 tags:
-  - workflow
+  - productivity
   - hardware
   - my experience
 ---

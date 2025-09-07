@@ -9,5 +9,5 @@
     </a>
 </p></div>
 
-My personal homepage with my knowledge base and blog all around Linux, DevOps, Cloud, and workflows
+My personal homepage with my knowledge base and blog all around Linux, DevOps, cloud, and productivity
 Successor of [knowledge.rootknecht.net](https://github.com/Allaman/knowledge.rootknecht.net)

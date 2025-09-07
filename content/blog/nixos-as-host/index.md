@@ -5,7 +5,6 @@ description: nixos, nix, configuration, linux
 date: 2023-07-17
 tags:
   - tools
-  - workflow
   - nixos
 ---
 
@@ -168,30 +167,30 @@ sudo pacman --noconfirm -S base-devel ueberzug
 
 # Install brew
 NONINTERACTIVE=1 /bin/bash -c \
-	"$(curl -fsSL \
-		https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+ "$(curl -fsSL \
+  https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 # Install packages
 brew install \
-	age \
-	chezmoi \
-	fd \
-	gcc \
-	git \
-	gitui \
-	go \
-	java \
-	lf \
-	libnotify \
-	nodejs \
-	ripgrep \
-	tig \
-	tmux \
-	trash-cli \
-	xclip \
-	zoxide
+ age \
+ chezmoi \
+ fd \
+ gcc \
+ git \
+ gitui \
+ go \
+ java \
+ lf \
+ libnotify \
+ nodejs \
+ ripgrep \
+ tig \
+ tmux \
+ trash-cli \
+ xclip \
+ zoxide
 
 # Install Neovim nightly
 brew install neovim --head
@@ -232,8 +231,13 @@ As I mentioned earlier, I am not willing to rewrite my Neovim configuration. Wit
 With this approach I can combine the best of two worlds. NixOS as a rock solid unbreakable and sort of immutable host system and Distrobox providing a layer where "normal Linux rules" apply.
 
 [^1]: I won't go into detail what NixOS/Nix is and what its benefits and culprits are.
+
 [^2]: See my post [Moving from Linux to macOS](https://rootknecht.net/blog/moving-to-macOS/)
+
 [^3]: Inspired by [NixOS: Containerized and Immutable](https://www.youtube.com/watch?v=VqUKpNXnRxs) on YouTube
+
 [^4]: Be aware that the [hosts home directory is always mounted](https://github.com/89luca89/distrobox/blob/main/docs/usage/distrobox-create.md), even if you specify a [custom home directory](https://github.com/89luca89/distrobox/blob/main/docs/useful_tips.md#create-a-distrobox-with-a-custom-home-directory). Because of this behavior I decided to not specify a dedicated home directory for my containers. Therefore, my hosts home directory is shared between my containers.
+
 [^5]: Why Mason, another package manager, and not aptitude, or pacman, or brew, or nix, or ...? My idea was, to let Mason manage the packages the same way on each OS and not to struggle with setting up each package manager on my various systems.
+
 [^6]: "Downloading and attempting to run a binary on NixOS will almost never work. This is due to hard-coded paths in the executable." from the [NixOS wiki](https://nixos.wiki/wiki/Packaging/Binaries)

@@ -1,10 +1,10 @@
 ---
 title: Make Windows 10 more Linux like
 summary: Trying to make Windows work as a Linux user.
-description: linux, workflow, windows, configuration
+description: linux, productivity, windows, configuration
 date: 2020-01-22
 tags:
-  - workflow
+  - productivity
   - configuration
 ---
 
@@ -159,7 +159,7 @@ Requirements:
 
 - [Enable/Install WSL](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 - Choose and install a Linux distribution from. As of now the choice is Ubuntu, OpenSUSE, SLES, Kali Linux, or Debian GNU/Linux. I prefer Ubuntu for the easiest usage
-- [Bonus](https://blog.joaograssi.com/windows-subsystem-for-linux-with-oh-my-zsh-conemu/]
+- [Bonus](<https://blog.joaograssi.com/windows-subsystem-for-linux-with-oh-my-zsh-conemu/>]
 
 Basically, configure it like your Linux. Install zsh, clone your dotfiles, install tools like ripgrep, fzf, etc. Generally speaking WSL is intended to be used to access Linux toolchain and not for server or GUI applications (although possible). Also keep in mind that there might be issues due to differences in both, Windows' and Linux' file system.
 
@@ -186,5 +186,7 @@ Requirements:
 Linux GUI applications usually require a running [X Server](https://en.wikipedia.org/wiki/X_Window_System) in order to display their window. You can download some X server implementation for Winodws like [Xming](https://sourceforge.net/projects/xming/). After installing and starting the x server on your Windows machine you just enter `export DISPLAY=:0` in your WSL. Now you can launch GUI applications within this WSL shell.
 
 [^1]: Linux is referred to as an Linux based operations system like Ubuntu, Arch, Debian
+
 [^2]: or CLI, console, terminal, you name it
+
 [^3]: WSL is only available on Windows 10 64bit systems

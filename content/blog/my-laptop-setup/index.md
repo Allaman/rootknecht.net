@@ -1,11 +1,11 @@
 ---
 title: My Laptop Setup
 summary: In this post I give an overview of my current Laptop and some of my hardware I use for work.
-description: lenovo, linux, workflow, configuration
+description: lenovo, linux, productivity, configuration
 type: posts
 date: 2020-08-30
 tags:
-  - workflow
+  - productivity
   - hardware
   - configuration
   - linux
@@ -157,4 +157,5 @@ Another aspect which is quite controversy is my preference when it comes to mult
 1. Let the WM handle the window management ;)
 
 [^1]: I am not sponsored by any company in this article
+
 [^2]: I cannot speak for [dvorak](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard), [neo](https://neo-layout.org/), and other special layouts

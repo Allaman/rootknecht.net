@@ -10,14 +10,14 @@ rtl = false
 dateFormat = "2 January 2006"
 logo = "img/logo.png"
 # secondaryLogo = "img/secondary-logo.png"
-description = "My personal homepage with my knowledge-base and blog about Linux, DevOps, self-hosting, workflows and more"
+description = "My personal homepage with my knowledge-base and blog about Linux, DevOps, self-hosting, productivity and more"
 copyright = "©️ Michael Peter - since 2017"
 
 [params.author]
 name = "Michael"
 email = "contact@mjpeter.de"
 image = "img/authors/profile.jpg"
-headline = "DevOps / Cloud Computing"
+headline = "DevOps / Cloud Computing / Productivity"
 bio = "Jack of all trades, master of none :ghost:"
 links = [
   { github = "https://github.com/allaman" },
