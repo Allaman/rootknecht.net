@@ -1,6 +1,7 @@
 @font-face {
     font-family: font;
     src: url('/fonts/IBMPlexMono-Regular.ttf');
+    font-display: swap;
 }
 
 /* Increase the default font size */
