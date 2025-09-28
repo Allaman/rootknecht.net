@@ -20,47 +20,69 @@ showZenMode: false
 ---
 
 {{< lead >}}
-A selection of my open-source work
+A selection of my open-source work hosted on my [GitHub Profile](https://github.com/Allaman/)
 {{< /lead >}}
 
 ## Neovim
 
-{{< github repo="allaman/nvim" >}}
+{{< github repo="allaman/nvim" showThumbnail=false >}}
 
-{{< github repo="allaman/kustomize.nvim" >}}
+---
 
-{{< github repo="allaman/emoji.nvim" >}}
+{{< github repo="allaman/kustomize.nvim" showThumbnail=false >}}
 
-{{< github repo="allaman/nvim-docker" >}}
+---
+
+{{< github repo="allaman/emoji.nvim" showThumbnail=false >}}
+
+---
+
+{{< github repo="allaman/nvim-docker" showThumbnail=false >}}
 
 ## Configs
 
-{{< github repo="allaman/dots" >}}
+{{< github repo="allaman/dots" showThumbnail=false >}}
 
-{{< github repo="allaman/mac-setup" >}}
+---
+
+{{< github repo="allaman/mac-setup" showThumbnail=false >}}
 
 ## DevOps
 
-{{< github repo="allaman/chkRedis" >}}
+{{< github repo="allaman/chkRedis" showThumbnail=false >}}
 
-{{< github repo="allaman/werkzeugkasten" >}}
+---
 
-{{< github repo="allaman/problemsolver" >}}
+{{< github repo="allaman/werkzeugkasten" showThumbnail=false >}}
 
-{{< github repo="allaman/gstring" >}}
+---
 
-{{< github repo="allaman/toolbox" >}}
+{{< github repo="allaman/problemsolver" showThumbnail=false >}}
 
-{{< github repo="allaman/go-cli-skeleton" >}}
+---
 
-{{< github repo="allaman/hands-on-nomad" >}}
+{{< github repo="allaman/gstring" showThumbnail=false >}}
+
+---
+
+{{< github repo="allaman/toolbox" showThumbnail=false >}}
+
+---
+
+{{< github repo="allaman/go-cli-skeleton" showThumbnail=false >}}
+
+---
+
+{{< github repo="allaman/hands-on-nomad" showThumbnail=false >}}
 
 ## Slides
 
-{{< github repo="allaman/productivity" >}}
+{{< github repo="allaman/productivity" showThumbnail=false >}}
 
-{{< github repo="allaman/reveal-js-intro" >}}
+---
+
+{{< github repo="allaman/reveal-js-intro" showThumbnail=false >}}
 
 ## Misc
 
-{{< github repo="allaman/darlehenpy" >}}
+{{< github repo="allaman/darlehenpy" showThumbnail=false >}}
