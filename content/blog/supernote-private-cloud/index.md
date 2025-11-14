@@ -119,6 +119,8 @@ Supernote provided [configuration](https://support.supernote.com/Whats-New/setti
 
 When opening the private cloud page I was greeted with a login/register page. To be able to register, I had to configure mail settings. Although the test mail from my primary mail provider [mailbox.org](https://mailbox.org/en/) was sent and received I did not receive the registration mail for my actual registration. Only when I configured my backup Gmail account my registration mail was succesfully delivered and I could create an account.
 
+At this point I wonder how to disable the registration of additional users? Usually there is a config setting that disables the "register" function and only the login is available.
+
 ## Sync
 
 After logging out of my Supernote account, I was able to enable the private cloud in the settings and log in with my account. However, a sync throws a “network error” and does not work. I assume that this is caused by the missing “exposed port.” Remember the compose file:
