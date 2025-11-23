@@ -27,7 +27,7 @@ After downloading the SQL file, which creates the table structure for the databa
 curl -O https://supernote-private-cloud.supernote.com/cloud/supernotedb.sql
 ```
 
-and creating the directories to store sn data and config I can finally spin up my cloud.
+and creating the directories to store data and config I can finally spin up my cloud.
 
 ```sh
 mkdir ~/supernote ~/sndata
@@ -40,15 +40,15 @@ My compose file looks like this now:
 ```yml
 services:
   mariadb:
-    image: mariadb:12.0.2-ubi
+    image: mariadb:10.6.24
     container_name: mariadb
     networks:
       - supernote-net
     environment:
-      MYSQL_ROOT_PASSWORD: "foo"
+      MYSQL_ROOT_PASSWORD: "changeMe"
       MYSQL_DATABASE: supernotedb
       MYSQL_USER: "supernote_user"
-      MYSQL_PASSWORD: "foo"
+      MYSQL_PASSWORD: "changeMe"
     volumes:
       - mariadb_data:/var/lib/mysql
       - ./supernotedb.sql:/docker-entrypoint-initdb.d/supernotedb.sql:ro
@@ -61,7 +61,7 @@ services:
       - supernote-net
     volumes:
       - redis_data:/data
-    command: redis-server --requirepass 'bar' --dir /data --dbfilename dump.rdb
+    command: redis-server --requirepass 'changeMe2' --dir /data --dbfilename dump.rdb
     restart: unless-stopped
 
   notelib:
@@ -72,7 +72,7 @@ services:
     restart: unless-stopped
 
   supernote-service:
-    image: docker.io/supernote/supernote-service:25.11.04
+    image: docker.io/supernote/supernote-service:25.11.24
     container_name: supernote-service
     networks:
       - supernote-net
@@ -90,15 +90,20 @@ services:
     environment:
       MYSQL_DATABASE: supernotedb
       MYSQL_USER: "supernote_user"
-      MYSQL_PASSWORD: "foo"
+      MYSQL_PASSWORD: "changeMe"
       REDIS_HOST: redis
       REDIS_PORT: 6379
-      REDIS_PASSWORD: "bar"
+      REDIS_PASSWORD: "changeMe2"
     depends_on:
       - mariadb
       - redis
       - notelib
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 networks:
   supernote-net:
@@ -113,22 +118,52 @@ volumes:
 
 ## Nginx (reverse proxy)
 
-Supernote provided [configuration](https://support.supernote.com/Whats-New/setting-up-your-own-supernote-private-cloud-beta) snippet for Nginx as a reverse proxy for handling HTTPS termination which is exactly what I do :) I just replaced `YOUR_PRIVATE_CLOUD_IP_ADDRESS` with `127.0.0.1` and removed the SSL settings as these are managed by [Certbot](https://certbot.eff.org/).
+Supernote provided [configuration](https://support.supernote.com/Whats-New/setting-up-your-own-supernote-private-cloud-beta) snippet for Nginx as a reverse proxy for handling HTTPS termination which is exactly what I do 😊. I just replaced `YOUR_PRIVATE_CLOUD_IP_ADDRESS` with `127.0.0.1` and removed the SSL settings as these are managed by [Certbot](https://certbot.eff.org/).
+
+{{< collapse "" >}}
+
+```nginx
+server {
+        server_name  example.com;
+        client_max_body_size 20480m;
+        access_log /var/log/nginx/sn.access.log;
+        error_log /var/log/nginx/sn.error.log;
+location / {
+        proxy_pass http://127.0.0.1:19072;
+        proxy_set_header Host $proxy_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_redirect http:///127.0.0.1:19072/ https://$host/;
+        proxy_redirect https:///127.0.0.1:19072/ https://$host/;
+        proxy_redirect ~*^https?://[^/]+:19072(/?.*)$ https://$host$1;
+
+        sub_filter_once off;
+        sub_filter_types *;
+        sub_filter 'http:///127.0.0.1:19072' 'https://$host';
+        sub_filter 'https:///127.0.0.1:19072' 'https://$host';
+        sub_filter ':19072' '';
+
+        proxy_buffering on;
+        proxy_buffer_size 4k;
+        proxy_buffers 8 4k;
+
+        proxy_connect_timeout 6000;
+        proxy_send_timeout 6000;
+        proxy_read_timeout 6000;
+ }
+}
+```
+
+{{< /collapse >}}
 
 ## Login
 
-When opening the private cloud page I was greeted with a login/register page. To be able to register, I had to configure mail settings. Although the test mail from my primary mail provider [mailbox.org](https://mailbox.org/en/) was sent and received I did not receive the registration mail for my actual registration. Only when I configured my backup Gmail account my registration mail was succesfully delivered and I could create an account.
-
-At this point I wonder how to disable the registration of additional users? Usually there is a config setting that disables the "register" function and only the login is available.
+When opening the private cloud page I was greeted with a login/register page. To register, I had to configure mail settings. Although the test mail from my primary mail provider [mailbox.org](https://mailbox.org/en/) was sent and received I did not receive the registration mail for my actual registration. Only when I configured my backup Gmail account my registration mail was succesfully delivered and I could create an account.
 
 ## Sync
 
-After logging out of my Supernote account, I was able to enable the private cloud in the settings and log in with my account. However, a sync throws a “network error” and does not work. I assume that this is caused by the missing “exposed port.” Remember the compose file:
+After logging out of my Supernote account, I enabled the private cloud in the settings and log in with my account. Syncing my Supernote with my private cloud manually worked perfectly. The automatic sync requires the port 18072 which is currently not exposed to the web on my server. The Supernote team is working on a soution to expose the automatic sync port securly via HTTPS[^1].
 
-```yml
-ports:
-  - "127.0.0.1:18072:18072"
-  - "127.0.0.1:19072:8080"
-```
-
-Port `19072` is for the homepage and apparently for the login of the device, but `18072` is probably the synchronization protocol’s port, which is not reachable from the internet. I wonder how this is supposed to work because I do not want to open the port on my machine without HTTPS. Or maybe the protocol itself is encrypted? I will update this part once I know more.
+[^1]: [reddit.com](https://www.reddit.com/r/Supernote/comments/1ox8uox/comment/nquep5o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
