@@ -120,7 +120,7 @@ volumes:
 
 Supernote provided [configuration](https://support.supernote.com/Whats-New/setting-up-your-own-supernote-private-cloud-beta) snippet for Nginx as a reverse proxy for handling HTTPS termination which is exactly what I do 😊. I just replaced `YOUR_PRIVATE_CLOUD_IP_ADDRESS` with `127.0.0.1` and removed the SSL settings as these are managed by [Certbot](https://certbot.eff.org/).
 
-{{< collapse "" >}}
+{{< collapse "nginx config snippet" >}}
 
 ```nginx
 server {
