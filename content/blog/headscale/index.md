@@ -18,7 +18,7 @@ Here is a brief tutorial on how to achieve this using [headscale](https://headsc
 
 ### Install headscale
 
-Follow the ([docs](kttps://headscale.net/stable/setup/install/official/)). For my Debian VPS:
+Follow the [docs](https://headscale.net/stable/setup/install/official/). For my Debian VPS:
 
 ```sh
 export HEADSCALE_VERSION=0.25.1
@@ -29,7 +29,7 @@ sudo apt install ./headscale.deb
 
 ### Configure headscale
 
-My setup is rather basic. Refer to the [docs]([Documentation](https://headscale.net/stable/ref/configuration/)) for all options and explanations.
+My setup is rather basic. Refer to the [Documentation](https://headscale.net/stable/ref/configuration/) for all options and explanations.
 
 {{< collapse "/etc/headscale/config.yaml" >}}
 
@@ -148,6 +148,7 @@ apt install tailscale
 ### Setup a Exit node
 
 From the [tailscale docs](https://tailscale.com/kb/1103/exit-nodes)
+
 > You can route all your public internet traffic by setting a device on your network as an exit node. When you route all traffic through an exit node, you're effectively using default routes (0.0.0.0/0, ::/0), similar to how you would if you were using a typical VPN.
 
 which is exactley what we want 😊

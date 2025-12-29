@@ -40,8 +40,8 @@ But being an Android phone, it can't be a feature phone, or is it? Do I trade on
 I won't go into detail about the specs of the phone, as there are enough resources on the web. Also, take a look at the [Links](#links) section for some YouTube links. What made me buy the flip was:
 
 1. It has Android, so I know what to expect.
-1. It is a flip phone! I mean, I am old enough that I proudly owned an O.G. [Moto Razr](https://en.wikipedia.org/wiki/Motorola_Razr). Do I need to say more?
-1. It was not expensive. Some owners bought it in 2023 for around $60; I bought it on January 24 for €87, and the price increased to over €100 on Amazon.de. Now (February 24), it is not available on Amazon.de anymore.
+2. It is a flip phone! I mean, I am old enough that I proudly owned an O.G. [Moto Razr](https://en.wikipedia.org/wiki/Motorola_Razr). Do I need to say more?
+3. It was not expensive. Some owners bought it in 2023 for around $60; I bought it on January 24 for €87, and the price increased to over €100 on Amazon.de. Now (February 24), it is not available on Amazon.de anymore.
 
 ## Buying and Delivery
 
