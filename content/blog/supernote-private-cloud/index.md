@@ -123,36 +123,56 @@ Supernote provided [configuration](https://support.supernote.com/Whats-New/setti
 {{< collapse "nginx config snippet" >}}
 
 ```nginx
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    '' close;
+}
 server {
         server_name  example.com;
         client_max_body_size 20480m;
         access_log /var/log/nginx/sn.access.log;
         error_log /var/log/nginx/sn.error.log;
-location / {
-        proxy_pass http://127.0.0.1:19072;
-        proxy_set_header Host $proxy_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_set_header X-Forwarded-Host $host;
-        proxy_redirect http:///127.0.0.1:19072/ https://$host/;
-        proxy_redirect https:///127.0.0.1:19072/ https://$host/;
-        proxy_redirect ~*^https?://[^/]+:19072(/?.*)$ https://$host$1;
+    location / {
+            proxy_pass http://127.0.0.1:19072;
+            proxy_set_header Host $proxy_host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header X-Forwarded-Host $host;
+            proxy_redirect http:///127.0.0.1:19072/ https://$host/;
+            proxy_redirect https:///127.0.0.1:19072/ https://$host/;
+            proxy_redirect ~*^https?://[^/]+:19072(/?.*)$ https://$host$1;
 
-        sub_filter_once off;
-        sub_filter_types *;
-        sub_filter 'http:///127.0.0.1:19072' 'https://$host';
-        sub_filter 'https:///127.0.0.1:19072' 'https://$host';
-        sub_filter ':19072' '';
+            sub_filter_once off;
+            sub_filter_types *;
+            sub_filter 'http:///127.0.0.1:19072' 'https://$host';
+            sub_filter 'https:///127.0.0.1:19072' 'https://$host';
+            sub_filter ':19072' '';
 
-        proxy_buffering on;
-        proxy_buffer_size 4k;
-        proxy_buffers 8 4k;
+            proxy_buffering on;
+            proxy_buffer_size 4k;
+            proxy_buffers 8 4k;
 
-        proxy_connect_timeout 6000;
-        proxy_send_timeout 6000;
-        proxy_read_timeout 6000;
- }
+            proxy_connect_timeout 6000;
+            proxy_send_timeout 6000;
+            proxy_read_timeout 6000;
+     }
+    location ~ ^/socket.io/(.*) {
+            proxy_ignore_client_abort on;
+            proxy_http_version 1.1;
+            proxy_connect_timeout 60s;
+            proxy_read_timeout 3600s;
+            proxy_send_timeout 3600s;
+            proxy_set_header   X-NginX-Proxy    true;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "$connection_upgrade";
+            proxy_pass http://127.0.0.1:18072;
+            proxy_redirect off;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
 }
 ```
 
@@ -164,6 +184,9 @@ When opening the private cloud page I was greeted with a login/register page. To
 
 ## Sync
 
-After logging out of my Supernote account, I enabled the private cloud in the settings and log in with my account. Syncing my Supernote with my private cloud manually worked perfectly. The automatic sync requires the port 18072 which is currently not exposed to the web on my server. The Supernote team is working on a soution to expose the automatic sync port securly via HTTPS[^1].
+After logging out of my Supernote account, I enabled the private cloud in the settings and log in with my account. Syncing my Supernote with my private cloud ~manually~ worked perfectly. ~The automatic sync requires the port 18072 which is currently not exposed to the web on my server. The Supernote team is working on a soution to expose the automatic sync port securly via HTTPS[^1].~
+
+> [!INFO]
+> With the latest release [25.12.17](https://support.supernote.com/change-log/supernote-private-cloud-changelog/version/8) Supernote introduced "auto sync over HTTPS in reverse proxy environments" 🥳 I updated the nginx snippet above accordingly.
 
 [^1]: [reddit.com](https://www.reddit.com/r/Supernote/comments/1ox8uox/comment/nquep5o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
