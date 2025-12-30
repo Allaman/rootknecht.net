@@ -33,6 +33,10 @@ A selection of my open-source work hosted on my [GitHub Profile](https://github.
 
 ---
 
+{{< github repo="allaman/tf.nvim" showThumbnail=false >}}
+
+---
+
 {{< github repo="allaman/emoji.nvim" showThumbnail=false >}}
 
 ---
