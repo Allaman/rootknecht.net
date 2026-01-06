@@ -37,7 +37,7 @@ Honestly, my only Boox device has not been touched for a while. The hardware is 
 - There are privacy concerns[^2], and some solutions (NetGuard, WebDAV / Syncthing) make the device less enjoyable and are not everybody’s taste.
 - The operating system does not feel very reliable, and I experienced a few crashes.
 
-## Remarkable
+## Remarkable (as a platform)
 
 Some pros and cons which affects every Remarkable device.
 
