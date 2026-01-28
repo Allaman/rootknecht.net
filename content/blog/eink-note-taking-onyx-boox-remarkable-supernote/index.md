@@ -19,7 +19,7 @@ I have been using E-ink note-taking devices for years and have owned models from
 > I am not sponsored or affiliated with any of these companies.
 
 > [!INFO]
-> This post is not intended to be a comprehensive review but rather to reflect my opinion. For comprehensive reviews, I can recommend My Deep Guide (YouTube) and Chalid Raqami (YouTube).
+> This post is not intended to be a comprehensive review but rather to reflect my opinion. For comprehensive reviews, I can recommend [My Deep Guide](https://www.youtube.com/MyDeepGuide) (YouTube) and [Chalid Raqami](https://www.youtube.com/@ChalidRaqami) (YouTube).
 
 ## Onyx Boox Note Air 3 C
 
