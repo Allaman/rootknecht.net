@@ -2,8 +2,8 @@
 GET http://localhost:1314
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[3]/div[2]/div/a)" == "Rootknecht.net"
-xpath "string(/html/body/div[4]/footer/div/p[1])" contains "©️ Michael Peter - since 2017"
+xpath "string(/html/body/div[2]/a)" == "Rootknecht.net"
+xpath "string(/html/body/div[3]/footer/div/p[1])" contains "©️ Michael Peter - since 2017"
 
 # Check error handling
 GET http://localhost:1314/foobar
