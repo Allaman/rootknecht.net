@@ -13,7 +13,7 @@ HTTP/1.1 404
 GET http://localhost:1314/imprint/
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[4]/main/article/section/div/div/p[3])" contains "Verantwortlich für den Inhalt"
+xpath "string(/html/body/div[3]/main/article/section/div/div/p[3])" contains "Verantwortlich für den Inhalt"
 
 # Check privacy is available
 GET http://localhost:1314/privacy/
