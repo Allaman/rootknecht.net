@@ -38,13 +38,13 @@ xpath "count(/html/body/div[3]/main/section[2]/article[*])" == 20
 GET http://localhost:1314/blog/
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[4]/main/ul/li[3]/a)" == "3"
+xpath "string(/html/body/div[3]/main/ul/li[3]/a)" == "3"
 
 # Check section
 GET http://localhost:1314/knowledge/programming/
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[4]/main/header/h1)" ==  "Programming"
+xpath "string(/html/body/div[3]/main/header/h1)" ==  "Programming"
 
 # Check PGP public key
 GET http://localhost:1314/Michael_Peter.asc
