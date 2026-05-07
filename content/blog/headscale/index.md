@@ -21,7 +21,7 @@ Here is a brief tutorial on how to achieve this using [headscale](https://headsc
 Follow the [docs](https://headscale.net/stable/setup/install/official/). For my Debian VPS:
 
 ```sh
-export HEADSCALE_VERSION=0.25.1
+export HEADSCALE_VERSION=0.28.0
 export HEADSCALE_ARCH=amd64
 wget --output-document=headscale.deb "https://github.com/juanfont/headscale/releases/download/v${HEADSCALE_VERSION}/headscale_${HEADSCALE_VERSION}_linux_${HEADSCALE_ARCH}.deb"
 sudo apt install ./headscale.deb
