@@ -66,6 +66,12 @@ log:
   level: info
 dns:
   magic_dns: false
+  nameservers:
+    global:
+      - 1.1.1.1
+      - 1.0.0.1
+      - 2606:4700:4700::1111
+      - 2606:4700:4700::1001
 database:
   type: sqlite
 unix_socket: /var/run/headscale/headscale.sock
@@ -154,9 +160,9 @@ From the [tailscale docs](https://tailscale.com/kb/1103/exit-nodes)
 which is exactley what we want 😊
 
 ```sh
+headscale users create max.mustermann # create a user to associate our nodes with
 tailscale up --login-server https://example.net --advertise-exit-node
-headscale routes enable -r 3 # ID of the new node
-headscale routes enable -r 4 # ID of the new node
+headscale nodes approve-routes --identifier 1 --routes 0.0.0.0/0 # "1" is the node identifier
 ```
 
 [headscale docs](https://headscale.net/stable/ref/exit-node/)
