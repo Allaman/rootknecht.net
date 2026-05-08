@@ -7,6 +7,7 @@ tags:
   - productivity
   - my experience
   - hardware
+  - eink
 ---
 
 ## Introduction

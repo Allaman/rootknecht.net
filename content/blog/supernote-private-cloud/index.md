@@ -7,6 +7,7 @@ tags:
   - productivity
   - self-hosted
   - docker
+  - eink
 ---
 
 With the recent release of [Chauvet 3.25.39](https://supernote.com/blogs/supernote-blog/private-cloud-for-data-sovereignty-serverlink-for-remote-files-control-via-webdav) for Supernote Manta and Nomad, the option to self-host the cloud for synchroizing has been introduced.
