@@ -4,7 +4,6 @@ description: "plain text, accounting, hledger, finance, hledger, cli, productivi
 summary: "As you probably know, I am a big fan of the plain text file format. Whenever there is the possibility of a solution based upon plain text files, I'll (likely) take it. In this post, I will explain how I follow this principle with my personal accounting workflow."
 draft: false
 date: 2023-03-26
-showHero: true
 tags:
   - diy
   - tools
