@@ -11,6 +11,7 @@ showPagination: false
 groupByYear: false
 showTableOfContents: false
 showZenMode: false
+replyByEmail: false
 ---
 
 Liability and copyright according to German law.

@@ -11,6 +11,7 @@ showPagination: false
 groupByYear: false
 showTableOfContents: false
 showZenMode: false
+replyByEmail: false
 ---
 
 <h2>Datenschutzerklärung</h2>
