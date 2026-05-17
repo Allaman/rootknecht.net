@@ -20,7 +20,6 @@
       devShells.default = pkgs.mkShellNoCC {
         packages = with pkgs; [
           hugo
-          jdk19_headless
 
         ];
 
