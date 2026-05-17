@@ -19,7 +19,7 @@ This article is divided into three parts. In the first part I want to give you a
 
 ### Laptop
 
-{{< figure src=carbon.png caption="Lenovo x1 Carbon Gen 9" >}}
+{{< figure src=carbon.jpg caption="Lenovo x1 Carbon Gen 9" >}}
 
 Recently, I upgraded my [Lenovo X1 Carbon Gen 6](/blog/my-laptop-setup/#laptop) to the [Gen 9 model](https://www.lenovo.com/de/de/laptops/thinkpad/thinkpad-x1/X1-Carbon-G9/p/22TP2X1X1C9) with the following specs:
 
@@ -125,7 +125,7 @@ You can find my playbook at [Github](https://github.com/Allaman/rice). This play
 
 ## Desk/Chair
 
-{{< figure src=desk.png caption="My office" >}}
+{{< figure src=desk.jpg caption="My office" >}}
 
 My desk consists of two parts:
 
