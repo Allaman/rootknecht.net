@@ -1,0 +1,30 @@
+locale = "de"
+label = "Deutsch"
+weight = 2
+title = "Rootknecht.net"
+
+[params]
+displayName = "DE"
+isoCode = "de"
+rtl = false
+dateFormat = "2. January 2006"
+description = "Meine persönliche Webseite mit Wissensdatenbank und Blog über Linux, DevOps, Self-Hosting, Produktivität und mehr"
+copyright = "©️ Michael Peter - seit 2017"
+
+[params.author]
+name = "Michael"
+email = "contact@mjpeter.de"
+image = "img/authors/profile.jpg"
+headline = "DevOps / Cloud Computing / Produktivität"
+bio = "Allrounder, Spezialist für nichts :ghost:"
+links = [
+  { github = "https://github.com/allaman" },
+  { bluesky = "https://bsky.app/profile/allamann.bsky.social" },
+  { mastodon = "https://mastodontech.de/@allaman" },
+  { x-twitter = "https://twitter.com/Allaman" },
+  { linkedin = "https://linkedin.com/in/michael-peter-4aa918107" },
+  { star = "https://mijope.de" },
+  { keybase = "https://keybase.io/allaman" },
+  { email = "mailto:contact@mjpeter.de" },
+  { pgpkey = "Michael_Peter.asc" },
+]

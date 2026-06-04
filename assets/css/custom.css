@@ -1,3 +1,9 @@
+/* Not By AI badge — swap variants on theme change */
+.not-by-ai-light { display: block; margin: 0; }
+.not-by-ai-dark  { display: none;  margin: 0; }
+.dark .not-by-ai-light { display: none; }
+.dark .not-by-ai-dark  { display: block; }
+
 @font-face {
     font-family: font;
     src: url('/fonts/IBMPlexMono-Regular.ttf');

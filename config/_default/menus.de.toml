@@ -1,0 +1,73 @@
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 10
+
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 15
+
+# The knowledge base is intentionally English-only and has no German translations.
+# url is used instead of pageRef so Hugo links directly to the English paths
+# without trying to resolve a German version (which does not exist).
+[[main]]
+  name = "Knowledge Base"
+  url = "/knowledge/"
+  weight = 20
+
+[[main]]
+  name = "Applications"
+  parent = "Knowledge Base"
+  url = "/knowledge/applications/"
+  weight = 10
+
+[[main]]
+  name = "Cloud Computing"
+  parent = "Knowledge Base"
+  url = "/knowledge/cloud/"
+  weight = 20
+
+[[main]]
+  name = "Linux"
+  parent = "Knowledge Base"
+  url = "/knowledge/linux/"
+  weight = 30
+
+[[main]]
+  name = "Programming"
+  parent = "Knowledge Base"
+  url = "/knowledge/programming/"
+  weight = 40
+
+[[main]]
+  name = "Projekte"
+  pageRef = "projects"
+  weight = 30
+
+[[main]]
+  name = "Lebenslauf"
+  pageRef = "cv"
+  weight = 40
+
+[[main]]
+  identifier = "rss"
+  pre = "rss"
+  url = "https://rootknecht.net/de/index.xml"
+  weight = 50
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/allaman/"
+  weight = 60
+
+[[footer]]
+  name = "Impressum"
+  pageRef = "imprint"
+  weight = 10
+
+[[footer]]
+  name = "Datenschutz"
+  pageRef = "privacy"
+  weight = 20

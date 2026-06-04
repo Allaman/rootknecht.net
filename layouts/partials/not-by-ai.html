@@ -1,0 +1,26 @@
+{{/*
+  Renders the "Written by Human, Not by AI" badge.
+
+  Shown only when ALL of the following are true:
+    - the page language is English (German translations are AI-translated)
+    - notByAI is not explicitly set to false in front matter
+      (use `notByAI: false` on any post whose English version is not the original)
+*/}}
+{{- $notByAI := .Params.notByAI | default true -}}
+{{- $show := or (and (eq .Lang "en") $notByAI) (eq .Params.notByAI true) -}}
+{{- if $show -}}
+<div class="flex justify-center mt-4">
+<a href="https://notbyai.fyi" target="_blank" rel="noopener noreferrer">
+  {{/* Light theme: white badge */}}
+  <img
+    src="/img/not-by-ai/written-by-human-white@2x.png"
+    alt="Written by Human, Not by AI"
+    class="nozoom not-by-ai-light">
+  {{/* Dark theme: black badge */}}
+  <img
+    src="/img/not-by-ai/written-by-human-black@2x.png"
+    alt="Written by Human, Not by AI"
+    class="nozoom not-by-ai-dark">
+</a>
+</div>
+{{- end -}}
