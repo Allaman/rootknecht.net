@@ -50,7 +50,7 @@ services:
 
 - Port is for `127.0.0.1` and not on all interfaces because a proxy is in front of my Docker container.
 - `ASPNETCORE_URLS` does listen on all interfaces.
-- `REGISTRATION_DISABLED` is set to false because all users are registered already
+- `REGISTRATION_DISABLED` should be set to false when all users are registered already
 - `TRUSTED_PROXIES` is set to my server's IP, and the Docker Gateway IP.
 - `user` is set to my users `id` and `gid` to handle permissions correct
 
