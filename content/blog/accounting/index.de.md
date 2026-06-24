@@ -109,10 +109,10 @@ Meine Wahl fiel auf die Open-Source-Version von [metabase](https://www.metabase.
 Eine (**nicht produktionsbereite**) Instanz lässt sich ganz einfach über einen einzigen Docker-Container starten, und die Benutzeroberfläche ist unter `http://localhost:3000` erreichbar:
 
 ```sh
-docker run --rm -d -p 3000:3000 -v $(PWD):/app/data --name metabase metabase
+docker run --rm -d -p 3000:3000 -v $PWD:/app/data --name metabase metabase
 ```
 
-`-v $(PWD):/app/data` hängt den aktuellen Ordner des Terminals in den Metabase-Container ein, sodass die Inhalte für die Anwendung verfügbar sind. Metabase kann sich mit verschiedenen [Quellen verbinden](https://www.metabase.com/docs/latest/databases/connecting), aber wir bleiben beim Einfachen und nutzen SQLite. Glücklicherweise bietet hledger einen Befehl, um die Transaktionen in SQL zu exportieren.
+`-v $PWD:/app/data` hängt den aktuellen Ordner des Terminals in den Metabase-Container ein, sodass die Inhalte für die Anwendung verfügbar sind. Metabase kann sich mit verschiedenen [Quellen verbinden](https://www.metabase.com/docs/latest/databases/connecting), aber wir bleiben beim Einfachen und nutzen SQLite. Glücklicherweise bietet hledger einen Befehl, um die Transaktionen in SQL zu exportieren.
 
 Folgender Befehl gibt das Journal als SQL aus und erstellt damit eine SQLite-Datenbank[^4]:
 
