@@ -76,7 +76,7 @@ Mount shared folders
 
 In `/etc/fstab`, add
 
-```fstab
+```
 com.apple.virtio-fs.automount /mnt/shared virtiofs rw,relatime 0 0
 ```
 
