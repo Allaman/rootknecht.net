@@ -112,7 +112,7 @@ I think the settings are self-explanatory. Don't forget to save the settings.
 
 Back on the device go to Settings - System - KOReader Sync. You should see your configured settings. Now hit "Authenticate" and your reader should be authenticated.
 
-Now you can open an Ebook, hit "Sync Progress" and your progress will be synced. At this point, I got the error `Sync failed - Server error`
+Now you can open an Ebook, hit "Sync Progress" and your progress will be synced. At this point, I got the error `Sync failed - Server error` [^2]
 
 A look in the logs revealed the error `Document hash [ed5a5fd24a25f214d580d2cd196ab373] not found for user [allaman]`.
 I don't know why but apparently, documents that are not synced yet cannot be synced. Unfortunately, I have no other device with KOReader available and the installation on macOS was broken.
@@ -242,3 +242,5 @@ X-Auth-User: {{authUser}}
 ```
 
 [^1]: Ordered at Nov. 1st 2025 and delivered on Nov. 8th 2025
+
+[^2]: Update: There is a sync server from the crosspoint-reader organization itself, [crosspoint-sync](https://github.com/crosspoint-reader/crosspoint-sync) which works perfectly, even for the very first sync!
