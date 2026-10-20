@@ -6,7 +6,7 @@ draft: false
 date: 2026-06-13
 tags:
   - tools
-  - AI
+  - ai
   - workflow
 ---
 

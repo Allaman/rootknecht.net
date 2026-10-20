@@ -5,9 +5,9 @@ summary: How to use .http files with Neovim to restore a deleted Azure DevOps re
 draft: false
 date: 2025-11-23
 tags:
-  - Neovim
-  - Azure
-  - Tools
+  - neovim
+  - azure
+  - tools
 ---
 
 Recently, I discovered that it is not possible to restore a deleted repository through the UI in Azure DevOps.

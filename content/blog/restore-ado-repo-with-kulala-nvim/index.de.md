@@ -5,9 +5,9 @@ summary: Wie man .http-Dateien mit Neovim verwendet, um ein gelöschtes Azure De
 draft: false
 date: 2025-11-23
 tags:
-  - Neovim
-  - Azure
-  - Tools
+  - neovim
+  - azure
+  - tools
 ---
 
 {{< alert >}}

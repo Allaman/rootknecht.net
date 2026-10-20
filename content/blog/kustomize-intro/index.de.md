@@ -6,7 +6,7 @@ type: posts
 draft: false
 date: 2021-11-06
 tags:
-  - Kubernetes
+  - kubernetes
   - devops
   - tools
 ---
