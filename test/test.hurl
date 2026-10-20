@@ -2,8 +2,8 @@
 GET http://localhost:1314
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[2]/a)" == "Rootknecht.net"
-xpath "string(/html/body/div[3]/footer/div/p[1])" contains "©️ Michael Peter - since 2017"
+xpath "string(/html/body/header/div/a)" == "Rootknecht.net"
+xpath "string(/html/body/div[2]/footer/div/p[1])" contains "©️ Michael Peter - since 2017"
 
 # Check error handling
 GET http://localhost:1314/foobar
@@ -13,7 +13,7 @@ HTTP/1.1 404
 GET http://localhost:1314/imprint/
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[3]/main/article/section/div/div/p[3])" contains "Verantwortlich für den Inhalt"
+xpath "string(/html/body/div[2]/main/article/section/div/div[1]/p[3])" contains "Verantwortlich für den Inhalt"
 
 # Check privacy is available
 GET http://localhost:1314/privacy/
@@ -32,19 +32,19 @@ xpath "string(//rss/channel/description)" == "Recent content in Rootknecht's Blo
 GET http://localhost:1314/blog/
 HTTP/1.1 200
 [Asserts]
-xpath "count(/html/body/div[3]/main/section[2]/article[*])" == 20
+xpath "count(/html/body/div[2]/main/section[2]/article[*])" == 20
 
 # Checking pagination count
 GET http://localhost:1314/blog/
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[3]/main/ul/li[3]/a)" == "3"
+xpath "string(/html/body/div[2]/main/ul/li[3]/a)" == "3"
 
 # Check section
 GET http://localhost:1314/knowledge/programming/
 HTTP/1.1 200
 [Asserts]
-xpath "string(/html/body/div[3]/main/header/h1)" ==  "Programming"
+xpath "string(/html/body/div[2]/main/header/h1)" ==  "Programming"
 
 # Check PGP public key
 GET http://localhost:1314/Michael_Peter.asc
