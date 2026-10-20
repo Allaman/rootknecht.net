@@ -14,7 +14,7 @@ tags:
 
 I have been using E-ink note-taking devices for years and have owned models from several major brands[^1], including Onyx Boox, Remarkable, and Supernote. After long-term daily use and comparing their strengths and weaknesses, I decided in 2026 to finally settle on the best E-ink note-taking platform for my workflow.
 
-![my-collection](./eink.jpeg)
+![my-collection](eink.jpeg)
 
 > [!NOTE]
 > I am not sponsored or affiliated with any of these companies.

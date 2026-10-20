@@ -18,7 +18,7 @@ Dieser Beitrag wurde von einer KI ins Deutsche übersetzt. Der englische Origina
 
 Ich nutze E-Ink-Notizgeräte seit Jahren und besaß Modelle mehrerer großer Marken[^1], darunter Onyx Boox, Remarkable und Supernote. Nach langem Alltageinsatz und dem Vergleich ihrer Stärken und Schwächen entschloss ich mich 2026, mich endgültig für die beste E-Ink-Notizplattform für meinen Workflow zu entscheiden.
 
-![my-collection](./eink.jpeg)
+![my-collection](eink.jpeg)
 
 > [!NOTE]
 > Ich bin weder gesponsert noch in irgendeiner Weise mit diesen Unternehmen verbunden.
