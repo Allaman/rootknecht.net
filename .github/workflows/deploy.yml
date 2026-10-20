@@ -12,7 +12,7 @@ jobs:
 
   deploy:
     needs: ci
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
         with:
@@ -21,7 +21,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.162.1"
+          hugo-version: "0.168.0"
           extended: true
 
       - name: Build
