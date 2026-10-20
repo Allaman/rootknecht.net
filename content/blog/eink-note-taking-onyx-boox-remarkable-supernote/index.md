@@ -5,9 +5,10 @@ description: productivity, E-ink, Note-taking, Supernote, self-hosting, Remarkab
 date: 2026-01-06
 tags:
   - productivity
-  - my-experience
+  - my experience
   - hardware
   - eink
+  - review
 ---
 
 ## Intro

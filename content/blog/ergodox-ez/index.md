@@ -8,6 +8,7 @@ tags:
   - productivity
   - hardware
   - my experience
+  - review
 ---
 
 [ErgoDox EZ](https://ergodox-ez.com/)
