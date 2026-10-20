@@ -8,6 +8,7 @@ tags:
   - my experience
   - hardware
   - eink
+  - review
 ---
 
 ## Introduction

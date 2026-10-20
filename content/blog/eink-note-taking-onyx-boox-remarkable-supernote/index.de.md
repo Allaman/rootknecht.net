@@ -5,9 +5,10 @@ description: Produktivität, E-Ink, Notizen, Supernote, Self-Hosting, Remarkable
 date: 2026-01-06
 tags:
   - produktivität
-  - my-experience
+  - my experience
   - hardware
   - eink
+  - review
 ---
 
 {{< alert >}}

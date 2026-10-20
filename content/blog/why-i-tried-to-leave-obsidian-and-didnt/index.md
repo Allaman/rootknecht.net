@@ -7,6 +7,7 @@ tags:
   - productivity
   - self-hosted
   - my experience
+  - review
 ---
 
 ## Overview of my system
