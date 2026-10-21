@@ -1,7 +1,6 @@
 ---
 title: Single binary web app with Gin-Gonic
 summary: What is so special about a single binary with Go you might ask? That is nothing special and a major feature of Go out of the box. Things change when you want to bundle template files and static assets for your Gin-Gonic web application in one binary. In this post I'll explain how I built a single binary web application with HTML templates, CSS, JS and more included.
-description: golang, gin, web development, binary, deployment
 type: posts
 draft: false
 date: 2022-02-24

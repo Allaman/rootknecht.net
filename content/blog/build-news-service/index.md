@@ -1,6 +1,5 @@
 ---
 title: "Building your own news service with Huginn"
-description: "rss, self-hosted, knowledge base"
 summary: "I am (still) a big fan of RSS feeds, and I have built a neat collection of feeds on my self-hosted Tiny Tiny RSS. However, not all interesting blogs do offer an RSS feed. In this post, I will show you how I generate my own RSS feed from those blogs via Huginn."
 date: 2022-01-02
 tags:

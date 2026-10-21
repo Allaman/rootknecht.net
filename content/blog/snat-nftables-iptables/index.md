@@ -1,6 +1,5 @@
 ---
 title: Basic SNAT with nftables and iptables
-description: "networking, linux, debian, proxy, firewall, iptables, nftables, snat"
 summary: SNAT replaces a client's IP with a static IP to simplify; this can be set up using iptables or nftables, as shown in a Docker example.
 draft: false
 date: 2025-07-09

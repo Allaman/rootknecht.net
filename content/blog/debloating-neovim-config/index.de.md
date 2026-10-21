@@ -1,7 +1,6 @@
 ---
 title: Meine Neovim-Konfiguration entrümpeln
 summary: "Zurück zu den Grundlagen: Eine kleine Reise über eine benutzerdefinierte Neovim-Konfiguration, die außer Kontrolle geriet, und wie ich mein Setup vereinfacht habe, um es schneller und wartbarer denn je zu machen."
-description: neovim, lua, produktivität, entwicklung, IDE, konfiguration
 draft: false
 date: 2025-01-09T01:33:45+10:00
 tags:

@@ -1,6 +1,5 @@
 ---
 title: Reading/storing articles with Obisidan and Remarkable2
-description: "remarkable, pim, knowledge base, obsidian, productivity"
 summary: My workflow for reading and storing articles from the web with reMarkable2 and Obsidian.
 draft: false
 date: 2022-08-02

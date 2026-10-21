@@ -1,7 +1,6 @@
 ---
 title: Ein Jahr macOS (nach 10 Jahren Linux)
 summary: In diesem Beitrag möchte ich meine Erfahrungen mit macOS beschreiben und insbesondere die Themen „Das Schlechte" und „Das Hässliche" aus dem Beitrag des letzten Jahres aufgreifen.
-description: macos, linux, produktivität, konfiguration, my experience
 date: 2022-11-26
 tags:
   - configuration

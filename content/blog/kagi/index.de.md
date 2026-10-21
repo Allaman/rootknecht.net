@@ -1,6 +1,5 @@
 ---
 title: Zwei Jahre mit Kagi (Suchmaschine)
-description: "Kagi Suchmaschine, bezahlte Suche, datenschutzorientierte Suche, Google-Alternative, werbefreie Suche, KI-Assistent"
 summary: "Meine Erfahrung nach zwei Jahren Nutzung von Kagi als bezahlte, datenschutzorientierte Suchmaschinen-Alternative zu Google."
 draft: false
 date: 2025-10-04

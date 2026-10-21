@@ -1,7 +1,6 @@
 ---
 title: "Wie diese Seite aufgebaut ist (und warum)"
 summary: In diesem Artikel erkläre ich, warum ich mich für Grav CMS, eine vielleicht weniger bekannte Lösung, für knowledge.rootknecht.net entschieden habe.
-description: webentwicklung, grav, cms, my experience
 date: 2019-09-15
 tags:
   - web

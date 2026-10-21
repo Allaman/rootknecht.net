@@ -1,7 +1,6 @@
 ---
 title: Hands-on Nomad
 summary: "Ich arbeite seit Jahren mit Kubernetes als Container-Orchestrierungstool. Obwohl ich Kubernetes für ein großartiges Tool halte, wenn es die Probleme löst, für die es gedacht ist, bringt es auch – zumindest ein :grinning_face: – Problem mit sich: Kubernetes ist ein komplexes Tool, das sowohl im Betrieb als auch in der Nutzung aufwändig ist. In diesem Beitrag beschreibe ich meine ersten Schritte mit Nomad von HashiCorp, das verspricht, weniger komplex als Kubernetes zu sein."
-description: nomad, kubernetes, hands-on, docker, jvm
 date: 2023-08-15
 tags:
   - devops

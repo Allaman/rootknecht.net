@@ -1,7 +1,6 @@
 ---
 title: Windows 10 Linux-ähnlicher machen
 summary: Versuche, Windows für einen Linux-Benutzer zum Laufen zu bringen.
-description: linux, produktivität, windows, konfiguration
 date: 2020-01-22
 tags:
   - produktivität

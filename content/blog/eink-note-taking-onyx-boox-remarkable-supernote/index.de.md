@@ -1,7 +1,6 @@
 ---
 title: Meine Gedanken zu Onyx Boox, Remarkable und Supernote E-Ink-Notizgeräten
 summary: "Ein Langzeitvergleich von Supernote, Remarkable und Onyx Boox E-Ink-Notizgeräten mit Fokus auf Schreibgefühl, Software, Datenschutz und den Einsatz im Alltag."
-description: Produktivität, E-Ink, Notizen, Supernote, Self-Hosting, Remarkable, Onyx Boox, bestes E-Ink-Notizgerät
 date: 2026-01-06
 tags:
   - produktivität

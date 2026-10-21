@@ -1,7 +1,6 @@
 ---
 title: Mein Arbeitsplatz
 summary: Ein Blogbeitrag über mein aktuelles Arbeitsplatz-Setup
-description: produktivität konfiguration hardware
 type: posts
 draft: false
 date: 2021-10-11

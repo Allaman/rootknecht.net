@@ -1,6 +1,5 @@
 ---
 title: ErgoDox EZ
-description: tastatur, produktivität, ergonomisch, ergodox
 summary: Eindrücke über meine neue Tastatur – die ErgoDox EZ
 type: posts
 date: 2020-03-09

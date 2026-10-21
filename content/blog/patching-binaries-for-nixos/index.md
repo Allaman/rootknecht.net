@@ -1,7 +1,6 @@
 ---
 title: Patching Binaries for NixOS
 summary: In this blog post, I want to describe a workaround how to get downloaded binaries to work on NixOS.
-description: nixos, configuration, linux
 date: 2023-07-25
 tags:
   - tools

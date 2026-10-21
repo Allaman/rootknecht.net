@@ -1,7 +1,6 @@
 ---
 title: First look at Supernote private cloud setup
 summary: Setting up a self-hosted Supernote private cloud using Docker compose and Nginx.
-description: productivity, E-ink, Note-taking, Supernote A5X2 Manta, self-hosting, Docker
 date: 2025-11-14
 tags:
   - productivity

@@ -1,6 +1,5 @@
 ---
 title: Mein selbstgebautes NAS
-description: "diy, nas, self-hosted, unraid"
 summary: "Planen Sie, ein NAS (Network Attached Storage) anzuschaffen, weil Ihre Daten wachsen? Denken Sie über den Aufbau eines kleinen Home-Labs nach? Sind Sie etwas technisch versiert und nicht scheu vor DIY-Projekten und dem Installieren von Betriebssystemen? Dann ist dieser Beitrag für Sie :nerd_face: Sie lesen über meine Anforderungen und Anwendungsfälle sowie meine Hardware- und Softwareentscheidungen beim Bau meines ersten selbstgebauten NAS."
 type: posts
 draft: false

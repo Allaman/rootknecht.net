@@ -1,6 +1,5 @@
 ---
 title: "Restore an Azure DevOps repo with style (feat: kulala.nvim)"
-description: "Azure, DevOps, API, Neovim, REST, kulala.nvim"
 summary: How to use .http files with Neovim to restore a deleted Azure DevOps repository
 draft: false
 date: 2025-11-23

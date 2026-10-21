@@ -1,7 +1,6 @@
 ---
 title: Netzwerkressourcen einer Webseite per Skript auflisten
 summary: Aufgrund eines kürzlich erhaltenen Abmahnschreibens wegen der Einbindung von Google Fonts schrieb ich ein kleines Python-Skript, das die von einer Webseite geladenen Ressourcen, wie Schriften, prüft.
-description: webschriften, compliance, datenschutz, webentwicklung
 date: 2022-11-02
 tags:
   - web

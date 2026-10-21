@@ -1,7 +1,6 @@
 ---
 title: ThinkPad-Geschichten
 summary: Einige Abenteuer mit ThinkPads
-description: thinkpad, diy
 date: 2020-02-06
 tags:
   - diy

@@ -1,6 +1,5 @@
 ---
 title: Two years with Kagi (search engine)
-description: "Kagi search engine, paid search, privacy-focused search, Google alternative, ad-free search, AI assistant"
 summary: "My experience after two years of using Kagi as a paid, privacy-focused search engine alternative to Google."
 draft: false
 date: 2025-10-04

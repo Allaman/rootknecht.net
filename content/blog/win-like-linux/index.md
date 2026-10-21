@@ -1,7 +1,6 @@
 ---
 title: Make Windows 10 more Linux like
 summary: Trying to make Windows work as a Linux user.
-description: linux, productivity, windows, configuration
 date: 2020-01-22
 tags:
   - productivity

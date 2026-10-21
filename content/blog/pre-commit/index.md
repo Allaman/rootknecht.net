@@ -1,7 +1,6 @@
 ---
 title: Pre-commit hook for YAML doc-start
 summary: In my daily business I have to deal with a lot of YAML files. In my opinion, it is best practice to write `---` (three dashes) at the beginning of a YAML file. This post describes how to utilize Git pre-commit hooks to automatically insert `---` at the beginning of your YAML files before committing them.
-description: git, yaml, workflow, best-practices
 date: 2022-03-19
 tags:
   - devops

@@ -1,6 +1,5 @@
 ---
 title: Einfacher Reverse Proxy mit Caddy
-description: "devops, proxy, caddy, self-hosted"
 summary: "Stellen Sie sich vor, Sie benötigen einen einfachen Reverse Proxy für einen Ihrer Server, haben aber keine Berechtigung, Nginx, Apache usw. zu installieren. Oder Sie brauchen wirklich nur einen einfachen Proxy und möchten sich nicht mit Proxy-Konfigurationen herumschlagen. In diesem Beitrag schauen wir uns einen vergleichsweise neuen Proxy namens `Caddy` an, der für dieses Szenario ideal ist."
 draft: false
 date: 2022-03-05

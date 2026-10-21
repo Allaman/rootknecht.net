@@ -1,7 +1,6 @@
 ---
 title: Building multi arch Docker images
 summary: In this post I want to briefly describe how to build Docker images for both platforms at the example of a Docker image for troubleshooting purposes especially within a Kubernetes cluster.
-description: kubernetes, docker, arm, amd64, macOS, apple silicone, multi-arch
 type: posts
 date: 2022-01-19
 tags:

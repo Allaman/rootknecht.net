@@ -1,7 +1,6 @@
 ---
 title: My Laptop Setup
 summary: In this post I give an overview of my current Laptop and some of my hardware I use for work.
-description: lenovo, linux, productivity, configuration
 type: posts
 date: 2020-08-30
 tags:

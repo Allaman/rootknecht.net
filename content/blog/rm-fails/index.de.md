@@ -1,7 +1,6 @@
 ---
 title: Wie man Daten nicht versehentlich mit rm löscht
 summary: In diesem Blogbeitrag möchte ich technische und „organisatorische" Strategien vorstellen, um zu verhindern, dass versehentlich das $HOME-Verzeichnis gelöscht wird (raten Sie mal, wer diese Auszeichnung erhalten hat 🙈).
-description: linux, tutorial, best-practices, my experience, produktivität
 date: 2023-10-30
 tags:
   - produktivität

@@ -1,6 +1,5 @@
 ---
 title: Halte deine Git-Historie ordentlich und sauber
-description: "git, fixup, rebase, autosquash, workflow, Versionskontrolle, saubere Historie, Entwicklerproduktivität"
 summary: 'Eine praktische Demo von Fixup-Commits mit dem du eine vergessene Änderung an einen früheren Commit anhängen kannst, anstatt „Ups"-Commits anzuhäufen.'
 draft: false
 date: 2026-09-06

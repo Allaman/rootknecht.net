@@ -1,6 +1,5 @@
 ---
 title: Self-Hosted Static-IP-Tunneling mit Headscale
-description: "vpn, tailscale, netzwerk, macos, linux, debian"
 summary: Wie man Headscale und Tailscale für statisches IP-Routing unter Debian und macOS verwendet.
 draft: false
 date: 2025-04-26

@@ -1,7 +1,6 @@
 ---
 title: Datenbank via SSH tunneln
 summary: Eine kurze Demonstration, wie eine Verbindung zu einer PostgreSQL-Datenbank über SSH hergestellt wird, implementiert mit Docker Compose.
-description: datenbank, cloud, netzwerk, linux, ssh
 date: 2025-01-20
 tags:
   - devops

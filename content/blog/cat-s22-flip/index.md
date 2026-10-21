@@ -1,7 +1,6 @@
 ---
 title: CAT S22 Flip as iPhone replacement in 2024
 summary: I bought a 2019 (not so dumb) feature phone in the year 2024. Here is why I did so and if it could replace my Apple iPhone 15 Pro.
-description: Smartphone, Disconnect, Feature Phone, Review, Focus, Habits, hardware, Android, Dumbphone, digital detox
 date: 2024-02-11T18:37:37+10:00
 tags:
   - productivity

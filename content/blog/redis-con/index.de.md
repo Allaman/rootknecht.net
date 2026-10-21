@@ -1,7 +1,6 @@
 ---
 title: Konnektivität zu einem Redis prüfen
 summary: Kürzlich musste ich die Verbindung zu einer Redis-6-Instanz mit aktiviertem TLS und Passwortschutz prüfen. In diesem Beitrag möchte ich einen Überblick über die verschiedenen Ansätze geben, um zu verifizieren, ob ein Redis erreichbar ist.
-description: devops, redis, go, cli, troubleshooting
 date: 2022-04-09
 tags:
   - shell

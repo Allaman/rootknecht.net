@@ -1,6 +1,5 @@
 ---
 title: "Ein Azure DevOps-Repo mit Stil wiederherstellen (feat: kulala.nvim)"
-description: "Azure, DevOps, API, Neovim, REST, kulala.nvim"
 summary: Wie man .http-Dateien mit Neovim verwendet, um ein gelöschtes Azure DevOps-Repository wiederherzustellen
 draft: false
 date: 2025-11-23

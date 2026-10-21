@@ -1,6 +1,5 @@
 ---
 title: "Eigenen Nachrichtendienst mit Huginn aufbauen"
-description: "rss, self-hosted, wissensdatenbank"
 summary: "Ich bin (noch immer) ein großer Fan von RSS-Feeds und habe eine ansehnliche Sammlung von Feeds in meinem self-hosted Tiny Tiny RSS aufgebaut. Allerdings bieten nicht alle interessanten Blogs einen RSS-Feed an. In diesem Beitrag zeige ich, wie ich via Huginn eigene RSS-Feeds aus diesen Blogs erzeuge."
 date: 2022-01-02
 tags:

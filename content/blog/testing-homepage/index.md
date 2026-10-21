@@ -1,7 +1,6 @@
 ---
 title: Testing this webpage (Hurl+Hugo+Docker)
 summary: Recently, I stumbled over Hurl which is an exciting tool in my opinion. To play around with it, I created a sort of integration test for this homepage utilizing Hugo, Docker, GitHub actions, and Hurl.
-description: web development, testing, integration, hurl
 date: 2022-12-10
 tags:
   - tools

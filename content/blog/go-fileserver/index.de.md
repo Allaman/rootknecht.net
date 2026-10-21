@@ -1,6 +1,5 @@
 ---
 title: Single-Binary-Fileserver auf Basis von Go's embed-Feature
-description: "netzwerk, golang, programmierung, devops, server"
 summary: "Poor Man's Web Framework: Wie Go's embed-Paket den gesamten Web-Stack ersetzt"
 draft: false
 date: 2025-07-11

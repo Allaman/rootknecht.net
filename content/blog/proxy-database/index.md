@@ -1,7 +1,6 @@
 ---
 title: Proxy a database via SSH
 summary: A brief demonstration of how to connect to a PostgreSQL database via SSH, implemented using Docker Compose.
-description: database, cloud, networking, linux, ssh
 date: 2025-01-20
 tags:
   - devops

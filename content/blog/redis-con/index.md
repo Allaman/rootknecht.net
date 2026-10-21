@@ -1,7 +1,6 @@
 ---
 title: Check the connection to Redis
 summary: Recently, I had to check the connectivity to a Redis 6 TLS enabled and password protected instance. In this post, I want to give you an overview of the different approaches to verify if a Redis is up and reachable.
-description: devops, redis, go, cli, troubleshooting
 date: 2022-04-09
 tags:
   - shell

@@ -1,6 +1,5 @@
 ---
 title: Artikel lesen und speichern mit Obsidian und Remarkable2
-description: "remarkable, pim, wissensdatenbank, obsidian, produktivität"
 summary: Mein Workflow zum Lesen und Speichern von Artikeln aus dem Web mit dem reMarkable2 und Obsidian.
 draft: false
 date: 2022-08-02

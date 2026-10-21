@@ -1,7 +1,6 @@
 ---
 title: Binaries für NixOS patchen
 summary: In diesem Blogbeitrag möchte ich einen Workaround beschreiben, wie heruntergeladene Binaries unter NixOS zum Laufen gebracht werden können.
-description: nixos, konfiguration, linux
 date: 2023-07-25
 tags:
   - tools

@@ -1,7 +1,6 @@
 ---
 title: Eine Einführung in Kustomize
 summary: In meinen frühen Tagen mit Kustomize fehlte mir eine kompakte, praxisorientierte Anleitung zum Aufbau von Deployments mit Kustomize und zur Umsetzung gängiger Anforderungen in einem Multi-Cluster-Setup. In diesem Blogbeitrag möchte ich diese Lücke füllen und einen umfassenden Überblick über Kustomize geben.
-description: tutorial, kustomize, kubernetes, best-practices
 type: posts
 draft: false
 date: 2021-11-06

@@ -1,6 +1,5 @@
 ---
 title: DevOps
-description: "devops, definition, methodik"
 summary: "Was ich unter DevOps und den verwandten Themen Cloud Computing und Infrastructure as Code verstehe"
 date: 2019-10-06
 showHero: false

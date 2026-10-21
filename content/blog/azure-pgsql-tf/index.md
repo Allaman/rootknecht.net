@@ -1,7 +1,6 @@
 ---
 title: Passwordless Azure PostgreSQL with Terraform and connection via Container App
 summary: How to create an Azure PostgreSQL instance without public access and passwords using Terraform while ensuring security. Additionally, I will explain how to access this database from a container app using access tokens.
-description: Azure, PostgreSQL, Terraform, DevOps, Database, cloud Computing, Infrastructure as Code, IaC, Python
 date: 2024-01-27T13:00:25+10:00
 tags:
   - devops

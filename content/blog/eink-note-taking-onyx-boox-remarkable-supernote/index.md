@@ -1,7 +1,6 @@
 ---
 title: My Reflection on Onyx Boox, Remarkable, and Supernote E-ink Note-Taking Devices
 summary: "A long-term comparison of Supernote, Remarkable, and Onyx Boox E-ink note-taking devices, focusing on writing feel, software, privacy, and real-world use."
-description: productivity, E-ink, Note-taking, Supernote, self-hosting, Remarkable, Onyx Boox, best E-ink note-taking device
 date: 2026-01-06
 tags:
   - productivity

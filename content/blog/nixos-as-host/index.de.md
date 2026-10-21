@@ -1,7 +1,6 @@
 ---
 title: NixOS als Container-Host
 summary: Mein erster Versuch mit NixOS war wahrscheinlich im Oktober 2021 😄. Seitdem versuchte ich mehrmals, mich an NixOS und/oder Nix als Paketmanager-Alternative zu gewöhnen, aber mit wenig Erfolg. In diesem Beitrag möchte ich erläutern, wie ich endlich einen Zweck für NixOS gefunden habe und wie mir das ermöglichte, der steilen Lernkurve auszuweichen!
-description: nixos, nix, konfiguration, linux
 date: 2023-07-17
 tags:
   - tools

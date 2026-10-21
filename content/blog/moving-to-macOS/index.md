@@ -1,7 +1,6 @@
 ---
 title: Moving from Linux to macOS
 summary: In this post, I will explain why I switched from Lenovo laptops running Linux for over a decade to the "arch enemy" macOS.
-description: workplace, configuration, hardware, productivity
 draft: false
 date: 2021-12-30
 tags:

@@ -1,6 +1,5 @@
 ---
 title: ErgoDox EZ
-description: keyboard, productivity, ergonomic, ergodox
 summary: Impressions about my new keyboard - the ErgoDox EZ
 type: posts
 date: 2020-03-09

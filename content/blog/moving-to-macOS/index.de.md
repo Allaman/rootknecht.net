@@ -1,7 +1,6 @@
 ---
 title: Von Linux zu macOS wechseln
 summary: In diesem Beitrag erkläre ich, warum ich nach über einem Jahrzehnt mit Lenovo-Laptops unter Linux zum „Erzfeind" macOS gewechselt bin.
-description: arbeitsplatz, konfiguration, hardware, produktivität
 draft: false
 date: 2021-12-30
 tags:

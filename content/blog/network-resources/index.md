@@ -1,7 +1,6 @@
 ---
 title: List network resources of a webpage via a script
 summary: Due to recent written warnings because of including Google fonts I wrote a little python script that checks the resources, like fonts, a webpage loads.
-description: web font, compliance, privacy, web development
 date: 2022-11-02
 tags:
   - web

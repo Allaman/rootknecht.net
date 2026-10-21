@@ -1,6 +1,5 @@
 ---
 title: Mein Plain-Text-Buchhaltungsworkflow mit hledger
-description: "plain text, buchhaltung, hledger, finanzen, cli, produktivität"
 summary: "Wie ihr wahrscheinlich wisst, bin ich ein großer Fan des Plain-Text-Dateiformats. Wann immer es eine Lösung auf Basis von Plain-Text-Dateien gibt, werde ich sie (wahrscheinlich) nutzen. In diesem Beitrag erkläre ich, wie ich dieses Prinzip auf meinen persönlichen Buchhaltungsworkflow anwende."
 draft: false
 date: 2023-03-26

@@ -1,7 +1,6 @@
 ---
 title: Java Spring Boot mit Prometheus überwachen
 summary: Minimale Java-Spring-Boot-Anwendung mit vorkonfiguriertem Prometheus und Grafana, um Einblicke in die Anwendung sowie in Betriebssystem- und Container-Metriken zu erhalten.
-description: java, spring, prometheus, grafana, monitoring
 date: 2019-02-21
 type: posts
 tags:

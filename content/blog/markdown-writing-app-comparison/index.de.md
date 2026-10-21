@@ -1,7 +1,6 @@
 ---
 title: Markdown-Schreib-Apps im Vergleich
 summary: "Kann eine spezialisierte Markdown-Schreib-App mein Neovim-Setup schlagen? Ich habe iA Writer, Typora, Calmly Writer und MarkText auf Fußnoten, Tabellen, Mermaid, LaTeX und GitHub-Alerts getestet. Es gibt einen klaren Gewinner."
-description: Markdown-Editor, Markdown-Schreib-App, bester Markdown-Editor, Typora, iA Writer, MarkText, Calmly Writer, Obsidian, Hugo, Bloggen, Produktivität, Review
 date: 2026-10-20
 tags:
   - produktivität

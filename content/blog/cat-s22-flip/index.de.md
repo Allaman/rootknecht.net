@@ -1,7 +1,6 @@
 ---
 title: CAT S22 Flip als iPhone-Ersatz im Jahr 2024
 summary: Ich habe im Jahr 2024 ein (nicht ganz so dummes) Feature-Phone aus dem Jahr 2019 gekauft. Hier erkläre ich, warum ich das getan habe und ob es mein Apple iPhone 15 Pro ersetzen konnte.
-description: Smartphone, Disconnect, Feature Phone, Rezension, Fokus, Gewohnheiten, Hardware, Android, Dumbphone, digitale Entgiftung
 date: 2024-02-11T18:37:37+10:00
 tags:
   - produktivität

@@ -1,6 +1,5 @@
 ---
 title: Keep your Git history tidy and clean
-description: "git, fixup, rebase, autosquash, workflow, version control, clean history, developer productivity"
 summary: 'A hands-on demo of fixup commits that lets you attach a forgotten change to an earlier commit instead of piling up "oops" commits.'
 draft: false
 date: 2026-09-06

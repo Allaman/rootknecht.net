@@ -1,7 +1,6 @@
 ---
 title: Pre-commit-Hook für YAML-doc-start
 summary: In meinem täglichen Geschäft habe ich es mit vielen YAML-Dateien zu tun. Meiner Meinung nach ist es Best Practice, `---` (drei Bindestriche) am Anfang einer YAML-Datei zu schreiben. Dieser Beitrag beschreibt, wie Git-Pre-Commit-Hooks genutzt werden können, um `---` automatisch am Anfang der YAML-Dateien einzufügen, bevor sie committed werden.
-description: git, yaml, workflow, best-practices
 date: 2022-03-19
 tags:
   - devops

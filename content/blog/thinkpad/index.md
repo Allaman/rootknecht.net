@@ -1,7 +1,6 @@
 ---
 title: Thinkpad Stories
 summary: Some shenanigans with ThinkPads
-description: thinkpad, diy
 date: 2020-02-06
 tags:
   - diy

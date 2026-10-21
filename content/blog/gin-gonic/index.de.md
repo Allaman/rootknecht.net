@@ -1,7 +1,6 @@
 ---
 title: Single-Binary-Webanwendung mit Gin-Gonic
 summary: Was ist so besonders an einem Single Binary mit Go, könnte man fragen? Das ist eigentlich nichts Besonderes und ein Hauptmerkmal von Go. Die Dinge ändern sich, wenn man Template-Dateien und statische Assets für eine Gin-Gonic-Webanwendung in einem einzigen Binary bündeln möchte. In diesem Beitrag erkläre ich, wie ich eine Single-Binary-Webanwendung mit eingebetteten HTML-Templates, CSS, JS und mehr gebaut habe.
-description: golang, gin, webentwicklung, binary, deployment
 type: posts
 draft: false
 date: 2022-02-24

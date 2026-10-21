@@ -1,7 +1,6 @@
 ---
 title: "Mein Weg zum Freiberufler"
 summary: In diesem Artikel möchte ich meine Erfahrungen und typische Bedenken auf dem Weg zum Freiberufler in der IT schildern.
-description: freelancer, karriere, my experience
 type: posts
 date: 2020-01-07
 notByAI: true

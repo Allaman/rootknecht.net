@@ -1,7 +1,6 @@
 ---
 title: Business Logic in Nginx
 summary: Nginx ist ein beliebter Web-Server/-Proxy, der häufig verwendet wird, um Frontend-Anwendungen in einem Docker-Container bereitzustellen. Aber wussten Sie, dass man mit Nginx auch (Business-)Logik implementieren kann? Hier ist wie!
-description: nginx, lua, proxy, webserver
 type: posts
 draft: false
 date: 2023-10-02

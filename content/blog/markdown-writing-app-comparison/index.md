@@ -1,7 +1,6 @@
 ---
 title: Comparing Markdown Writing Apps
 summary: "A requirements-driven comparison of iA Writer, Typora, Calmly Writer, and MarkText for writing Hugo blog posts."
-description: markdown editor, markdown writing app, best markdown editor, typora, ia writer, marktext, calmly writer, obsidian, hugo, blogging, productivity, review
 date: 2026-10-20
 tags:
   - productivity

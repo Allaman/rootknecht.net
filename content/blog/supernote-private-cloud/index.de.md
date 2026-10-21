@@ -1,7 +1,6 @@
 ---
 title: Erster Blick auf die Supernote Private Cloud
 summary: Einrichtung einer self-hosted Supernote Private Cloud mit Docker Compose und Nginx.
-description: produktivität, E-Ink, Notizen, Supernote A5X2 Manta, Self-Hosting, Docker
 date: 2025-11-14
 tags:
   - produktivität

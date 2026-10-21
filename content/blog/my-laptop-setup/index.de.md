@@ -1,7 +1,6 @@
 ---
 title: Mein Laptop-Setup
 summary: In diesem Beitrag gebe ich einen Überblick über meinen aktuellen Laptop und einige der Hardware, die ich für die Arbeit verwende.
-description: lenovo, linux, produktivität, konfiguration
 type: posts
 date: 2020-08-30
 tags:

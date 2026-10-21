@@ -1,6 +1,5 @@
 ---
 title: Building my DIY NAS
-description: "diy, nas, self-hosted, unraid"
 summary: "Are you planning to get a NAS (network attached storage) because your data is growing? Do you think about building a small home lab? You are a little more technical and not afraid of DIY builds and installing operating systems? Then, this post is for you :nerd_face: You will read about my requirements and use cases as well as my hardware and software choices for building my first DIY NAS."
 type: posts
 draft: false

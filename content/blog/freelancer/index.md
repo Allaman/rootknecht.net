@@ -1,7 +1,6 @@
 ---
 title: "My Path to Becoming a Freelancer"
 summary: In this article I want to share my experiences and common concerns on the way to becoming a freelancer in IT.
-description: freelancer, career, my experience
 type: posts
 date: 2020-01-07
 notByAI: false

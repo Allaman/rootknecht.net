@@ -1,7 +1,6 @@
 ---
 title: "How is this page built (and why)"
 summary: In this article I explain why I have chosen Grav CMS, maybe a rather unknown solution, for knowledge.rootknecht.net.
-description: web development, grav, cms, my experience
 date: 2019-09-15
 tags:
   - web

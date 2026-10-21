@@ -1,7 +1,6 @@
 ---
 title: Minimale Netzwerksicherheitsgruppe für Azure Container App
 summary: Dieser Beitrag enthält eine Terraform-NSG-Konfiguration, die Azure Container Apps ordnungsgemäß betreiben lässt und dabei strikte Netzwerksicherheit wahrt.
-description: Azure, Container App, Terraform, DevOps, Cloud Computing, Infrastructure as Code, IaC
 date: 2025-09-30
 tags:
   - devops
